@@ -10,7 +10,7 @@ export default defineConfig({
         .scrollbar-hide::-webkit-scrollbar {display: none;}`
       },
     ],
-    ['vertical-lr', { 'writing-mode': 'vertical-lr' }],
+    ['vertical-rl', { 'writing-mode': 'vertical-rl' }],
   ],
   theme: {
     fontFamily: {
