@@ -5,8 +5,8 @@
 <template>
   <div class="space-y-4">
     <header class="grid gap-4 p-4 sm:grid-cols-2">
-      <GridCard class="grid content-center">
-        <div class="relative rounded-xl">
+      <article class="grid content-center">
+        <div class="relative">
           <svg
             viewBox="0 0 480 480"
             xmlns="http://www.w3.org/2000/svg"
@@ -17,24 +17,42 @@
             />
           </svg>
 
-          <div class="absolute top-0 pt-4 h-full w-full overflow-hidden">
-            <img
-              src="@/assets/images/epigenetica/dna.png"
-              class="h-full w-10/12 mx-auto object-contain transition-300 group-hover:scale-110"
-            />
-          </div>
+          <div
+            class="absolute top-0 right-0 h-12 w-12 bg-sky-300 rounded-full"
+          ></div>
 
-          <div class="absolute top-0 right-0">
-            <span class="block h-12 w-12 p-2 bg-sky-300 rounded-full"></span>
+          <div
+            class="absolute top-0 h-full w-full flex items-center overflow-hidden px-4"
+          >
+            <PokerCard class="h-6/10 w-full -rotate-z-10 translate-y-2">
+              <img
+                src="@/assets/images/epigenetica/card_back.jpg"
+                class="h-full w-full object-cover transition-300 group-hover:scale-110"
+              />
+            </PokerCard>
+
+            <PokerCard class="h-6/10 w-full">
+              <img
+                src="@/assets/images/epigenetica/card_center.png"
+                class="h-full w-full object-cover transition-300 group-hover:scale-110"
+              />
+            </PokerCard>
+
+            <PokerCard class="h-6/10 w-full rotate-z-10 translate-y-2">
+              <img
+                src="@/assets/images/epigenetica/card_front.jpg"
+                class="h-full w-full object-cover transition-300 group-hover:scale-110"
+              />
+            </PokerCard>
           </div>
         </div>
-      </GridCard>
+      </article>
 
-      <GridCard class="sm:order-first grid gap-4 content-center">
+      <article class="sm:order-first grid gap-4 content-center">
         <div class="font-semibold">
           <span class="text-5xl">
             Nutrición basada en la expresión de tus
-            <span class="text-6xl text-[#4FE0B6]">genes</span>
+            <span class="text-6xl text-sky-400">genes</span>
           </span>
         </div>
 
@@ -42,95 +60,37 @@
           Con tan solo 5 hebras de tu cabello realizaremos un test epigenético y
           recibiras un plan alimenticio basado en tu bio-información
         </p>
-      </GridCard>
+      </article>
     </header>
 
-    <GridContainer class="min-h-xl p-6 parallax">
-      <GridCard>
-        <div class="flex flex-col justify-center gap-4">
-          <h1
-            class="p-4 text-5xl sm:text-7xl font-black tracking-tighter text-gray-200"
-          >
-            Nutrición basada en la expresión de tus genes
-          </h1>
-
-          <GridContainer
-            :cols="{ sm: 2 }"
-            class="p-6"
-          >
-            <p class="text-gray-200">
-              Con tan solo 5 hebras de tu cabello realizaremos un test
-              epigenético y recibiras un plan alimenticio basado en tu
-              bio-información
-            </p>
-          </GridContainer>
-        </div>
-      </GridCard>
-
-      <!-- <GridCard class="justify-center items-center">
-            <GridContainer
-              :cols="{ sm: 2 }"
-              class="w-full"
-            >
-              <GridCard>
-                <AteneaBlobCard>
-                  <template #title>Titulo</template>
-                  <template #icon>ICONO</template>
-
-                  <p>Content</p>
-                </AteneaBlobCard>
-              </GridCard>
-
-              <GridCard>
-                <AteneaBlobCard> Hi </AteneaBlobCard>
-              </GridCard>
-            </GridContainer>
-          </GridCard> -->
-    </GridContainer>
-
-    <GridContainer
-      :cols="{
-        sm: 2,
-        md: 4,
-      }"
-      class="auto-rows-[192px]"
+    <section
+      class="grid gap-4 p-4 sm:grid-cols-2 md:grid-cols-4 auto-rows-[160px]"
     >
-      <GridCard
-        class="p-1 bg-black rounded-2xl!"
-        :col-span="{ md: 2 }"
-        :row-span="{ base: 2 }"
-      >
-        <AteneaBlobCard blob-color="rgb(79, 128, 226)">
-          <template #title>
-            <div class="absolute flex flex-col lg:flex-row gap-2">
-              <p
-                class="tracking-tighter font-black text-4xl lg:text-6xl vertical-lr"
-              >
-                Estudios
-              </p>
-              <p
-                class="tracking-tighter font-black text-4xl lg:text-6xl vertical-lr lg:order-first"
-              >
-                epigenéticos
-              </p>
-            </div>
-          </template>
-
-          <template #icon>
-            <UnoIcon class="i-ph:dna-bold w-26 h-26" />
-          </template>
-
-          <div class="absolute bottom-4 right-4 w-8/12">
-            <p>
-              Este estudio evaluara tu bio-información, obteniendo datos sobre
-              tus necesidades nutricionales, conocerás lo que realmente necesita
-              tu organismo a nivel celular basado en la expresión de tus genes
+      <article class="md:col-span-2 row-span-2">
+        <AteneaBlobCard
+          blob-color="bg-purple"
+          class="h-full w-full"
+        >
+          <div class="h-full w-full p-4 flex text-neutral-200">
+            <p class="text-5xl font-light vertical-rl">
+              Estudios
+              <span class="text-sky-400">epigenéticos</span>
             </p>
+
+            <div class="flex flex-col justify-between">
+              <p>
+                Este estudio evaluara tu bio-información, obteniendo datos sobre
+                tus necesidades nutricionales, conocerás lo que realmente
+                necesita tu organismo a nivel celular basado en la expresión de
+                tus genes
+              </p>
+              <UnoIcon class="i-ph:dna-bold w-20 h-20 self-end" />
+            </div>
           </div>
         </AteneaBlobCard>
-      </GridCard>
+      </article>
 
-      <GridCard class="overflow-hidden">
+      <article class="overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -160,14 +120,14 @@
             </div>
           </template>
         </FlipCard>
-      </GridCard>
+      </article>
 
       <GridCard
         class="relative overflow-hidden mix-blend-screen"
         :row-span="{ sm: 2 }"
       >
         <img
-          src="@/assets/epigenetica/dna.jpeg"
+          src="@/assets/images/epigenetica/dna.jpeg"
           class="h-full w-full object-cover transition-300 hover:scale-110"
         />
         <div
@@ -309,14 +269,14 @@
           </template>
         </FlipCard>
       </GridCard>
-    </GridContainer>
+    </section>
 
     <GridContainer>
       <GridCard
         :col-span="{ sm: 2, md: 4 }"
         class="text-center flex-col"
       >
-        <p class="text-3xl font-semibold text-gray-800">
+        <p class="text-3xl font-semibold text-gray-800 mb-4">
           ¿Qué indicadores epigenéticos conoceras?
         </p>
 
@@ -398,39 +358,42 @@
       </GridCard>
     </GridContainer>
 
-    <GridContainer :cols="{ sm: 3 }">
-      <GridCard :col-span="{ sm: 3 }">
+    <section class="grid gap-4 p-4 sm:grid-cols-2">
+      <header class="sm:col-span-2">
         <header class="w-full text-center text-3xl font-semibold text-gray-800">
           <p>Elige un plan según tu objetívo</p>
         </header>
-      </GridCard>
+      </header>
 
-      <GridCard
-        v-for="(item, i) in [
-          {
-            image: '/epigenetica/high_performance.jpg',
-          },
-          {
-            image: '/epigenetica/wellness.png',
-          },
-          {
-            image: '/epigenetica/vegan.jpg',
-          },
-        ]"
-        class="border-4 overflow-hidden max-h-sm aspect-3/4"
-      >
-        <img
-          :src="item.image"
-          class="h-full w-full object-cover transition-300 hover:scale-110"
-        />
-      </GridCard>
-    </GridContainer>
+      <div class="h-full w-full flex items-center overflow-hidden px-4">
+        <PokerCard class="h-6/10 w-full">
+          <img
+            src="@/assets/images/epigenetica/card_back.jpg"
+            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+          />
+        </PokerCard>
+
+        <PokerCard class="h-6/10 w-full">
+          <img
+            src="@/assets/images/epigenetica/card_center.png"
+            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+          />
+        </PokerCard>
+
+        <PokerCard class="h-6/10 w-full">
+          <img
+            src="@/assets/images/epigenetica/card_front.jpg"
+            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+          />
+        </PokerCard>
+
+        <PokerCard class="h-6/10 w-full">
+          <img
+            src="@/assets/images/epigenetica/card_front.jpg"
+            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+          />
+        </PokerCard>
+      </div>
+    </section>
   </div>
 </template>
-
-<style>
-.parallax {
-  background-image: url('/epigenetica/dna.jpeg');
-  background-attachment: fixed;
-}
-</style>
