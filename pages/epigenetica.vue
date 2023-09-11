@@ -24,21 +24,25 @@
           <div
             class="absolute top-0 h-full w-full flex items-center overflow-hidden px-4"
           >
-            <PokerCard class="h-6/10 w-full -rotate-z-10 translate-y-2">
+            <PokerCard
+              class="h-5/10 w-full aspect-3/4 -rotate-z-10 translate-y-2"
+            >
               <img
                 src="@/assets/images/epigenetica/card_back.jpg"
                 class="h-full w-full object-cover transition-300 group-hover:scale-110"
               />
             </PokerCard>
 
-            <PokerCard class="h-6/10 w-full">
+            <PokerCard class="h-5/10 w-full aspect-3/4">
               <img
                 src="@/assets/images/epigenetica/card_center.png"
                 class="h-full w-full object-cover transition-300 group-hover:scale-110"
               />
             </PokerCard>
 
-            <PokerCard class="h-6/10 w-full rotate-z-10 translate-y-2">
+            <PokerCard
+              class="h-5/10 w-full aspect-3/4 rotate-z-10 translate-y-2"
+            >
               <img
                 src="@/assets/images/epigenetica/card_front.jpg"
                 class="h-full w-full object-cover transition-300 group-hover:scale-110"
@@ -122,10 +126,7 @@
         </FlipCard>
       </article>
 
-      <GridCard
-        class="relative overflow-hidden mix-blend-screen"
-        :row-span="{ sm: 2 }"
-      >
+      <article class="relative sm:row-span-2 rounded-xl overflow-hidden">
         <img
           src="@/assets/images/epigenetica/dna.jpeg"
           class="h-full w-full object-cover transition-300 hover:scale-110"
@@ -136,9 +137,9 @@
           <h3 class="font-black text-2xl">CONTACTO</h3>
           <p class="text-xs">+52 444 123 456</p>
         </div>
-      </GridCard>
+      </article>
 
-      <GridCard class="overflow-hidden">
+      <article class="overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -168,9 +169,9 @@
             </div>
           </template>
         </FlipCard>
-      </GridCard>
+      </article>
 
-      <GridCard class="overflow-hidden">
+      <article class="overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -201,9 +202,9 @@
             </div>
           </template>
         </FlipCard>
-      </GridCard>
+      </article>
 
-      <GridCard class="overflow-hidden">
+      <article class="overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -231,12 +232,9 @@
             </div>
           </template>
         </FlipCard>
-      </GridCard>
+      </article>
 
-      <GridCard
-        :col-span="{ sm: 2 }"
-        class="overflow-hidden"
-      >
+      <article class="sm:col-span-2 overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -268,126 +266,132 @@
             </div>
           </template>
         </FlipCard>
-      </GridCard>
+      </article>
     </section>
 
-    <GridContainer>
-      <GridCard
-        :col-span="{ sm: 2, md: 4 }"
-        class="text-center flex-col"
-      >
-        <p class="text-3xl font-semibold text-gray-800 mb-4">
+    <section class="p-4 space-y-6">
+      <header class="text-center">
+        <p class="text-3xl font-semibold">
           ¿Qué indicadores epigenéticos conoceras?
         </p>
+      </header>
 
-        <GridContainer
-          :cols="{ sm: 2, md: 3 }"
-          class="p-0! gap-6!"
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <AteneaAccordion
+          v-for="({ title, subtitle, icon, content }, i) of [
+            {
+              title: 'Vitaminas',
+              subtitle: '16 Indicadores',
+              icon: 'i-mdi:fruit-watermelon',
+              content:
+                'Biotina, Inositol, Vitamina A, Vitamina Bl, Vitamina B12, Vitamina B2, Vitamina B3, Vitamina B5, Vitamina B6, Vitamina B9, Vitamina C, Vitamina D3, Vitamina E, Vitamina K, Vitamina K2',
+            },
+            {
+              title: 'Minerales',
+              subtitle: '15 Indicadores',
+              icon: 'i-ph:diamonds-four-duotone',
+              content:
+                'Azufre, Boro, Calcio, Cobre, Cromo, Hierro, Litio, Magnesio, Manganeso, Molibdeno, Potasio, Selenio, Silicio, Sodio, Yodo',
+            },
+            {
+              title: 'Antioxidantes',
+              icon: 'i-mdi:fruit-citrus',
+              subtitle: '12 Indicadores',
+              content:
+                'AntocianinaS, Carotenoides, Co Enzima Q10, Flavonoides,  Fitoestrógenos, Polifenoles, Selenio, Sulforafano, Superoxide dismutase (sod), Vitamina C, Vitamina E, Zinc',
+            },
+            {
+              title: 'Ácidos Grasos',
+              icon: 'i-ph:drop-duotone',
+              subtitle: '7 Indicadores',
+              content:
+                'Alfa linolelco 3 (ALA),  Ácido araquidónico 6 (AA), Acido docosahexaenoico 3 (DHA), Ácido eicosapentanoico 3 (EPA),  Ácido linolénico gamma 6 (GLA), Ácido linoleico 6, Ácido oleico 9',
+            },
+            {
+              title: 'Aminoácidos',
+              icon: 'i-mdi:molecule',
+              subtitle: '20 Indicadores',
+              content:
+                'Tirosina, Histidina, Isoleucina, Leucina, Lisina, Metionina, Fenilalanina, Treonina, Triptófano, Valina, Alanina, Arginina, Asparagina, Ácido aspártico, Cisteína, Ácido glutamico, Glutamina, Glicina, Prolina, Serina',
+            },
+            {
+              title: 'Microbioma',
+              icon: 'i-mdi:bacteria',
+              subtitle: '6 Indicadores',
+              content:
+                'Hongo, Moldes/Esporas, Parasitos, Bacteria, Señal Viral, Señal Post vira',
+            },
+
+            {
+              title: 'Interferencias',
+              icon: 'i-ph:seal-warning-duotone',
+              subtitle: '14 Indicadores',
+              content:
+                '50 Hz Corriente de Entrada Campo Alternante Electromagnético, Campo Electrostático, Campo Magnético Constante, Corriente de Tracción 16 2/3 Hz, ELF (Frecuencia Extremadamente Baja), Electrosmog, Horno Microondas, Pantalla de Ordenador, Pantalla de Televisión, RBF (Radiación de Baja Frecuencia), RF (Radiofrecuencia), Teléfono Móvil, GSM (0,9 GHz), Teléfono Móvil, GSM (1,8 GHz)',
+            },
+          ]"
+          :key="i"
         >
-          <AteneaAccordion
-            v-for="({ title, subtitle, icon, content }, i) of [
-              {
-                title: 'Vitaminas',
-                subtitle: '16 Indicadores',
-                icon: 'i-mdi:fruit-watermelon',
-                content:
-                  'Biotina, Inositol, Vitamina A, Vitamina Bl, Vitamina B12, Vitamina B2, Vitamina B3, Vitamina B5, Vitamina B6, Vitamina B9, Vitamina C, Vitamina D3, Vitamina E, Vitamina K, Vitamina K2',
-              },
-              {
-                title: 'Minerales',
-                subtitle: '15 Indicadores',
-                icon: 'i-ph:diamonds-four-duotone',
-                content:
-                  'Azufre, Boro, Calcio, Cobre, Cromo, Hierro, Litio, Magnesio, Manganeso, Molibdeno, Potasio, Selenio, Silicio, Sodio, Yodo',
-              },
-              {
-                title: 'Antioxidantes',
-                icon: 'i-mdi:fruit-citrus',
-                subtitle: '12 Indicadores',
-                content:
-                  'AntocianinaS, Carotenoides, Co Enzima Q10, Flavonoides,  Fitoestrógenos, Polifenoles, Selenio, Sulforafano, Superoxide dismutase (sod), Vitamina C, Vitamina E, Zinc',
-              },
-              {
-                title: 'Ácidos Grasos',
-                icon: 'i-ph:drop-duotone',
-                subtitle: '7 Indicadores',
-                content:
-                  'Alfa linolelco 3 (ALA),  Ácido araquidónico 6 (AA), Acido docosahexaenoico 3 (DHA), Ácido eicosapentanoico 3 (EPA),  Ácido linolénico gamma 6 (GLA), Ácido linoleico 6, Ácido oleico 9',
-              },
-              {
-                title: 'Aminoácidos',
-                icon: 'i-mdi:molecule',
-                subtitle: '20 Indicadores',
-                content:
-                  'Tirosina, Histidina, Isoleucina, Leucina, Lisina, Metionina, Fenilalanina, Treonina, Triptófano, Valina, Alanina, Arginina, Asparagina, Ácido aspártico, Cisteína, Ácido glutamico, Glutamina, Glicina, Prolina, Serina',
-              },
-              {
-                title: 'Microbioma',
-                icon: 'i-material-symbols:microbiology',
-                subtitle: '6 Indicadores',
-                content:
-                  'Hongo, Moldes/Esporas, Parasitos, Bacteria, Señal Viral, Señal Post vira',
-              },
+          <template #title>
+            <div class="tracking-tighter text-start">
+              <p>{{ title }}</p>
+              <span class="text-xs text-gray-500">{{ subtitle }}</span>
+            </div>
+          </template>
+          <template #icon>
+            <UnoIcon
+              :class="icon"
+              class="bg-purple-500 h-6 w-6"
+            />
+          </template>
 
-              {
-                title: 'Interferencias',
-                icon: 'i-ph:seal-warning-duotone',
-                subtitle: '14 Indicadores',
-                content:
-                  '50 Hz Corriente de Entrada Campo Alternante Electromagnético, Campo Electrostático, Campo Magnético Constante, Corriente de Tracción 16 2/3 Hz, ELF (Frecuencia Extremadamente Baja), Electrosmog, Horno Microondas, Pantalla de Ordenador, Pantalla de Televisión, RBF (Radiación de Baja Frecuencia), RF (Radiofrecuencia), Teléfono Móvil, GSM (0,9 GHz), Teléfono Móvil, GSM (1,8 GHz)',
-              },
-            ]"
-            :key="i"
-          >
-            <template #title>
-              <div class="tracking-tighter text-start">
-                <p>{{ title }}</p>
-                <span class="text-xs text-gray-500">{{ subtitle }}</span>
-              </div>
-            </template>
-            <template #icon>
-              <UnoIcon
-                :class="icon"
-                class="bg-purple-500 h-6 w-6"
-              />
-            </template>
+          <p>{{ content }}</p>
+        </AteneaAccordion>
+      </div>
+    </section>
 
-            <p>{{ content }}</p>
-          </AteneaAccordion>
-        </GridContainer>
-      </GridCard>
-    </GridContainer>
-
-    <section class="grid gap-4 p-4 sm:grid-cols-2">
-      <header class="sm:col-span-2">
+    <section class="p-4 space-y-6">
+      <header>
         <header class="w-full text-center text-3xl font-semibold text-gray-800">
           <p>Elige un plan según tu objetívo</p>
         </header>
       </header>
 
-      <div class="h-full w-full flex items-center overflow-hidden px-4">
-        <PokerCard class="h-6/10 w-full">
+      <div class="h-full w-full flex flex-col sm:flex-row items-center px-4">
+        <PokerCard
+          class="h-full w-9/12 aspect-3/4"
+          is-vertical
+        >
           <img
-            src="@/assets/images/epigenetica/card_back.jpg"
+            src="@/assets/images/epigenetica/high_performance.jpg"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
 
-        <PokerCard class="h-6/10 w-full">
+        <PokerCard
+          class="h-full w-9/12 aspect-3/4"
+          is-vertical
+        >
           <img
-            src="@/assets/images/epigenetica/card_center.png"
+            src="@/assets/images/epigenetica/vegan.jpg"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
 
-        <PokerCard class="h-6/10 w-full">
+        <PokerCard
+          class="h-full w-9/12 aspect-3/4"
+          is-vertical
+        >
           <img
-            src="@/assets/images/epigenetica/card_front.jpg"
+            src="@/assets/images/epigenetica/wellness.png"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
 
-        <PokerCard class="h-6/10 w-full">
+        <PokerCard
+          class="h-full w-9/12 aspect-3/4"
+          is-vertical
+        >
           <img
             src="@/assets/images/epigenetica/card_front.jpg"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
