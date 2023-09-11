@@ -9,7 +9,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/material-symbols": "^1.1.57",
     "@iconify-json/mdi": "^1.1.54",
     "@iconify-json/ph": "^1.1.6",
     "@unocss/nuxt": "^0.55.4",

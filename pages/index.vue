@@ -8,7 +8,7 @@ interface CardContent {
 const psiconutricionAreas: CardContent[] = [
   {
     title: 'Diagnostico',
-    icon: 'i-material-symbols:gfit-health',
+    icon: 'i-ph:heartbeat',
     content:
       'Valoración del paciente para identificar factores predisponentes, que deterioran el estado de salud',
   },
@@ -26,7 +26,7 @@ const psiconutricionAreas: CardContent[] = [
   },
   {
     title: 'Área Congnitiva',
-    icon: 'i-material-symbols:cognition-rounded',
+    icon: 'i-mdi:head-heart-outline',
     content:
       'Trabajo sobre los pensamientos y emociones del paciente, para transformar los patrones de pensamiento contraproducentes en maneras de pensar que sean más útiles',
   },
