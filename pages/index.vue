@@ -40,55 +40,37 @@ const psiconutricionAreas: CardContent[] = [
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-12 px-4">
     <!-- 1er -->
-    <section class="grid gap-4 p-4 sm:grid-cols-2">
-      <GridCard class="grid content-center">
-        <div class="relative rounded-xl">
-          <svg
-            viewBox="0 0 480 480"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-full fill-teal"
+    <header class="grid gap-4 md:grid-cols-2">
+      <BlobCard class="relative">
+        <img
+          src="@/assets/images/index/header.png"
+          class="mt-4 h-full w-full object-contain transition-300 group-hover:scale-110"
+        />
+
+        <template #footer>
+          <div
+            class="flex items-center gap-2 py-2 pl-4 pr-12 bg-gray-100/70 backdrop-blur rounded-full shadow-xl border"
           >
-            <path
-              d="M369,331Q345,422,256.5,393.5Q168,365,123,302.5Q78,240,116,166Q154,92,247,79.5Q340,67,366.5,153.5Q393,240,369,331Z"
-            />
-          </svg>
-
-          <div class="absolute top-0 pt-4 h-full w-full overflow-hidden">
-            <img
-              src="@/assets/images/index/header.png"
-              class="h-full w-full object-contain transition-300 group-hover:scale-110"
-            />
-          </div>
-
-          <div class="absolute top-0 right-0">
-            <span class="block h-12 w-12 p-2 bg-[#4FE0B6] rounded-full"></span>
-          </div>
-
-          <div class="absolute left-4 bottom-4">
             <div
-              class="flex items-center gap-2 py-2 pl-4 pr-12 bg-gray-100/70 backdrop-blur rounded-full shadow-xl border"
+              class="h-12 w-12 rounded-full overflow-hidden shadow-md border border-white"
             >
-              <div
-                class="h-12 w-12 rounded-full overflow-hidden shadow-md border border-white"
-              >
-                <img
-                  src="@/assets/images/index/header.png"
-                  class="object-center object-cover"
-                />
-              </div>
+              <img
+                src="@/assets/images/index/header.png"
+                class="object-contain"
+              />
+            </div>
 
-              <div>
-                <p class="text-xs font-bold">Nutriologa</p>
-                <p class="text-xs text-gray-500">Yetlanetzi Portillo</p>
-              </div>
+            <div>
+              <p class="text-xs font-bold">Nutriologa</p>
+              <p class="text-xs text-gray-500">Yetlanetzi Portillo</p>
             </div>
           </div>
-        </div>
-      </GridCard>
+        </template>
+      </BlobCard>
 
-      <GridCard class="sm:order-first mt-4 space-y-4">
+      <article class="md:order-first mt-4 space-y-4">
         <div class="font-semibold">
           <span class="text-5xl">¡El Movimiento</span>
           <br />
@@ -119,15 +101,15 @@ const psiconutricionAreas: CardContent[] = [
             {{ content }}
           </AteneaTag>
         </div>
-      </GridCard>
-    </section>
+      </article>
+    </header>
 
     <!-- GRID -->
     <section
-      class="grid justify-center gap-4 md:gap-2 p-4 md:px-0 md:-mx-6 auto-rows-[140px] sm:grid-rows-2 sm:grid-cols-6 md:grid-rows-[90px_40px_90px] md:grid-cols-10"
+      class="grid gap-4 md:gap-2 md:px-0 md:-mx-6 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10"
     >
       <!-- NUTRICION -->
-      <GridCard class="sm:col-span-2 md:row-span-3 md:order-1">
+      <div class="md:col-span-2 lg:row-span-3 lg:order-1">
         <AteneaBlobCard
           class="h-full"
           blob-color="bg-purple"
@@ -146,9 +128,9 @@ const psiconutricionAreas: CardContent[] = [
             />
           </div>
         </AteneaBlobCard>
-      </GridCard>
+      </div>
 
-      <div class="hidden md:block col-span-6 md:order-2">
+      <div class="hidden lg:block col-span-6 lg:order-2">
         <div class="text-center flex justify-center">
           <div
             class="bg-black rounded-xl text-neutral-200 p-2 flex items-center gap-1 text-sm font-semibold"
@@ -159,16 +141,16 @@ const psiconutricionAreas: CardContent[] = [
       </div>
 
       <!-- FRASE -->
-      <GridCard class="sm:col-span-2 order-1 sm:order-none md:order-6">
+      <div class="md:col-span-2 order-1 md:order-none lg:order-6">
         <div
           class="bg-teal-300 h-full rounded-xl text-2xl font-black grid content-center justify-center text-center"
         >
           <p>¡Optimiza tu salud!</p>
         </div>
-      </GridCard>
+      </div>
 
       <!-- EPIGENETICA -->
-      <GridCard class="sm:col-span-2 md:order-3 md:row-span-3">
+      <div class="md:col-span-2 lg:order-3 lg:row-span-3">
         <AteneaBlobCard
           class="h-full"
           blob-color="bg-indigo-500"
@@ -202,11 +184,11 @@ const psiconutricionAreas: CardContent[] = [
             />
           </div>
         </AteneaBlobCard>
-      </GridCard>
+      </div>
 
       <!-- PSICONUTRICION -->
-      <GridCard
-        class="sm:col-span-2 sm:col-start-2 md:col-start-3 md:row-span-2 md:order-4"
+      <div
+        class="md:col-span-2 md:col-start-2 lg:col-start-3 lg:row-span-2 lg:order-4"
       >
         <div class="relative h-full">
           <svg
@@ -226,9 +208,7 @@ const psiconutricionAreas: CardContent[] = [
           >
             <div class="h-full flex flex-col gap-2">
               <div class="h-full grid content-center text-center">
-                <p
-                  class="font-light text-3xl sm:text-2xl md:text-xl text-neutral-700"
-                >
+                <p class="font-light text-3xl lg:text-xl text-neutral-700">
                   Psiconutrición
                 </p>
               </div>
@@ -249,11 +229,11 @@ const psiconutricionAreas: CardContent[] = [
             </div>
           </div>
         </div>
-      </GridCard>
+      </div>
 
       <!-- ENTRENAMIENTO PERSONALIZADO -->
-      <GridCard
-        class="sm:col-start-4 sm:col-span-2 md:col-start-7 md:row-span-2 md:order-5"
+      <div
+        class="md:col-start-4 md:col-span-2 lg:col-start-7 lg:row-span-2 lg:order-5"
       >
         <div class="relative h-full rounded-xl overflow-hidden">
           <img
@@ -264,9 +244,7 @@ const psiconutricionAreas: CardContent[] = [
           <div class="h-full">
             <div class="h-full flex flex-col gap-2">
               <div class="h-full grid content-center text-center">
-                <p
-                  class="font-light text-3xl sm:text-2xl md:text-xl text-neutral-200"
-                >
+                <p class="font-light text-3xl lg:text-xl text-neutral-200">
                   Entrenamiento
                 </p>
               </div>
@@ -298,17 +276,15 @@ const psiconutricionAreas: CardContent[] = [
             </div>
           </div>
         </div>
-      </GridCard>
+      </div>
     </section>
 
     <!-- PSICONUTRICIÓN -->
-    <GridContainer>
-      <GridCard class="text-center overflow-hidden flex-col">
+    <section class="grid gap-4">
+      <div class="text-center overflow-hidden">
         <p class="text-3xl font-semibold text-gray-800">Psiconutrición</p>
 
-        <div
-          class="px-4 py-2 overflow-x-scroll overflow-y-hidden scrollbar-hide"
-        >
+        <div class="p-4 overflow-x-scroll overflow-y-hidden scrollbar-hide">
           <div class="flex gap-2">
             <AteneaTag
               v-for="(content, i) of [
@@ -332,12 +308,9 @@ const psiconutricionAreas: CardContent[] = [
         </div>
 
         <span class="text-gray-500">Áreas de abordaje</span>
-      </GridCard>
+      </div>
 
-      <GridContainer
-        :cols="{ sm: 2, md: 3 }"
-        class="p-0! gap-6!"
-      >
+      <div class="grid gap-6 md:grid-cols-3">
         <AteneaAccordion
           v-for="({ title, icon, content }, i) of psiconutricionAreas"
           :key="i"
@@ -352,7 +325,7 @@ const psiconutricionAreas: CardContent[] = [
 
           <p>{{ content }}</p>
         </AteneaAccordion>
-      </GridContainer>
-    </GridContainer>
+      </div>
+    </section>
   </div>
 </template>
