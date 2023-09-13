@@ -20,8 +20,10 @@
           to="/"
           class="flex items-center gap-1"
         >
-          <img
-            src="@/assets/atenea_logo.png"
+          <NuxtImg
+            src="/atenea_logo.png"
+            loading="lazy"
+            preset="avatar"
             class="h-10 w-10 drop-shadow-sm"
           />
           <span class="font-semibold text-[rgb(177_191_146)] drop-shadow-sm">
