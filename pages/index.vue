@@ -48,7 +48,7 @@ const psiconutricionAreas: CardContent[] = [
           src="/index/header.png"
           loading="lazy"
           preset="hero"
-          class="mt-4 h-full w-full object-contain transition-300 group-hover:scale-110"
+          class="h-full w-full object-contain transition-300 group-hover:scale-110"
         />
 
         <template #footer>
@@ -110,7 +110,7 @@ const psiconutricionAreas: CardContent[] = [
 
     <!-- GRID -->
     <section
-      class="grid gap-4 lg:gap-2 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10"
+      class="grid gap-4 lg:gap-2 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10 lg:-mx-28"
     >
       <!-- NUTRICION -->
       <div class="md:col-span-2 lg:row-span-3 lg:order-1">
