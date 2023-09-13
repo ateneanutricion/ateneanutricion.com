@@ -3,56 +3,36 @@
 </script>
 
 <template>
-  <div class="space-y-4">
-    <header class="grid gap-4 p-4 sm:grid-cols-2">
-      <article class="grid content-center">
-        <div class="relative">
-          <svg
-            viewBox="0 0 480 480"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-full fill-sky-300"
+  <div class="space-y-12 px-4">
+    <header class="grid gap-4 md:grid-cols-2">
+      <BlobCard fill-class="fill-sky-300">
+        <div class="h-full flex items-center px-4">
+          <PokerCard
+            class="h-5/10 w-full aspect-3/4 -rotate-z-10 translate-y-2"
           >
-            <path
-              d="M369,331Q345,422,256.5,393.5Q168,365,123,302.5Q78,240,116,166Q154,92,247,79.5Q340,67,366.5,153.5Q393,240,369,331Z"
+            <img
+              src="@/assets/images/epigenetica/card_back.jpg"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
-          </svg>
+          </PokerCard>
 
-          <div
-            class="absolute top-0 right-0 h-12 w-12 bg-sky-300 rounded-full"
-          ></div>
+          <PokerCard class="h-5/10 w-full aspect-3/4">
+            <img
+              src="@/assets/images/epigenetica/card_center.png"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
+            />
+          </PokerCard>
 
-          <div
-            class="absolute top-0 h-full w-full flex items-center overflow-hidden px-4"
-          >
-            <PokerCard
-              class="h-5/10 w-full aspect-3/4 -rotate-z-10 translate-y-2"
-            >
-              <img
-                src="@/assets/images/epigenetica/card_back.jpg"
-                class="h-full w-full object-cover transition-300 group-hover:scale-110"
-              />
-            </PokerCard>
-
-            <PokerCard class="h-5/10 w-full aspect-3/4">
-              <img
-                src="@/assets/images/epigenetica/card_center.png"
-                class="h-full w-full object-cover transition-300 group-hover:scale-110"
-              />
-            </PokerCard>
-
-            <PokerCard
-              class="h-5/10 w-full aspect-3/4 rotate-z-10 translate-y-2"
-            >
-              <img
-                src="@/assets/images/epigenetica/card_front.jpg"
-                class="h-full w-full object-cover transition-300 group-hover:scale-110"
-              />
-            </PokerCard>
-          </div>
+          <PokerCard class="h-5/10 w-full aspect-3/4 rotate-z-10 translate-y-2">
+            <img
+              src="@/assets/images/epigenetica/card_front.jpg"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
+            />
+          </PokerCard>
         </div>
-      </article>
+      </BlobCard>
 
-      <article class="sm:order-first grid gap-4 content-center">
+      <article class="md:order-first grid content-center gap-4">
         <div class="font-semibold">
           <span class="text-5xl">
             Nutrición basada en la expresión de tus
@@ -68,14 +48,14 @@
     </header>
 
     <section
-      class="grid gap-4 p-4 sm:grid-cols-2 md:grid-cols-4 auto-rows-[160px]"
+      class="grid gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 auto-rows-[160px]"
     >
-      <article class="md:col-span-2 row-span-2">
-        <AteneaBlobCard
+      <article class="lg:col-span-2 row-span-2">
+        <ShineCard
           blob-color="bg-purple"
           class="h-full w-full"
         >
-          <div class="h-full w-full p-4 flex text-neutral-200">
+          <div class="h-full w-full p-4 flex gap-2 text-neutral-200">
             <p class="text-5xl font-light vertical-rl">
               Estudios
               <span class="text-sky-400">epigenéticos</span>
@@ -91,7 +71,7 @@
               <UnoIcon class="i-ph:dna-bold w-20 h-20 self-end" />
             </div>
           </div>
-        </AteneaBlobCard>
+        </ShineCard>
       </article>
 
       <article class="overflow-hidden">
@@ -126,7 +106,7 @@
         </FlipCard>
       </article>
 
-      <article class="relative sm:row-span-2 rounded-xl overflow-hidden">
+      <article class="relative md:row-span-2 rounded-xl overflow-hidden">
         <img
           src="@/assets/images/epigenetica/dna.jpeg"
           class="h-full w-full object-cover transition-300 hover:scale-110"
@@ -234,7 +214,7 @@
         </FlipCard>
       </article>
 
-      <article class="sm:col-span-2 overflow-hidden">
+      <article class="md:col-span-2 overflow-hidden">
         <FlipCard>
           <template #front>
             <div
@@ -276,7 +256,7 @@
         </p>
       </header>
 
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-3">
         <AteneaAccordion
           v-for="({ title, subtitle, icon, content }, i) of [
             {

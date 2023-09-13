@@ -44,8 +44,10 @@ const psiconutricionAreas: CardContent[] = [
     <!-- 1er -->
     <header class="grid gap-4 md:grid-cols-2">
       <BlobCard class="relative">
-        <img
-          src="@/assets/images/index/header.png"
+        <NuxtImg
+          src="/index/header.png"
+          loading="lazy"
+          preset="hero"
           class="mt-4 h-full w-full object-contain transition-300 group-hover:scale-110"
         />
 
@@ -56,9 +58,13 @@ const psiconutricionAreas: CardContent[] = [
             <div
               class="h-12 w-12 rounded-full overflow-hidden shadow-md border border-white"
             >
-              <img
-                src="@/assets/images/index/header.png"
-                class="object-contain"
+              <NuxtImg
+                src="/index/header.png"
+                loading="lazy"
+                preset="avatar"
+                width="60"
+                height="60"
+                class="object-cover w-full"
               />
             </div>
 
@@ -70,13 +76,13 @@ const psiconutricionAreas: CardContent[] = [
         </template>
       </BlobCard>
 
-      <article class="md:order-first mt-4 space-y-4">
+      <article class="md:order-first grid content-center gap-4">
         <div class="font-semibold">
           <span class="text-5xl">¡El Movimiento</span>
           <br />
           <span class="text-5xl">
             es
-            <span class="text-6xl text-[#4FE0B6]">Fortaleza!</span>
+            <span class="text-6xl text-teal-400">Fortaleza!</span>
           </span>
         </div>
 
@@ -106,11 +112,11 @@ const psiconutricionAreas: CardContent[] = [
 
     <!-- GRID -->
     <section
-      class="grid gap-4 md:gap-2 md:px-0 md:-mx-6 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10"
+      class="grid gap-4 lg:gap-2 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10"
     >
       <!-- NUTRICION -->
       <div class="md:col-span-2 lg:row-span-3 lg:order-1">
-        <AteneaBlobCard
+        <ShineCard
           class="h-full"
           blob-color="bg-purple"
         >
@@ -127,7 +133,7 @@ const psiconutricionAreas: CardContent[] = [
               class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
           </div>
-        </AteneaBlobCard>
+        </ShineCard>
       </div>
 
       <div class="hidden lg:block col-span-6 lg:order-2">
@@ -151,7 +157,7 @@ const psiconutricionAreas: CardContent[] = [
 
       <!-- EPIGENETICA -->
       <div class="md:col-span-2 lg:order-3 lg:row-span-3">
-        <AteneaBlobCard
+        <ShineCard
           class="h-full"
           blob-color="bg-indigo-500"
         >
@@ -183,7 +189,7 @@ const psiconutricionAreas: CardContent[] = [
               class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
           </div>
-        </AteneaBlobCard>
+        </ShineCard>
       </div>
 
       <!-- PSICONUTRICION -->
