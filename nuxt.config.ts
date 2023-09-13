@@ -38,6 +38,33 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@unocss/nuxt', '@vueuse/nuxt'],
+  image: {
+    dir: 'assets/images',
+    quality: 85,
+    format: ['webp'],
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'webp',
+          fit: 'contain',
+          background: 'transparent',
+          quality: 70,
+          width: 40,
+          height: 40,
+        },
+      },
+      hero: {
+        modifiers: {
+          format: 'webp',
+          fit: 'contain',
+          background: 'transparent',
+          quality: 85,
+          width: 480,
+          height: 480,
+        },
+      },
+    },
+  },
+  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/image'],
   css: ['@unocss/reset/tailwind.css'],
 })
