@@ -78,11 +78,9 @@ const psiconutricionAreas: CardContent[] = [
 
       <article class="md:order-first grid content-center gap-4">
         <div class="font-semibold">
-          <span class="text-5xl">¡El Movimiento</span>
-          <br />
-          <span class="text-5xl">
-            es
-            <span class="text-6xl text-teal-400">Fortaleza!</span>
+          <span class="text-[2.8rem]">
+            ¡El Movimiento es
+            <span class="text-5xl text-teal-400">Fortaleza!</span>
           </span>
         </div>
 
