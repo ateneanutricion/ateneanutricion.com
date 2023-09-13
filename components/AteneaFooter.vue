@@ -6,7 +6,7 @@
           class="h-full w-11/12 mx-auto bg-[rgb(177_191_146)] rounded-xl p-4 text-center"
         >
           <p class="text-neutral-100 font-semibold text-lg">
-            !Supera tus limites!
+            ¡Optimiza tu salud!
           </p>
         </div>
       </div>

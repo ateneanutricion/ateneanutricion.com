@@ -18,7 +18,7 @@
         </span>
       </NuxtLink>
 
-      <div class="font-albert-sans space-x-4 text-xs">
+      <div class="space-x-2 md:space-x-4 text-xs">
         <NuxtLink to="/nutricion"> Nutrición </NuxtLink>
         <NuxtLink to="/epigenetica"> Epigenetica </NuxtLink>
         <NuxtLink to="/nosotros"> Nosotros </NuxtLink>
