@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-definePageMeta({ layout: false })
-</script>
-
 <template>
   <AteneaContainer>
     <div class="col-span-2 p-4 rounded-3xl grid-rows-2">

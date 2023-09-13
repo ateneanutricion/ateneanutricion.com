@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-// definePageMeta({ layout: false })
-</script>
-
 <template>
   <div class="space-y-12 px-4">
     <header class="grid gap-4 md:grid-cols-2">
