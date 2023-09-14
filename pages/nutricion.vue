@@ -23,7 +23,7 @@
         <p>Haz de la nutrición tu ventaja competitiva.</p>
 
         <div class="flex flex-wrap gap-2">
-          <AteneaTag
+          <Badge
             v-for="(content, i) of [
               'Nutrición Deportiva',
               'Metabolismo',
@@ -35,7 +35,7 @@
             :key="i"
           >
             {{ content }}
-          </AteneaTag>
+          </Badge>
         </div>
       </article>
     </header>
@@ -110,8 +110,8 @@
     </section>
 
     <section class="space-y-8 bg-neutral-100 p-4">
-      <article class="grid md:grid-cols-2">
-        <div class="font-semibold h-full grid content-center p-4">
+      <article class="grid md:grid-cols-2 border-b">
+        <div class="font-semibold inline-grid content-center p-4">
           <span class="text-4xl">
             Composición
             <span class="text-[#4F80E2]">corporal</span>
@@ -119,18 +119,65 @@
             <span class="text-[#4F80E2]">fitness</span>
           </span>
         </div>
-        <div class="p-4 md:pl-0 grid content-center">
-          <p>
-            Sabemos que cada cuerpo es diferente y nos apasiona personalizar
-            cada plan con un enfoque personalizado. Así como perder grasa
-            corporal, ganar masa muscular, mejorar su salud u optimizar su
-            rendimiento, creamos un plan de nutrición de acuerdo con sus
-            objetivos.
-          </p>
+
+        <div class="inline-grid grid-cols-1 divide-y">
+          <div class="inline-grid grid-cols-2 gap-4 py-4 px-6">
+            <div class="inline-grid grid-auto-flow-row">
+              <div class="font-medium text-sm text-neutral-800">
+                Consulta Nutricional
+              </div>
+              <div class="font-black text-3xl text-neutral-800">
+                $600<span class="text-sm">.00</span>
+              </div>
+            </div>
+
+            <ul class="font-light text-xs text-neutral-600 list-disc">
+              <li>Plan y guía de alimentación</li>
+              <li>Lista de super</li>
+              <li>Análisis composición corporal</li>
+              <li>Antropométria</li>
+              <li>Lista de equivalentes</li>
+            </ul>
+          </div>
+
+          <div class="inline-grid grid-cols-2 gap-4 py-4 px-6">
+            <div class="inline-grid grid-auto-flow-row">
+              <div class="font-medium text-sm text-neutral-800">
+                Consulta + Entrenamiento
+              </div>
+              <div class="font-black text-3xl text-neutral-800">
+                $850<span class="text-sm">.00</span>
+              </div>
+            </div>
+
+            <ul class="font-light text-xs text-neutral-600 list-disc">
+              <li>Plan nutricional inidividualizado</li>
+              <li>Programación de entrenamiento físico</li>
+              <li>Suplementación deportiva</li>
+            </ul>
+          </div>
         </div>
+
+        <details class="p-4 grid content-center md:col-span-2">
+          <summary
+            class="list-none [&::-webkit-details-marker]:display-none mx-4"
+          >
+            <Badge>Ver Mas +</Badge>
+          </summary>
+
+          <div class="p-4">
+            <p class="text-sm text-neutral-600">
+              Sabemos que cada cuerpo es diferente y nos apasiona personalizar
+              cada plan con un enfoque personalizado. Así como perder grasa
+              corporal, ganar masa muscular, mejorar su salud u optimizar su
+              rendimiento, creamos un plan de nutrición de acuerdo con sus
+              objetivos.
+            </p>
+          </div>
+        </details>
       </article>
 
-      <article class="grid md:grid-cols-2">
+      <article class="grid md:grid-cols-2 border-b">
         <div class="font-semibold h-full grid content-center p-4 md:order-last">
           <span class="text-4xl">
             Alto
