@@ -91,7 +91,7 @@ const psiconutricionAreas: CardContent[] = [
         </p>
 
         <div class="flex flex-wrap gap-2">
-          <AteneaTag
+          <Badge
             v-for="(content, i) of [
               'Nutrición',
               'Epigenética',
@@ -103,7 +103,7 @@ const psiconutricionAreas: CardContent[] = [
             :key="i"
           >
             {{ content }}
-          </AteneaTag>
+          </Badge>
         </div>
       </article>
     </header>
@@ -290,7 +290,7 @@ const psiconutricionAreas: CardContent[] = [
 
         <div class="p-4 overflow-x-scroll overflow-y-hidden scrollbar-hide">
           <div class="flex gap-2">
-            <AteneaTag
+            <Badge
               v-for="(content, i) of [
                 'TCA',
                 'TCANE',
@@ -307,7 +307,7 @@ const psiconutricionAreas: CardContent[] = [
               :key="i"
             >
               {{ content }}
-            </AteneaTag>
+            </Badge>
           </div>
         </div>
 

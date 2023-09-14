@@ -37,7 +37,7 @@
               <p class="text-xs">adsis.corporativomty</p>
             </div>
 
-            <AteneaTag class="bg-black text-white border-0!">Abrir</AteneaTag>
+            <Badge class="bg-black text-white border-0!">Abrir</Badge>
           </div>
         </div>
 
@@ -57,7 +57,7 @@
               <p class="text-xs">portal.prestamofeliz</p>
             </div>
 
-            <AteneaTag class="bg-black text-white border-0!">Abrir</AteneaTag>
+            <Badge class="bg-black text-white border-0!">Abrir</Badge>
           </div>
         </div>
 
@@ -77,7 +77,7 @@
               <p class="text-xs">AIO</p>
             </div>
 
-            <AteneaTag class="bg-black text-white border-0!">Abrir</AteneaTag>
+            <Badge class="bg-black text-white border-0!">Abrir</Badge>
           </div>
         </div>
 
@@ -108,7 +108,7 @@
               <p class="text-xs">Abre PDFs de manera segura</p>
             </div>
 
-            <AteneaTag class="bg-black text-white border-0!">Abrir</AteneaTag>
+            <Badge class="bg-black text-white border-0!">Abrir</Badge>
           </div>
         </div>
 
@@ -129,7 +129,7 @@
               <p class="text-xs">Llamadas VoIP de manera segura</p>
             </div>
 
-            <AteneaTag class="bg-black text-white border-0!">Abrir</AteneaTag>
+            <Badge class="bg-black text-white border-0!">Abrir</Badge>
           </div>
         </div>
 
