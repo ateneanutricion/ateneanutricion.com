@@ -8,7 +8,7 @@ const [flipped, toggleFlipped] = useToggle(false)
     @click="() => toggleFlipped()"
   >
     <div
-      class="flip-card-inner relative w-full h-full transform preserve-3d transition-transform-800"
+      class="relative w-full h-full transform preserve-3d transition-transform-800"
       :class="{ 'rotate-y-180': flipped }"
     >
       <UnoIcon
