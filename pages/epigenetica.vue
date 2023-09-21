@@ -61,7 +61,7 @@
             </div>
           </summary>
 
-          <p class="font-light text-xs text-neutral-600 py-4">
+          <p class="font-light text-sm text-neutral-600 py-4">
             Este estudio evaluara tu bio-información, obteniendo datos sobre tus
             necesidades nutricionales, conocerás lo que realmente necesita tu
             organismo a nivel celular basado en la expresión de tus genes
@@ -72,12 +72,14 @@
       <div class="inline-grid md:col-span-3 divide-y">
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-sm text-neutral-800">Alimentarias</div>
-            <div class="font-black text-xl text-neutral-800">
+            <div class="font-medium text-base text-neutral-800">
+              Alimentarias
+            </div>
+            <div class="font-black text-2xl text-neutral-800">
               Sensibilidades
             </div>
           </header>
-          <p class="font-light text-xs text-neutral-600">
+          <p class="font-light text-sm text-neutral-600">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
             causando estrés digestivo en tu organismo, impidiendo la correcta
             absorción de nutrientes y favoreciendo la inflamación
@@ -85,14 +87,14 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-sm text-neutral-800">
+            <div class="font-medium text-base text-neutral-800">
               Nutricionales
             </div>
-            <div class="font-black text-xl text-neutral-800">
+            <div class="font-black text-2xl text-neutral-800">
               <span class="">Necesidades</span>
             </div>
           </header>
-          <p class="font-light text-xs text-neutral-600">
+          <p class="font-light text-sm text-neutral-600">
             Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar el bienestar a través de las
             necesidades reales de tu organismo
@@ -100,12 +102,12 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-sm text-neutral-800">Factores</div>
-            <div class="font-black text-xl text-neutral-800">
+            <div class="font-medium text-base text-neutral-800">Factores</div>
+            <div class="font-black text-2xl text-neutral-800">
               <span class="">Externos</span>
             </div>
           </header>
-          <p class="font-light text-xs text-neutral-600">
+          <p class="font-light text-sm text-neutral-600">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
             los factores ambientales, la exposición tóxica y las cargas
             electromagnéticas de baja intensidad a nivel celular?
@@ -113,12 +115,12 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-sm text-neutral-800">Sistema</div>
-            <div class="font-black text-xl text-neutral-800">
+            <div class="font-medium text-base text-neutral-800">Sistema</div>
+            <div class="font-black text-2xl text-neutral-800">
               <span class="">Metabolico</span>
             </div>
           </header>
-          <p class="font-light text-xs text-neutral-600">
+          <p class="font-light text-sm text-neutral-600">
             Información del estado actual de los principales sistemas
             metabólicos para recuperar su equilibrio y optimizar tus sistemas
             inmune, intestinal, cardiovascular, metabólico, sueño, emociones.
