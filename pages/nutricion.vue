@@ -40,71 +40,85 @@
       </article>
     </header>
 
-    <section class="grid gap-4 md:grid-cols-3 auto-rows-48">
+    <section class="grid gap-4 md:grid-cols-3 w-10/12 md:w-full mx-auto">
       <article
         group
-        class="relative rounded-xl overflow-hidden"
+        class="aspect-7/5 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
       >
         <NuxtImg
           src="/nutricion/fitness.jpeg"
           loading="lazy"
           preset="hero"
           fit="cover"
-          class="object-cover transition-300 group-hover:scale-110"
+          class="object-cover w-full transition-300 group-hover:scale-110"
         />
 
-        <div class="absolute h-full w-full top-0 grid content-center">
-          <div
-            class="px-4 py-2 w-full text-center text-3xl md:text-lg text-neutral-200 bg-white/30 backdrop-blur"
-          >
-            <p class="font-medium tracking-tighter">
-              Composición corporal & fitness
-            </p>
+        <div class="absolute top-0 right-0 p-2">
+          <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+            <UnoIcon class="i-mdi:weight-lifter" />
           </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+        >
+          <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            Composición corporal & fitness
+          </p>
         </div>
       </article>
 
       <article
         group
-        class="relative rounded-xl overflow-hidden"
+        class="aspect-7/5 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
       >
         <NuxtImg
           src="/nutricion/rendimiento.jpeg"
           loading="lazy"
           preset="hero"
           fit="cover"
-          class="object-cover transition-300 group-hover:scale-110"
+          class="object-cover w-full transition-300 group-hover:scale-110"
         />
 
-        <div class="absolute h-full w-full top-0 grid content-center">
-          <div
-            class="px-4 py-2 w-full text-center text-3xl md:text-lg text-neutral-200 bg-white/30 backdrop-blur"
-          >
-            <p class="font-medium tracking-tighter">
-              Alto rendimiento & deporte
-            </p>
+        <div class="absolute top-0 right-0 p-2">
+          <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+            <UnoIcon class="i-mdi:weight-lifter" />
           </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+        >
+          <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            Alto rendimiento & deporte
+          </p>
         </div>
       </article>
 
       <article
         group
-        class="relative rounded-xl overflow-hidden"
+        class="aspect-7/5 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
       >
         <NuxtImg
           src="/nutricion/clinica.jpg"
           loading="lazy"
           preset="hero"
           fit="cover"
-          class="object-cover transition-300 group-hover:scale-110"
+          class="object-cover w-full transition-300 group-hover:scale-110"
         />
 
-        <div class="absolute h-full w-full top-0 grid content-center">
-          <div
-            class="px-4 py-2 w-full text-center text-3xl md:text-lg text-neutral-200 bg-white/30 backdrop-blur"
-          >
-            <p class="font-medium tracking-tighter">Clínica & metabólica</p>
+        <div class="absolute top-0 right-0 p-2">
+          <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+            <UnoIcon class="i-mdi:fruit-cherries" />
           </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+        >
+          <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            Clínica & metabólica
+          </p>
         </div>
       </article>
     </section>
