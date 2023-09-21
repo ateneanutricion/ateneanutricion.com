@@ -8,11 +8,14 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <article class="relative">
+  <article
+    group
+    class="relative"
+  >
     <svg
       viewBox="0 0 480 480"
       xmlns="http://www.w3.org/2000/svg"
-      class="h-full w-full"
+      class="h-full w-full transition-300 group-hover:scale-95"
       :class="fillClass"
     >
       <path
@@ -22,7 +25,7 @@ withDefaults(defineProps<Props>(), {
 
     <svg
       viewBox="0 0 100 100"
-      class="absolute top-0 right-0 h-12 w-12"
+      class="absolute top-0 right-0 h-12 w-12 transition-300 group-hover:scale-95"
       :class="fillClass"
     >
       <circle
@@ -32,10 +35,7 @@ withDefaults(defineProps<Props>(), {
       />
     </svg>
 
-    <div
-      group
-      class="absolute top-0 h-full w-full overflow-hidden"
-    >
+    <div class="absolute top-0 h-full w-full overflow-hidden">
       <slot />
     </div>
 
