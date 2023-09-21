@@ -43,206 +43,88 @@
       </article>
     </header>
 
-    <section
-      class="grid gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 auto-rows-[160px]"
-    >
-      <article class="lg:col-span-2 row-span-2">
-        <ShineCard
-          blob-color="bg-purple"
-          class="h-full w-full"
-        >
-          <div class="h-full w-full p-4 flex gap-2 text-neutral-200">
-            <p class="text-5xl font-light vertical-rl">
-              Estudios
-              <span class="text-sky-400">epigenéticos</span>
-            </p>
-
-            <div class="flex flex-col justify-between">
-              <p>
-                Este estudio evaluara tu bio-información, obteniendo datos sobre
-                tus necesidades nutricionales, conocerás lo que realmente
-                necesita tu organismo a nivel celular basado en la expresión de
-                tus genes
-              </p>
-              <UnoIcon class="i-ph:dna-bold w-20 h-20 self-end" />
-            </div>
-          </div>
-        </ShineCard>
-      </article>
-
-      <article class="overflow-hidden">
-        <FlipCard>
-          <template #front>
+    <section class="bg-neutral-100 p-4 rounded-xl grid md:grid-cols-5">
+      <header class="md:col-span-2 inline-grid content-center gap-4 p-4">
+        <h2 class="text-4xl font-semibold">
+          Estudios <span class="text-[#4F80E2]">Epigeneticos</span>
+        </h2>
+        <details>
+          <summary
+            class="list-none [&::-webkit-details-marker]:display-none cursor-pointer"
+          >
             <div
-              class="h-full p-4 bg-[rgb(100_152_255)] flex flex-col justify-between items-center rounded-xl"
+              class="text-gray-600 text-xs rounded-full py-1 px-4 border-2 transition-300 hover:scale-110"
             >
-              <UnoIcon
-                class="i-ph:flower-lotus-duotone h-12 w-12 group-hover:animate-wobble"
-              />
-
-              <div class="text-center text-3xl md:text-2xl lg:text-3xl">
-                <p class="font-extrabold tracking-tighter">
-                  Necesidades nutricionales
-                </p>
+              <div class="flex justify-center items-center">
+                <span class="font-medium whitespace-nowrap">Ver Mas +</span>
               </div>
             </div>
-          </template>
+          </summary>
 
-          <template #back>
-            <div
-              class="h-full p-4 bg-[#1a1a1a] text-gray-200 grid content-center rounded-xl"
-            >
-              <p class="text-center tracking-tighter md:text-sm">
-                Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
-                energía durante el día y potenciar el bienestar a través de las
-                necesidades reales de tu organismo
-              </p>
+          <p class="font-light text-xs text-neutral-600 py-4">
+            Este estudio evaluara tu bio-información, obteniendo datos sobre tus
+            necesidades nutricionales, conocerás lo que realmente necesita tu
+            organismo a nivel celular basado en la expresión de tus genes
+          </p>
+        </details>
+      </header>
+
+      <div class="inline-grid md:col-span-3 divide-y">
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-sm text-neutral-800">Alimentarias</div>
+            <div class="font-black text-xl text-neutral-800">
+              Sensibilidades
             </div>
-          </template>
-        </FlipCard>
-      </article>
-
-      <article class="relative md:row-span-2 rounded-xl overflow-hidden">
-        <img
-          src="@/assets/images/epigenetica/dna.jpeg"
-          class="h-full w-full object-cover transition-300 hover:scale-110"
-        />
-        <div
-          class="absolute bottom-2 left-2 tracking-tighter bg-white text-black mix-blend-screen w-full pl-1"
-        >
-          <h3 class="font-black text-2xl">CONTACTO</h3>
-          <p class="text-xs">+52 444 123 456</p>
-        </div>
-      </article>
-
-      <article class="overflow-hidden">
-        <FlipCard>
-          <template #front>
-            <div
-              class="h-full p-4 bg-[rgb(200_233_94)] flex flex-col justify-between items-center rounded-xl"
-            >
-              <UnoIcon
-                class="i-ph:warning-circle-duotone h-12 w-12 group-hover:animate-wobble"
-              />
-
-              <div class="text-center text-3xl md:text-2xl lg:text-3xl">
-                <p class="font-extrabold tracking-tighter">
-                  Sensibilidades alimentarias
-                </p>
-              </div>
+          </header>
+          <p class="font-light text-xs text-neutral-600">
+            Te ayudamos a identificar qué alimentos y aditivos pueden estar
+            causando estrés digestivo en tu organismo, impidiendo la correcta
+            absorción de nutrientes y favoreciendo la inflamación
+          </p>
+        </article>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-sm text-neutral-800">
+              Nutricionales
             </div>
-          </template>
-
-          <template #back>
-            <div
-              class="h-full p-4 bg-[#1a1a1a] text-gray-200 grid content-center rounded-xl"
-            >
-              <p class="text-center tracking-tighter md:max-lg:text-xs">
-                Te ayudamos a identificar qué alimentos y aditivos pueden estar
-                causando estrés digestivo en tu organismo, impidiendo la
-                correcta absorción de nutrientes y favoreciendo la inflamación
-              </p>
+            <div class="font-black text-xl text-neutral-800">
+              <span class="">Necesidades</span>
             </div>
-          </template>
-        </FlipCard>
-      </article>
-
-      <article class="overflow-hidden">
-        <FlipCard>
-          <template #front>
-            <div
-              class="h-full p-4 bg-[rgb(169_173_217)] flex flex-col justify-between items-center rounded-xl"
-            >
-              <UnoIcon
-                class="i-ph:heartbeat-duotone h-12 w-12 group-hover:animate-wobble"
-              />
-
-              <div class="text-center text-3xl md:text-2xl lg:text-3xl">
-                <p class="font-extrabold tracking-tighter">
-                  Estado de sistemas metabólicos
-                </p>
-              </div>
+          </header>
+          <p class="font-light text-xs text-neutral-600">
+            Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
+            energía durante el día y potenciar el bienestar a través de las
+            necesidades reales de tu organismo
+          </p>
+        </article>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-sm text-neutral-800">Factores</div>
+            <div class="font-black text-xl text-neutral-800">
+              <span class="">Externos</span>
             </div>
-          </template>
-
-          <template #back>
-            <div
-              class="h-full p-4 bg-[#1a1a1a] text-gray-200 grid content-center rounded-xl"
-            >
-              <p class="text-center tracking-tighter md:max-lg:text-xs">
-                Información del estado actual de los principales sistemas
-                metabólicos para recuperar su equilibrio y optimizar tus
-                sistemas inmune, intestinal, cardiovascular, metabólico, sueño,
-                emociones…
-              </p>
+          </header>
+          <p class="font-light text-xs text-neutral-600">
+            ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
+            los factores ambientales, la exposición tóxica y las cargas
+            electromagnéticas de baja intensidad a nivel celular?
+          </p>
+        </article>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-sm text-neutral-800">Sistema</div>
+            <div class="font-black text-xl text-neutral-800">
+              <span class="">Metabolico</span>
             </div>
-          </template>
-        </FlipCard>
-      </article>
-
-      <article class="overflow-hidden">
-        <FlipCard>
-          <template #front>
-            <div
-              class="h-full p-4 bg-[rgb(169_173_217)] flex flex-col justify-between items-center rounded-xl"
-            >
-              <UnoIcon
-                class="i-ph:spiral-fill h-12 w-12 group-hover:animate-wobble"
-              />
-
-              <div class="text-center text-3xl md:text-2xl lg:text-3xl">
-                <p class="font-extrabold tracking-tighter">Factores externos</p>
-              </div>
-            </div>
-          </template>
-
-          <template #back>
-            <div
-              class="h-full p-4 bg-[#1a1a1a] text-gray-200 grid content-center rounded-xl"
-            >
-              <p class="text-center tracking-tighter md:max-lg:text-xs">
-                ¿Cómo te relacionas con el ambiente que te rodea y cómo te
-                afectan los factores ambientales, la exposición tóxica y las
-                cargas electromagnéticas de baja intensidad a nivel celular?
-              </p>
-            </div>
-          </template>
-        </FlipCard>
-      </article>
-
-      <article class="md:col-span-2 overflow-hidden">
-        <FlipCard>
-          <template #front>
-            <div
-              class="h-full p-4 bg-[rgb(247_211_207)] flex flex-col justify-between items-center rounded-xl"
-            >
-              <UnoIcon
-                class="i-ph:quotes-duotone h-12 w-12 group-hover:animate-wobble"
-              />
-
-              <div class="text-center text-3xl md:text-2xl lg:text-3xl">
-                <p class="font-extrabold tracking-tighter">
-                  ¿Qué es la epigenética?
-                </p>
-              </div>
-            </div>
-          </template>
-
-          <template #back>
-            <div
-              class="h-full p-4 bg-[#1a1a1a] text-gray-200 grid content-center rounded-xl"
-            >
-              <p class="text-center tracking-tighter">
-                Es una rama de la genética que estudia la influencia del medio
-                ambiente y las condiciones externas, sobre los genes. Las
-                influencias del medio ambiente, incluyendo la nutrición, el
-                estrés y las emociones, pueden modificar los genes, sin cambiar
-                la secuencia básica del ADN
-              </p>
-            </div>
-          </template>
-        </FlipCard>
-      </article>
+          </header>
+          <p class="font-light text-xs text-neutral-600">
+            Información del estado actual de los principales sistemas
+            metabólicos para recuperar su equilibrio y optimizar tus sistemas
+            inmune, intestinal, cardiovascular, metabólico, sueño, emociones.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="p-4 space-y-6">
