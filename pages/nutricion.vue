@@ -109,85 +109,194 @@
       </article>
     </section>
 
-    <section class="space-y-8 bg-neutral-100 p-4">
-      <article class="grid md:grid-cols-2 border-b">
-        <div class="font-semibold inline-grid content-center p-4">
-          <span class="text-4xl">
-            Composición
-            <span class="text-[#4F80E2]">corporal</span>
-            &
-            <span class="text-[#4F80E2]">fitness</span>
-          </span>
-        </div>
+    <section class="grid gap-4 md:grid-cols-3 w-8/12 md:w-full mx-auto">
+      <BlobCard fill-class="fill-[#4F80E2]">
+        <NuxtImg
+          src="/nutricion/people/nutri_0.png"
+          loading="lazy"
+          preset="hero"
+          class="h-full w-full object-contain transition-300 group-hover:scale-110"
+        />
 
-        <div class="inline-grid grid-cols-1 divide-y">
-          <div class="inline-grid grid-cols-2 gap-4 py-4 px-6">
-            <div class="inline-grid grid-auto-flow-row">
-              <div class="font-medium text-sm text-neutral-800">
-                Consulta Nutricional
-              </div>
-              <div class="font-black text-3xl text-neutral-800">
-                $600<span class="text-sm">.00</span>
-              </div>
-            </div>
-
-            <ul class="font-light text-xs text-neutral-600 list-disc">
-              <li>Plan y guía de alimentación</li>
-              <li>Lista de super</li>
-              <li>Análisis composición corporal</li>
-              <li>Antropométria</li>
-              <li>Lista de equivalentes</li>
-            </ul>
-          </div>
-
-          <div class="inline-grid grid-cols-2 gap-4 py-4 px-6">
-            <div class="inline-grid grid-auto-flow-row">
-              <div class="font-medium text-sm text-neutral-800">
-                Consulta + Entrenamiento
-              </div>
-              <div class="font-black text-3xl text-neutral-800">
-                $850<span class="text-sm">.00</span>
-              </div>
-            </div>
-
-            <ul class="font-light text-xs text-neutral-600 list-disc">
-              <li>Plan nutricional inidividualizado</li>
-              <li>Programación de entrenamiento físico</li>
-              <li>Suplementación deportiva</li>
-            </ul>
-          </div>
-        </div>
-
-        <details class="p-4 grid content-center md:col-span-2">
-          <summary
-            class="list-none [&::-webkit-details-marker]:display-none mx-4"
+        <template #footer>
+          <div
+            class="flex items-center gap-2 py-1 pl-2 pr-4 bg-gray-100/70 backdrop-blur rounded-full shadow-xl border"
           >
-            <Badge>Ver Mas +</Badge>
+            <div
+              class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
+            >
+              <NuxtImg
+                src="/nutricion/people/nutri_0.png"
+                loading="lazy"
+                preset="avatar"
+                width="50"
+                height="60"
+                class="object-cover w-full"
+              />
+            </div>
+
+            <div>
+              <p class="text-xs font-medium">Nutriologa</p>
+              <p class="text-xs text-gray-500">Yetlanetzi Portillo</p>
+            </div>
+          </div>
+        </template>
+      </BlobCard>
+
+      <BlobCard fill-class="fill-[#4F80E2]">
+        <NuxtImg
+          src="/nutricion/people/nutri_1.png"
+          loading="lazy"
+          preset="hero"
+          class="h-full w-full object-contain transition-300 group-hover:scale-110"
+        />
+
+        <template #footer>
+          <div
+            class="flex items-center gap-2 py-1 pl-2 pr-4 bg-gray-100/70 backdrop-blur rounded-full shadow-xl border"
+          >
+            <div
+              class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
+            >
+              <NuxtImg
+                src="/nutricion/people/nutri_1.png"
+                loading="lazy"
+                preset="avatar"
+                width="50"
+                height="60"
+                class="object-cover w-full"
+              />
+            </div>
+
+            <div>
+              <p class="text-xs font-medium">Nutriologa</p>
+              <p class="text-xs text-gray-500">Daniela Cuevas</p>
+            </div>
+          </div>
+        </template>
+      </BlobCard>
+
+      <BlobCard fill-class="fill-[#4F80E2]">
+        <NuxtImg
+          src="/nutricion/people/nutri_2.png"
+          loading="lazy"
+          preset="hero"
+          class="h-full w-full object-contain transition-300 group-hover:scale-110"
+        />
+
+        <template #footer>
+          <div
+            class="flex items-center gap-2 py-1 pl-2 pr-4 bg-gray-100/70 backdrop-blur rounded-full shadow-xl border"
+          >
+            <div
+              class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
+            >
+              <NuxtImg
+                src="/nutricion/people/nutri_2.png"
+                loading="lazy"
+                preset="avatar"
+                width="50"
+                height="60"
+                class="object-cover w-full"
+              />
+            </div>
+
+            <div>
+              <p class="text-xs font-medium">Nutriologa</p>
+              <p class="text-xs text-gray-500">Ninfa Jonguitud</p>
+            </div>
+          </div>
+        </template>
+      </BlobCard>
+    </section>
+
+    <section class="bg-neutral-100 p-4 rounded-xl grid md:grid-cols-5">
+      <header class="md:col-span-2 inline-grid content-center gap-4 px-4">
+        <h2 class="text-4xl font-semibold">
+          Composición
+          <span class="text-[#4F80E2]">corporal</span>
+          &
+          <span class="text-[#4F80E2]">fitness</span>
+        </h2>
+        <details>
+          <summary
+            class="list-none [&::-webkit-details-marker]:display-none cursor-pointer"
+          >
+            <div
+              class="text-gray-600 text-xs rounded-full py-1 px-4 border-2 transition-300 hover:scale-110"
+            >
+              <div class="flex justify-center items-center">
+                <span class="font-medium whitespace-nowrap">Ver Mas +</span>
+              </div>
+            </div>
           </summary>
 
-          <div class="p-4">
-            <p class="text-sm text-neutral-600">
-              Sabemos que cada cuerpo es diferente y nos apasiona personalizar
-              cada plan con un enfoque personalizado. Así como perder grasa
-              corporal, ganar masa muscular, mejorar su salud u optimizar su
-              rendimiento, creamos un plan de nutrición de acuerdo con sus
-              objetivos.
-            </p>
-          </div>
+          <p class="font-light text-sm text-neutral-600 py-4">
+            Sabemos que cada cuerpo es diferente y nos apasiona personalizar
+            cada plan con un enfoque personalizado. Así como perder grasa
+            corporal, ganar masa muscular, mejorar su salud u optimizar su
+            rendimiento, creamos un plan de nutrición de acuerdo con sus
+            objetivos.
+          </p>
         </details>
-      </article>
+      </header>
 
-      <article class="grid md:grid-cols-2 border-b">
-        <div class="font-semibold h-full grid content-center p-4 md:order-last">
-          <span class="text-4xl">
-            Alto
-            <span class="text-[#4F80E2]">rendimiento</span>
-            &
-            <span class="text-[#4F80E2]">deporte</span>
-          </span>
-        </div>
-        <div class="p-4 md:pl-0 grid content-center">
-          <div class="space-y-4">
+      <div class="inline-grid md:col-span-3 divide-y">
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-800">Consulta</div>
+            <div class="font-black text-2xl text-neutral-800">Nutricional</div>
+          </header>
+
+          <ul class="font-light text-sm text-neutral-600 list-disc list-inside">
+            <li>Plan y guía de alimentación</li>
+            <li>Lista de super</li>
+            <li>Análisis de composición corporal</li>
+            <li>Antropométria</li>
+            <li>Lista de equivalentes</li>
+          </ul>
+        </article>
+
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-800">Consulta</div>
+            <div class="font-black text-2xl text-neutral-800">
+              + Entrenamiento
+            </div>
+          </header>
+
+          <ul class="font-light text-sm text-neutral-600 list-disc list-inside">
+            <li>Plan nutricional inidividualizado</li>
+            <li>Programación de entrenamiento físico</li>
+            <li>Suplementación deportiva</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-neutral-100 p-4 rounded-xl grid md:grid-cols-5">
+      <header
+        class="md:col-span-2 inline-grid content-center gap-4 px-4 md:order-last"
+      >
+        <h2 class="text-4xl font-semibold">
+          Alto
+          <span class="text-[#4F80E2]">rendimiento</span>
+          &
+          <span class="text-[#4F80E2]">deporte</span>
+        </h2>
+        <details>
+          <summary
+            class="list-none [&::-webkit-details-marker]:display-none cursor-pointer"
+          >
+            <div
+              class="text-gray-600 text-xs rounded-full py-1 px-4 border-2 transition-300 hover:scale-110"
+            >
+              <div class="flex justify-center items-center">
+                <span class="font-medium whitespace-nowrap">Ver Mas +</span>
+              </div>
+            </div>
+          </summary>
+          <div class="space-y-4 font-light text-sm text-neutral-600 py-4">
             <p>
               Entendemos la importancia de la nutrición en el rendimiento
               deportivo, cada atleta y deporte es único y requiere un programa
@@ -199,7 +308,7 @@
               composición corporal y rendimiento deportivo.
             </p>
 
-            <p class="text-[#4F80E2] font-semibold text-lg">
+            <p class="text-[#4F80E2] font-semibold">
               Haz de la nutrición tu ventaja competitiva.
             </p>
 
@@ -210,19 +319,48 @@
               una manera segura y saludable.
             </p>
           </div>
-        </div>
-      </article>
+        </details>
+      </header>
 
-      <article class="grid md:grid-cols-2">
-        <div class="font-semibold h-full grid content-center p-4">
-          <span class="text-4xl">
-            <span class="text-[#4F80E2]">Clínica</span>
-            &
-            <span class="text-[#4F80E2]">metabólica</span>
-          </span>
-        </div>
-        <div class="p-4 md:pl-0 grid content-center">
-          <div class="space-y-4">
+      <div class="inline-grid md:col-span-3 divide-y h-min">
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-800">Plan</div>
+            <div class="font-black text-2xl text-neutral-800">Nutricional</div>
+          </header>
+
+          <ul class="font-light text-sm text-neutral-600 list-disc list-inside">
+            <li>Periodización nutricional</li>
+            <li>Pre, durante & post competencia</li>
+            <li>Perfil antropométrico somatocarta</li>
+            <li>Análisis de composición corporal</li>
+            <li>Plan de hidratación & recuperación</li>
+            <li>Plan de suplementación</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-neutral-100 p-4 rounded-xl grid md:grid-cols-5">
+      <header class="md:col-span-2 inline-grid content-center gap-4 px-4">
+        <h2 class="text-4xl font-semibold">
+          <span class="text-[#4F80E2]">Clínica</span>
+          &
+          <span class="text-[#4F80E2]">metabólica</span>
+        </h2>
+        <details>
+          <summary
+            class="list-none [&::-webkit-details-marker]:display-none cursor-pointer"
+          >
+            <div
+              class="text-gray-600 text-xs rounded-full py-1 px-4 border-2 transition-300 hover:scale-110"
+            >
+              <div class="flex justify-center items-center">
+                <span class="font-medium whitespace-nowrap">Ver Mas +</span>
+              </div>
+            </div>
+          </summary>
+          <div class="space-y-4 font-light text-sm text-neutral-600 py-4">
             <p>
               Eres único. Tu Nutrición también debería serlo. Áreas
               especializadas de nutrición y manejo de enfermedades en las que se
@@ -240,8 +378,25 @@
               <li>Recuperación cirugías bariátricas</li>
             </ul>
           </div>
-        </div>
-      </article>
+        </details>
+      </header>
+
+      <div class="inline-grid md:col-span-3 divide-y h-min">
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-800">Consulta</div>
+            <div class="font-black text-2xl text-neutral-800">Nutricional</div>
+          </header>
+
+          <ul class="font-light text-sm text-neutral-600 list-disc list-inside">
+            <li>Plan y guía de alimentación</li>
+            <li>Lista de super</li>
+            <li>Análisis de composición corporal</li>
+            <li>Antropométria</li>
+            <li>Lista de equivalentes</li>
+          </ul>
+        </article>
+      </div>
     </section>
   </div>
 </template>
