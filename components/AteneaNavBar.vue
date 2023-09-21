@@ -18,7 +18,7 @@
         </span>
       </NuxtLink>
 
-      <div class="space-x-2 md:space-x-4 text-xs">
+      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-600">
         <NuxtLink to="/nutricion"> Nutrición </NuxtLink>
         <NuxtLink to="/epigenetica"> Epigenetica </NuxtLink>
         <NuxtLink to="/nosotros"> Nosotros </NuxtLink>
@@ -26,3 +26,11 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.router-link-exact-active {
+  --uno: font-bo;
+  font-weight: 700;
+  color: rgb(177, 191, 146);
+}
+</style>
