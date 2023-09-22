@@ -110,26 +110,32 @@ const psiconutricionAreas: CardContent[] = [
 
     <!-- GRID -->
     <section
-      class="grid gap-4 lg:gap-2 auto-rows-[140px] md:grid-rows-2 md:grid-cols-6 lg:grid-rows-[90px_40px_90px] lg:grid-cols-10 lg:-mx-28"
+      class="grid gap-4 lg:gap-2 md:grid-cols-6 lg:grid-cols-10 lg:-mx-28"
     >
       <!-- NUTRICION -->
       <div class="md:col-span-2 lg:row-span-3 lg:order-1">
         <ShineCard
-          class="h-full"
-          blob-color="bg-purple"
+          group
+          blob-color="bg-purple-400"
+          class="aspect-7/4 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
         >
-          <div class="relative h-full">
-            <div class="absolute top-4 left-4 text-neutral-200 z-1">
-              <p class="text-5xl md:text-3xl font-semibold">Nutrición</p>
-              <p class="text-sm md:text-xs text-neutral-300">
-                Enfocada en tus objetivos
-              </p>
-            </div>
+          <NuxtImg
+            src="/index/nutricion.jpeg"
+            loading="lazy"
+            preset="hero"
+            fit="cover"
+            class="object-cover w-full h-full transition-300 group-hover:scale-110"
+          />
 
-            <img
-              src="@/assets/images/index/nutricion.jpeg"
-              class="h-full w-full object-cover transition-300 group-hover:scale-110"
-            />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+          >
+            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              Nutrición
+            </p>
+            <span class="font-light text-sm text-neutral-400">
+              Enfocada en tus objetivos
+            </span>
           </div>
         </ShineCard>
       </div>
@@ -147,7 +153,7 @@ const psiconutricionAreas: CardContent[] = [
       <!-- FRASE -->
       <div class="md:col-span-2 order-1 md:order-none lg:order-6">
         <div
-          class="bg-teal-300 h-full rounded-xl text-2xl font-black grid content-center justify-center text-center"
+          class="aspect-7/3 md:aspect-7/6 lg:aspect-0 bg-teal-300 h-full rounded-xl text-2xl font-black grid content-center justify-center text-center"
         >
           <p>¡Optimiza tu salud!</p>
         </div>
@@ -156,36 +162,27 @@ const psiconutricionAreas: CardContent[] = [
       <!-- EPIGENETICA -->
       <div class="md:col-span-2 lg:order-3 lg:row-span-3">
         <ShineCard
-          class="h-full"
-          blob-color="bg-indigo-500"
+          group
+          blob-color="bg-indigo-400"
+          class="aspect-7/4 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
         >
-          <div class="relative h-full">
-            <div class="absolute top-4 left-4 text-neutral-200 z-1">
-              <p class="text-5xl md:text-3xl font-semibold md:vertical-lr">
-                Epigenetica
-              </p>
-              <p class="text-sm md:text-xs text-neutral-300">
-                Enfocada en tus objetivos
-              </p>
-            </div>
+          <NuxtImg
+            src="/index/epigenetica.jpeg"
+            loading="lazy"
+            preset="hero"
+            fit="cover"
+            class="object-cover w-full h-full transition-300 group-hover:scale-110"
+          />
 
-            <div
-              class="absolute z-1 bottom-0 w-full text-neutral-200 p-1 text-sm font-semibold"
-            >
-              <div
-                class="bg-white/70 w-1/2 mx-auto backdrop-blur rounded-xl flex items-center gap-1 p-1"
-              >
-                <div class="bg-black rounded-xl px-2 py-1">
-                  <UnoIcon class="i-mdi:weight-lifter h-4 w-4" />
-                </div>
-                <p class="text-black">Personalizado</p>
-              </div>
-            </div>
-
-            <img
-              src="@/assets/images/index/epigenetica.jpeg"
-              class="h-full w-full object-cover transition-300 group-hover:scale-110"
-            />
+          <div
+            class="absolute top-0 left-0 right-0 p-2 bg-gradient-to-b from-neutral-800"
+          >
+            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              Epigenetica
+            </p>
+            <span class="font-light text-sm text-neutral-400">
+              Enfocada en tus objetivos
+            </span>
           </div>
         </ShineCard>
       </div>
@@ -194,41 +191,32 @@ const psiconutricionAreas: CardContent[] = [
       <div
         class="md:col-span-2 md:col-start-2 lg:col-start-3 lg:row-span-2 lg:order-4"
       >
-        <div class="relative h-full">
-          <svg
-            id="10015.io"
-            viewBox="0 0 480 480"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            class="absolute top-0 object-cover h-full w-full fill-purple-400"
-          >
-            <path
-              d="M421.5,311.5Q410,383,343.5,417Q277,451,224,405.5Q171,360,105.5,336.5Q40,313,29.5,236Q19,159,89.5,130Q160,101,221,52.5Q282,4,317,75Q352,146,392.5,193Q433,240,421.5,311.5Z"
-            />
-          </svg>
+        <div
+          group
+          class="aspect-7/3 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
+        >
+          <BlobCard fill-class="fill-purple-400" />
 
           <div
-            class="h-full bg-white/50 backdrop-blur border shadow-xl rounded-xl overflow-hidden"
+            class="absolute top-0 left-0 right-0 bottom-0 grid rounded-xl overflow-hidden bg-white/50 backdrop-blur text-neutral-600 border"
           >
-            <div class="h-full flex flex-col gap-2">
-              <div class="h-full grid content-center text-center">
-                <p class="font-light text-3xl lg:text-xl text-neutral-700">
-                  Psiconutrición
-                </p>
+            <div class="flex h-full items-center px-4">
+              <p class="text-3xl md:text-2xl font-bold text-neutral-600">
+                Psiconutrición
+              </p>
+            </div>
+
+            <div
+              class="w-full px-4 bg-gradient-to-r from-indigo-500 to-purple font-light text-sm text-neutral-200 inline-grid content-center gap-2"
+            >
+              <div class="w-full flex items-center gap-2">
+                <UnoIcon class="i-ph:brain-duotone h-6 w-6" />
+                <p>Emociones</p>
               </div>
 
-              <div
-                class="h-full w-full px-3 bg-gradient-to-r from-indigo-500 to-purple text-neutral-200 grid gap-2 content-center text-sm font-light"
-              >
-                <div class="w-full flex items-center gap-2">
-                  <UnoIcon class="i-ph:brain-duotone h-6 w-6" />
-                  <p>Emociones</p>
-                </div>
-
-                <div class="w-full flex items-center gap-2">
-                  <UnoIcon class="i-ph:spiral-fill h-6 w-6" />
-                  <p>Equilibrio</p>
-                </div>
+              <div class="w-full flex items-center gap-2">
+                <UnoIcon class="i-ph:spiral-fill h-6 w-6" />
+                <p>Equilibrio</p>
               </div>
             </div>
           </div>
@@ -239,43 +227,37 @@ const psiconutricionAreas: CardContent[] = [
       <div
         class="md:col-start-4 md:col-span-2 lg:col-start-7 lg:row-span-2 lg:order-5"
       >
-        <div class="relative h-full rounded-xl overflow-hidden">
-          <img
-            src="@/assets/images/index/entrenamiento.jpeg"
-            class="absolute h-full w-full object-cover -z-1"
+        <div
+          group
+          class="aspect-7/3 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
+        >
+          <NuxtImg
+            src="/index/entrenamiento.jpeg"
+            loading="lazy"
+            preset="hero"
+            fit="cover"
+            class="object-cover w-full transition-300 group-hover:scale-110"
           />
 
-          <div class="h-full">
-            <div class="h-full flex flex-col gap-2">
-              <div class="h-full grid content-center text-center">
-                <p class="font-light text-3xl lg:text-xl text-neutral-200">
-                  Entrenamiento
-                </p>
-              </div>
+          <div class="absolute top-0 left-0 right-0 p-4 h-full grid gap-2">
+            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              Entrenamiento
+            </p>
 
-              <div
-                class="h-full w-full p-1 text-neutral-200 grid grid-cols-2 gap-1 content-center text-sm md:text-xs font-light"
-              >
-                <div
-                  class="text-center bg-black/30 backdrop-blur p-2 rounded-xl"
-                >
-                  <p>Fuerza</p>
-                </div>
-                <div
-                  class="text-center bg-black/30 backdrop-blur p-2 rounded-xl"
-                >
-                  <p>Resistencia</p>
-                </div>
-                <div
-                  class="text-center bg-black/30 backdrop-blur p-2 rounded-xl"
-                >
-                  <p>Fitness</p>
-                </div>
-                <div
-                  class="text-center bg-black/30 backdrop-blur p-2 rounded-xl"
-                >
-                  <p>Potencia</p>
-                </div>
+            <div
+              class="w-full font-light text-sm text-neutral-200 inline-grid content-center gap-2 grid-cols-2"
+            >
+              <div class="text-center bg-black/30 backdrop-blur p-2 rounded-xl">
+                <p>Fuerza</p>
+              </div>
+              <div class="text-center bg-black/30 backdrop-blur p-2 rounded-xl">
+                <p>Resistencia</p>
+              </div>
+              <div class="text-center bg-black/30 backdrop-blur p-2 rounded-xl">
+                <p>Fitness</p>
+              </div>
+              <div class="text-center bg-black/30 backdrop-blur p-2 rounded-xl">
+                <p>Potencia</p>
               </div>
             </div>
           </div>
