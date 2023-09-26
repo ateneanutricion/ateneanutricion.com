@@ -6,22 +6,28 @@
           <PokerCard
             class="h-5/10 w-full aspect-3/4 -rotate-z-10 translate-y-2"
           >
-            <img
-              src="@/assets/images/epigenetica/card_back.jpg"
+            <NuxtImg
+              src="/epigenetica/card_back.jpg"
+              loading="lazy"
+              preset="hero"
               class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
           </PokerCard>
 
           <PokerCard class="h-5/10 w-full aspect-3/4">
-            <img
-              src="@/assets/images/epigenetica/card_center.png"
+            <NuxtImg
+              src="/epigenetica/card_center.png"
+              loading="lazy"
+              preset="hero"
               class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
           </PokerCard>
 
           <PokerCard class="h-5/10 w-full aspect-3/4 rotate-z-10 translate-y-2">
-            <img
-              src="@/assets/images/epigenetica/card_front.jpg"
+            <NuxtImg
+              src="/epigenetica/card_front.jpg"
+              loading="lazy"
+              preset="hero"
               class="h-full w-full object-cover transition-300 group-hover:scale-110"
             />
           </PokerCard>
@@ -216,8 +222,10 @@
           class="h-full w-9/12 aspect-3/4"
           is-vertical
         >
-          <img
-            src="@/assets/images/epigenetica/high_performance.jpg"
+          <NuxtImg
+            src="/epigenetica/vegan.jpg"
+            loading="lazy"
+            preset="hero"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
@@ -226,8 +234,10 @@
           class="h-full w-9/12 aspect-3/4"
           is-vertical
         >
-          <img
-            src="@/assets/images/epigenetica/vegan.jpg"
+          <NuxtImg
+            src="/epigenetica/high_performance.jpg"
+            loading="lazy"
+            preset="hero"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
@@ -236,8 +246,10 @@
           class="h-full w-9/12 aspect-3/4"
           is-vertical
         >
-          <img
-            src="@/assets/images/epigenetica/wellness.png"
+          <NuxtImg
+            src="/epigenetica/wellness.png"
+            loading="lazy"
+            preset="hero"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
@@ -246,8 +258,10 @@
           class="h-full w-9/12 aspect-3/4"
           is-vertical
         >
-          <img
-            src="@/assets/images/epigenetica/card_front.jpg"
+          <NuxtImg
+            src="/epigenetica/card_front.jpg"
+            loading="lazy"
+            preset="hero"
             class="h-full w-full object-cover transition-300 group-hover:scale-110"
           />
         </PokerCard>
