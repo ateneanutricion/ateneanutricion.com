@@ -73,11 +73,9 @@
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
             <div class="font-medium text-base text-neutral-800">
-              Alimentarias
-            </div>
-            <div class="font-black text-2xl text-neutral-800">
               Sensibilidades
             </div>
+            <div class="font-black text-2xl text-neutral-800">Alimentarias</div>
           </header>
           <p class="font-light text-sm text-neutral-600">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
@@ -88,10 +86,10 @@
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
             <div class="font-medium text-base text-neutral-800">
-              Nutricionales
+              Necesidades
             </div>
             <div class="font-black text-2xl text-neutral-800">
-              <span class="">Necesidades</span>
+              Nutricionales
             </div>
           </header>
           <p class="font-light text-sm text-neutral-600">
@@ -103,9 +101,7 @@
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
             <div class="font-medium text-base text-neutral-800">Factores</div>
-            <div class="font-black text-2xl text-neutral-800">
-              <span class="">Externos</span>
-            </div>
+            <div class="font-black text-2xl text-neutral-800">Externos</div>
           </header>
           <p class="font-light text-sm text-neutral-600">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
@@ -116,9 +112,7 @@
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
             <div class="font-medium text-base text-neutral-800">Sistema</div>
-            <div class="font-black text-2xl text-neutral-800">
-              <span class="">Metabolico</span>
-            </div>
+            <div class="font-black text-2xl text-neutral-800">Metabolico</div>
           </header>
           <p class="font-light text-sm text-neutral-600">
             Información del estado actual de los principales sistemas
