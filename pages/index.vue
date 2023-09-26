@@ -43,7 +43,7 @@ const psiconutricionAreas: CardContent[] = [
   <div class="space-y-12 px-4">
     <!-- 1er -->
     <header class="grid gap-4 md:grid-cols-2">
-      <BlobCard class="relative">
+      <BlobCard>
         <NuxtImg
           src="/index/header.png"
           loading="lazy"
@@ -133,7 +133,7 @@ const psiconutricionAreas: CardContent[] = [
             <p class="text-3xl md:text-2xl font-bold text-neutral-200">
               Nutrición
             </p>
-            <span class="font-light text-sm text-neutral-400">
+            <span class="font-light text-sm text-neutral-300">
               Enfocada en tus objetivos
             </span>
           </div>
@@ -153,9 +153,9 @@ const psiconutricionAreas: CardContent[] = [
       <!-- FRASE -->
       <div class="md:col-span-2 order-1 md:order-none lg:order-6">
         <div
-          class="aspect-7/3 md:aspect-7/6 lg:aspect-0 bg-teal-300 h-full rounded-xl text-2xl font-black grid content-center justify-center text-center"
+          class="md:aspect-7/6 lg:aspect-0 bg-black text-neutral-200 rounded-xl text-xl py-2 flex justify-center items-center whitespace-nowrap"
         >
-          <p>¡Optimiza tu salud!</p>
+          ¡Optimiza tu salud!
         </div>
       </div>
 
@@ -180,7 +180,7 @@ const psiconutricionAreas: CardContent[] = [
             <p class="text-3xl md:text-2xl font-bold text-neutral-200">
               Epigenetica
             </p>
-            <span class="font-light text-sm text-neutral-400">
+            <span class="font-light text-sm text-neutral-300">
               Enfocada en tus objetivos
             </span>
           </div>
