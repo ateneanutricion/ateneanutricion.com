@@ -1,89 +1,69 @@
 <template>
-  <div class="space-y-12 px-4">
-    <header class="grid gap-4 md:grid-cols-2">
-      <BlobCard fill-class="fill-sky-300">
-        <div class="h-full flex items-center px-4">
-          <PokerCard
-            class="h-5/10 w-full aspect-3/4 -rotate-z-10 translate-y-2"
-          >
-            <NuxtImg
-              src="/epigenetica/card_back.jpg"
-              loading="lazy"
-              preset="hero"
-              class="h-full w-full object-cover transition-300 group-hover:scale-110"
-            />
-          </PokerCard>
-
-          <PokerCard class="h-5/10 w-full aspect-3/4">
-            <NuxtImg
-              src="/epigenetica/card_center.png"
-              loading="lazy"
-              preset="hero"
-              class="h-full w-full object-cover transition-300 group-hover:scale-110"
-            />
-          </PokerCard>
-
-          <PokerCard class="h-5/10 w-full aspect-3/4 rotate-z-10 translate-y-2">
-            <NuxtImg
-              src="/epigenetica/card_front.jpg"
-              loading="lazy"
-              preset="hero"
-              class="h-full w-full object-cover transition-300 group-hover:scale-110"
-            />
-          </PokerCard>
-        </div>
-      </BlobCard>
-
-      <article class="md:order-first grid content-center gap-4">
-        <div class="font-semibold">
-          <span class="text-5xl">
-            Nutrición basada en la expresión de tus
-            <span class="text-6xl text-sky-400">genes</span>
-          </span>
-        </div>
-
-        <p>
-          Con tan solo 5 hebras de tu cabello realizaremos un test epigenético y
-          recibiras un plan alimenticio basado en tu bio-información
+  <div class="space-y-16">
+    <HeroHeader :titles="['Ciencia.', 'Genes.', 'Bienestar.']">
+      <template #preppend>
+        <p class="font-light text-neutral-400 text-center">
+          Haz de la nutrición tu ventaja
+          <span class="text-white font-semibold">competitiva</span>
         </p>
-      </article>
-    </header>
+      </template>
 
-    <section class="bg-neutral-100 p-4 rounded-xl grid md:grid-cols-5">
-      <header class="md:col-span-2 inline-grid content-center gap-4 p-4">
-        <h2 class="text-4xl font-semibold">
-          Estudios <span class="text-[#4F80E2]">Epigeneticos</span>
-        </h2>
-        <details>
-          <summary
-            class="list-none [&::-webkit-details-marker]:display-none cursor-pointer"
-          >
-            <div
-              class="text-gray-600 text-xs rounded-full py-1 px-4 border-2 transition-300 hover:scale-110"
-            >
-              <div class="flex justify-center items-center">
-                <span class="font-medium whitespace-nowrap">Ver Mas +</span>
-              </div>
-            </div>
-          </summary>
-
-          <p class="font-light text-sm text-neutral-600 py-4">
-            Este estudio evaluara tu bio-información, obteniendo datos sobre tus
+      <template #append>
+        <div class="flex flex-col gap-4">
+          <p class="font-light text-neutral-400 text-center mb-16">
+            Evaluaremos tu bio-información, obteniendo datos sobre tus
             necesidades nutricionales, conocerás lo que realmente necesita tu
             organismo a nivel celular basado en la expresión de tus genes
           </p>
-        </details>
+
+          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+            <a
+              href="#CTA"
+              role="button"
+              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+            >
+              <div class="h-full flex gap-2 justify-center items-center">
+                Saber más
+              </div>
+            </a>
+
+            <GlowCard glow-gradient="from-purple-500 to-pink-500">
+              <a
+                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20tener%20mí%20estudio%20epigenetico."
+                target="_blank"
+                rel="noopener noreferrer"
+                role="button"
+                class="block rounded-xl font-medium h-12 w-full px-4 text-neutral-200"
+              >
+                <div class="h-full flex gap-2 justify-center items-center">
+                  <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                  Contactanos
+                </div>
+              </a>
+            </GlowCard>
+          </div>
+        </div>
+      </template>
+    </HeroHeader>
+
+    <!-- AREAS -->
+    <HeroSection>
+      <header class="p-4 text-center space-y-4">
+        <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+          Estudios <span class="text-purple-400">epigeneticos</span>
+        </h2>
+        <Badge class="w-min mx-auto text-neutral-200"> ¿Qué conoceras? </Badge>
       </header>
 
-      <div class="inline-grid md:col-span-3 divide-y">
+      <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-800">
+            <div class="font-medium text-base text-neutral-200">
               Sensibilidades
             </div>
-            <div class="font-black text-2xl text-neutral-800">Alimentarias</div>
+            <div class="font-black text-2xl text-orange-400">Alimentarias</div>
           </header>
-          <p class="font-light text-sm text-neutral-600">
+          <p class="font-light text-sm text-neutral-400">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
             causando estrés digestivo en tu organismo, impidiendo la correcta
             absorción de nutrientes y favoreciendo la inflamación
@@ -91,14 +71,14 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-800">
+            <div class="font-medium text-base text-neutral-200">
               Necesidades
             </div>
-            <div class="font-black text-2xl text-neutral-800">
+            <div class="font-black text-2xl text-emerald-400">
               Nutricionales
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-600">
+          <p class="font-light text-sm text-neutral-400">
             Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar el bienestar a través de las
             necesidades reales de tu organismo
@@ -106,10 +86,10 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-800">Factores</div>
-            <div class="font-black text-2xl text-neutral-800">Externos</div>
+            <div class="font-medium text-base text-neutral-200">Factores</div>
+            <div class="font-black text-2xl text-sky-400">Externos</div>
           </header>
-          <p class="font-light text-sm text-neutral-600">
+          <p class="font-light text-sm text-neutral-400">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
             los factores ambientales, la exposición tóxica y las cargas
             electromagnéticas de baja intensidad a nivel celular?
@@ -117,27 +97,32 @@
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-800">Sistema</div>
-            <div class="font-black text-2xl text-neutral-800">Metabolico</div>
+            <div class="font-medium text-base text-neutral-200">Sistema</div>
+            <div class="font-black text-2xl text-red-400">Metabolico</div>
           </header>
-          <p class="font-light text-sm text-neutral-600">
+          <p class="font-light text-sm text-neutral-400">
             Información del estado actual de los principales sistemas
             metabólicos para recuperar su equilibrio y optimizar tus sistemas
             inmune, intestinal, cardiovascular, metabólico, sueño, emociones.
           </p>
         </article>
       </div>
-    </section>
+    </HeroSection>
 
-    <section class="p-4 space-y-6">
-      <header class="text-center">
-        <p class="text-3xl font-semibold">
-          ¿Qué indicadores epigenéticos conoceras?
+    <span id="CTA"></span>
+    <!-- MARCADORES -->
+    <HeroSection class="space-y-6">
+      <header class="p-4 text-center">
+        <p class="text-4xl md:text-5xl font-black text-neutral-200">
+          ¿Qué indicadores
+          <span class="text-purple-400">epigenéticos</span>
+          conoceras?
         </p>
       </header>
 
-      <div class="grid gap-6 md:grid-cols-3">
-        <AteneaAccordion
+      <div class="flex flex-wrap justify-center">
+        <div
+          class="w-full md:w-1/3 py-3 md:px-3"
           v-for="({ title, subtitle, icon, content }, i) of [
             {
               title: 'Vitaminas',
@@ -192,80 +177,137 @@
           ]"
           :key="i"
         >
-          <template #title>
-            <div class="tracking-tighter text-start">
-              <p>{{ title }}</p>
-              <span class="text-xs text-gray-500">{{ subtitle }}</span>
-            </div>
-          </template>
-          <template #icon>
-            <UnoIcon
-              :class="icon"
-              class="bg-purple-500 h-6 w-6"
-            />
-          </template>
+          <AteneaAccordion>
+            <template #title>
+              <div class="tracking-tighter text-start">
+                <p>{{ title }}</p>
+                <span class="text-xs text-gray-500">{{ subtitle }}</span>
+              </div>
+            </template>
+            <template #icon>
+              <UnoIcon
+                :class="icon"
+                class="bg-purple-500 h-6 w-6"
+              />
+            </template>
 
-          <p>{{ content }}</p>
-        </AteneaAccordion>
+            <p class="text-neutral-400">{{ content }}</p>
+          </AteneaAccordion>
+        </div>
       </div>
-    </section>
+    </HeroSection>
 
-    <section class="p-4 space-y-6">
-      <header>
-        <header class="w-full text-center text-3xl font-semibold text-gray-800">
-          <p>Elige un plan según tu objetívo</p>
-        </header>
-      </header>
+    <HeroSection>
+      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+        Informes
+        <span class="text-purple-400">epigenéticos</span>
+      </h2>
 
-      <div class="h-full w-full flex flex-col sm:flex-row items-center px-4">
-        <PokerCard
-          class="h-full w-9/12 aspect-3/4"
-          is-vertical
-        >
+      <!-- ALTO RENDIMIENTO -->
+      <div
+        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+      >
+        <div class="w-full space-y-2 text-sm text-neutral-400">
           <NuxtImg
-            src="/epigenetica/vegan.jpg"
+            src="/epigenetica/high_performance.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+            class="h-full w-full object-contain transition-300 hover:scale-110"
           />
-        </PokerCard>
+        </div>
 
-        <PokerCard
-          class="h-full w-9/12 aspect-3/4"
-          is-vertical
+        <GlowCard
+          disable-glow
+          glow-gradient=" from-violet-500 to-purple-400"
         >
-          <NuxtImg
-            src="/epigenetica/high_performance.jpg"
-            loading="lazy"
-            preset="hero"
-            class="h-full w-full object-cover transition-300 group-hover:scale-110"
-          />
-        </PokerCard>
+          <article class="inline-grid gap-4 py-4 px-6">
+            <header class="flex flex-col">
+              <div class="font-light">Informe de optimización</div>
+              <div class="font-extrabold text-2xl">Alto Rendimiento</div>
+            </header>
 
-        <PokerCard
-          class="h-full w-9/12 aspect-3/4"
-          is-vertical
-        >
+            <p class="font-light text-sm">
+              El informe epigenético "Optimización de Alto Rendimiento" ha sido
+              desarrollado por científicos expertos en epigenética para ayudar a
+              identificar las influencias del entorno y su influencia en la
+              expresión en genes relacionados al rendimiento del atleta. tiene
+              como objetivo poder mejorar el rendimiento físico de los atletas a
+              través de ajustes nutricionales y medio ambientales. De este modo
+              podremos optimizar sus capacidades físicas, mentales y
+              emocionales.
+            </p>
+          </article>
+        </GlowCard>
+      </div>
+
+      <!-- WELLNESS -->
+      <div
+        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+      >
+        <div class="w-full space-y-2 text-sm text-neutral-400 md:order-last">
           <NuxtImg
             src="/epigenetica/wellness.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+            class="h-full w-full object-contain transition-300 hover:scale-110"
           />
-        </PokerCard>
+        </div>
 
-        <PokerCard
-          class="h-full w-9/12 aspect-3/4"
-          is-vertical
+        <GlowCard
+          disable-glow
+          glow-gradient=" from-violet-500 to-purple-400"
         >
+          <article class="inline-grid gap-4 py-4 px-6">
+            <header class="flex flex-col">
+              <div class="font-light">Informe de optimización</div>
+              <div class="font-extrabold text-2xl">Wellness</div>
+            </header>
+
+            <p class="font-light text-sm">
+              El informe wellness está diseñado para ayudarnos a identificar
+              influencias ambientales, que podrían estar afectando nuestra
+              expresión genética y su influencia en las funciones metabólicas.
+              En base a dichas influencias, nos proporciona un "Plan Nutricional
+              de 90 Días" para equilibrar estos marcadores y así poder
+              optimizarlos a través de ajustes nutricionales.
+            </p>
+          </article>
+        </GlowCard>
+      </div>
+
+      <!-- VEGANO -->
+      <div
+        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+      >
+        <div class="w-full space-y-2 text-sm text-neutral-400">
           <NuxtImg
-            src="/epigenetica/card_front.jpg"
+            src="/epigenetica/vegan.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-cover transition-300 group-hover:scale-110"
+            class="h-full w-full object-contain transition-300 hover:scale-110"
           />
-        </PokerCard>
+        </div>
+
+        <GlowCard
+          disable-glow
+          glow-gradient=" from-violet-500 to-purple-400"
+        >
+          <article class="inline-grid gap-4 py-4 px-6">
+            <header class="flex flex-col">
+              <div class="font-light">Informe de optimización</div>
+              <div class="font-extrabold text-2xl">Vegano</div>
+            </header>
+
+            <p class="font-light text-sm">
+              El informe optimización "vegano" está diseñado para ayudar a
+              identificar influencias ambientales correlacionadas con la
+              expresión de genes, enzimas y funciones metabólica. Además, de
+              brindar un plan para abordar estos desequilibrios y optimizar la
+              salud mediante programas dietéticos, nutricionales y suplementos.
+            </p>
+          </article>
+        </GlowCard>
       </div>
-    </section>
+    </HeroSection>
   </div>
 </template>
