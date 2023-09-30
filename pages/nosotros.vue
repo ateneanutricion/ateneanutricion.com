@@ -1,5 +1,5 @@
 <template>
-  <AteneaContainer>
+  <div>
     <div class="col-span-2 p-4 rounded-3xl grid-rows-2">
       <div class="grid auto-rows-[192px] grid-cols-4 gap-4">
         <!-- 1 -->
@@ -86,10 +86,10 @@
           class="row-span-2 col-span-1 rounded-xl bg-[rgb(33_50_216)] overflow-hidden"
         >
           <div class="relative h-full flex flex-col justify-end">
-            <img
+            <!-- <img
               src="@/assets/happy.jpg"
               class="h-full w-full object-cover transition transition-duration-300 hover:scale-110"
-            />
+            /> -->
           </div>
         </div>
 
@@ -151,5 +151,5 @@
         </div>
       </div>
     </div>
-  </AteneaContainer>
+  </div>
 </template>
