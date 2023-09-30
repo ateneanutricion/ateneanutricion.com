@@ -2,22 +2,24 @@
   <details>
     <summary
       group
-      class="bg-gray-100 p-2 rounded-full shadow-xl transition-300 hover:scale-105 select-none"
+      class="bg-neutral-800 p-2 rounded-xl shadow-xl transition-300 hover:scale-105 select-none cursor-pointer"
     >
       <div class="flex items-center gap-2">
-        <div class="h-12 w-12 rounded-full shadow-md border border-white flex justify-center items-center">
+        <div
+          class="h-12 w-12 rounded-xl shadow-md border border-neutral-300 flex justify-center items-center"
+        >
           <span class="transition-300 group-hover:scale-110">
             <slot name="icon" />
           </span>
         </div>
 
-        <div class="font-semibold text-gray-800">
+        <div class="font-semibold text-neutral-300">
           <slot name="title" />
         </div>
       </div>
     </summary>
 
-    <div class="p-4 pt-2 text-gray-500">
+    <div class="p-4 pt-2">
       <slot />
     </div>
   </details>

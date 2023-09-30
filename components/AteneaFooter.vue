@@ -3,17 +3,15 @@
     <div class="relative z-1 h-24">
       <div class="absolute -bottom-6 w-full">
         <div
-          class="h-full w-11/12 mx-auto bg-[rgb(177_191_146)] rounded-xl p-4 text-center"
+          class="h-full w-10/12 md:w-1/2 mx-auto border rounded-2xl py-2 text-center"
         >
-          <p class="text-neutral-100 font-semibold text-lg">
-            ¡Optimiza tu salud!
-          </p>
+          <p class="text-neutral-100 font-semibold">¡Optimiza tu salud!</p>
         </div>
       </div>
     </div>
 
     <div
-      class="px-12 pb-12 pt-16 grid gap-4 md:grid-cols-4 bg-neutral-700 text-neutral-200"
+      class="px-12 pb-12 pt-16 grid gap-4 md:grid-cols-4 bg-black text-neutral-200"
     >
       <div class="grid gap-1 content-center md:justify-center">
         <NuxtLink
@@ -30,6 +28,16 @@
             ATENEA
           </span>
         </NuxtLink>
+
+        <span class="text-xs text-neutral-300 font-extralight">
+          Matehuala, S.L.P.
+        </span>
+        <span class="text-xs text-neutral-300 font-extralight">
+          San Luis Potosí, S.L.P.
+        </span>
+        <span class="text-xs text-neutral-300 font-extralight">
+          San Miguel Allende, Gto.
+        </span>
 
         <p class="text-xs text-neutral-300 font-extralight">
           ¡Supera tus limites!

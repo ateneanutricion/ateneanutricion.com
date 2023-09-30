@@ -1,7 +1,5 @@
-<script lang="ts" setup></script>
-
 <template>
-  <nav class="sticky top-0 px-6 h-16 bg-white/70 backdrop-blur z-2">
+  <nav class="fixed w-full top-0 px-6 h-16 bg-black/70 backdrop-blur z-99">
     <div class="h-full flex items-center justify-between">
       <NuxtLink
         to="/"
@@ -11,26 +9,31 @@
           src="/atenea_logo.png"
           loading="lazy"
           preset="avatar"
-          class="h-10 w-10 drop-shadow-sm"
+          class="h-10 w-10"
         />
-        <span class="font-semibold text-[rgb(177_191_146)] drop-shadow-sm">
-          ATENEA
-        </span>
+        <span class="text-[rgb(177_191_146)]"> ATENEA </span>
       </NuxtLink>
 
-      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-600">
-        <NuxtLink to="/nutricion"> Nutrición </NuxtLink>
-        <NuxtLink to="/epigenetica"> Epigenetica </NuxtLink>
-        <NuxtLink to="/nosotros"> Nosotros </NuxtLink>
+      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-500">
+        <NuxtLink
+          to="/nutricion"
+          exact-active-class="font-bold text-[rgb(177_191_146)]"
+        >
+          Nutrición
+        </NuxtLink>
+        <NuxtLink
+          to="/epigenetica"
+          exact-active-class="font-bold text-[rgb(177_191_146)]"
+        >
+          Epigenetica
+        </NuxtLink>
+        <NuxtLink
+          to="/nosotros"
+          exact-active-class="font-bold text-[rgb(177_191_146)]"
+        >
+          Nosotros
+        </NuxtLink>
       </div>
     </div>
   </nav>
 </template>
-
-<style scoped>
-.router-link-exact-active {
-  --uno: font-bo;
-  font-weight: 700;
-  color: rgb(177, 191, 146);
-}
-</style>
