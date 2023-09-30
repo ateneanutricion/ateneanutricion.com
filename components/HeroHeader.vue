@@ -7,14 +7,14 @@ defineProps<Props>()
 </script>
 
 <template>
-  <header class="h-[calc(100dvh-4rem)] px-6 overflow-clip">
+  <header class="h-[calc(100dvh-4rem)] px-6 overflow-clip @container">
     <div
       class="h-full flex flex-col items-center justify-center py-12 container mx-auto"
     >
       <slot name="preppend" />
 
       <div
-        class="h-full flex gap-2 flex-col md:flex-row items-center justify-center text-6xl lg:text-7xl font-black"
+        class="h-full w-full flex gap-2 flex-col md:flex-row items-center justify-center [line-height:1] text-[20cqw] md:text-[7cqw] font-black"
       >
         <span
           v-for="(title, i) in titles"
