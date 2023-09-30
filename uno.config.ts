@@ -11,10 +11,4 @@ export default defineConfig({
       },
     ],
   ],
-  theme: {
-    fontFamily: {
-      'source-serif': 'SourceSerif4, "Times New Roman", Times, serif',
-      'albert-sans': 'AlbertSans, "Helvetica Neue", sans-serif',
-    },
-  },
 })
