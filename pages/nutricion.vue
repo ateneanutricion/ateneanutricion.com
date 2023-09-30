@@ -397,26 +397,24 @@ useServerSeoMeta({
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
           />
 
-          <div class="absolute bottom-0 left-0">
+          <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-4 bg-white rounded-full shadow-xl border"
+              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
             >
-              <div
-                class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
-              >
+              <div class="h-12 w-12 rounded-full overflow-hidden">
                 <NuxtImg
                   src="/nutricion/people/nutri_0.png"
                   loading="lazy"
                   preset="avatar"
-                  width="50"
+                  width="60"
                   height="60"
                   class="object-cover w-full"
                 />
               </div>
 
               <div>
-                <p class="text-xs font-medium">Nutriologa</p>
-                <p class="text-xs text-gray-500">Yetlanetzi Portillo</p>
+                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
+                <p class="text-xs text-gray-400">Yetlanetzi Portillo</p>
               </div>
             </div>
           </div>
@@ -433,26 +431,24 @@ useServerSeoMeta({
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
           />
 
-          <div class="absolute bottom-0 left-0">
+          <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-4 bg-white rounded-full shadow-xl border"
+              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
             >
-              <div
-                class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
-              >
+              <div class="h-12 w-12 rounded-full overflow-hidden">
                 <NuxtImg
                   src="/nutricion/people/nutri_1.png"
                   loading="lazy"
                   preset="avatar"
-                  width="50"
+                  width="60"
                   height="60"
                   class="object-cover w-full"
                 />
               </div>
 
               <div>
-                <p class="text-xs font-medium">Nutriologa</p>
-                <p class="text-xs text-gray-500">Daniela Cuevas</p>
+                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
+                <p class="text-xs text-gray-400">Daniela Cuevas</p>
               </div>
             </div>
           </div>
@@ -469,26 +465,24 @@ useServerSeoMeta({
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
           />
 
-          <div class="absolute bottom-0 left-0">
+          <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-4 bg-white rounded-full shadow-xl border"
+              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
             >
-              <div
-                class="h-8 w-8 rounded-full overflow-hidden shadow-md border border-white"
-              >
+              <div class="h-12 w-12 rounded-full overflow-hidden">
                 <NuxtImg
                   src="/nutricion/people/nutri_2.png"
                   loading="lazy"
                   preset="avatar"
-                  width="50"
+                  width="60"
                   height="60"
                   class="object-cover w-full"
                 />
               </div>
 
               <div>
-                <p class="text-xs font-medium">Nutriologa</p>
-                <p class="text-xs text-gray-500">Ninfa Jonguitud</p>
+                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
+                <p class="text-xs text-gray-400">Ninfa Jonguitud</p>
               </div>
             </div>
           </div>
