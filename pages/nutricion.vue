@@ -62,6 +62,7 @@ useServerSeoMeta({
       </template>
     </HeroHeader>
 
+    <!-- Images grid -->
     <HeroSection>
       <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
         <article
@@ -380,6 +381,7 @@ useServerSeoMeta({
       </div>
     </HeroSection>
 
+    <!-- People -->
     <HeroSection>
       <Badge class="w-min mx-auto text-neutral-200"> Conocenos </Badge>
 
