@@ -287,7 +287,7 @@ const psiconutricionAreas: CardContent[] = [
                     src="/nutricion/people/nutri_0.png"
                     loading="lazy"
                     preset="avatar"
-                    width="50"
+                    width="60"
                     height="60"
                     class="object-cover w-full"
                   />
