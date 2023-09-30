@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="font-sans">
     <AteneaNavBar />
 
-    <main class="container lg:max-w-[80ch] mx-auto font-albert-sans">
+    <main>
       <slot />
     </main>
 
