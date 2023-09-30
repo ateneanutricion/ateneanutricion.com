@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="relative z-1 h-24">
+    <div class="relative z-1 h-24 select-none">
       <div class="absolute -bottom-6 w-full">
         <div
           class="h-full w-10/12 md:w-1/2 mx-auto border rounded-2xl py-2 text-center"

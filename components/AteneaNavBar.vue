@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full top-0 px-6 h-16 bg-black/70 backdrop-blur z-99">
+  <nav class="sticky w-full top-0 px-6 h-16 bg-black/70 backdrop-blur z-99">
     <div class="h-full flex items-center justify-between">
       <NuxtLink
         to="/"
