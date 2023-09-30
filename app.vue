@@ -5,17 +5,15 @@
 </template>
 
 <style>
-@font-face {
-  font-family: SourceSerif4;
-  font-display: swap;
-  src: url('@/assets/fonts/SourceSerif4.woff2') format('woff2');
+html {
+  scroll-behavior: smooth;
+  background: #000;
 }
-
-@font-face {
-  font-family: AlbertSans;
-  font-display: swap;
-  src: url('@/assets/fonts/AlbertSans.ttf');
+body {
+  background: #000;
 }
+</style>
+<style>
 /* 
   bg-[#3E54D3]
   bg-[#4F80E2]

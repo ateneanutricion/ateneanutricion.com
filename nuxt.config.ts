@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       meta: [
-        { name: 'theme-color', content: '#4FE0B6' },
+        { name: 'theme-color', content: '#000' },
         { name: 'application-name', content: 'Atenea' },
         { name: 'apple-mobile-web-app-title', content: 'Atenea' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
