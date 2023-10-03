@@ -46,6 +46,8 @@
       </template>
     </HeroHeader>
 
+    <span id="CTA"></span>
+    <!-- FAQs -->
     <HeroSection>
       <header class="p-4 text-center space-y-4">
         <h2 class="text-4xl md:text-5xl font-black text-neutral-200">

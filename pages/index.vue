@@ -25,32 +25,85 @@ const psiconutricionAreas: CardContent[] = [
       'Trabajo sobre las emociones que pueden ser detonantes en ciertos comportamientos relacionados a algún TCA',
   },
   {
-    title: 'Área Congnitiva',
+    title: 'Área Cognitiva',
     icon: 'i-mdi:head-heart-outline',
     content:
       'Trabajo sobre los pensamientos y emociones del paciente, para transformar los patrones de pensamiento contraproducentes en maneras de pensar que sean más útiles',
   },
   {
-    title: 'Mindfull Eating',
+    title: 'Mindful Eating',
     icon: 'i-ph:spiral-fill',
     content:
       'Trabajo sobre técnicas de alimentación consciente, para mejorar la relación con la comida, con un abordaje integral, para reducir el estrés, problemas nutricionales y psicológicos asociados',
   },
 ]
+
+useServerHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'http://schema.org',
+        '@graph': [
+          {
+            '@type': 'Organization',
+            url: 'https://ateneanutricion.com',
+            logo: '/logo.png',
+          },
+          {
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '¿Necesito un plan nutricional?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'La nutrición tiene total influencia en nuestro bienestar & salud de nuestro cuerpo. Existe un sinfín de información sobre una alimentación saludable y cual es la mejor  manera de nutrirse, pero para lograr una salud optima la clave es que sea personalizada, una consulta de nutrición por un nutriólogo especialista te brinda las herramientas necesarias para saber cuales son tus necesidades específicas.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: '¿Cuál es el mejor plan de alimentación?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'El mejor plan de alimentación es el que nos permita realizar cambios dietéticos sostenibles a largo plazo, cada cuerpo es diferente por lo que necesita una nutrición especializada, no necesita protocolos de alimentación estandarizados con las mismas pautas y reglas de alimentación,  si lo que queremos es una nutrición óptima debemos darle un enfoque personalizado con cambios dietéticos y pautas nutricionales que nos brindan un bienestar único.',
+                },
+              },
+            ],
+          },
+        ],
+      }),
+    },
+  ],
+})
+useServerSeoMeta({
+  title: 'Atenea Nutrición | Nutrición, deporte y genética',
+  ogTitle: 'Atenea Nutrición | Nutrición, deporte y genética',
+  ogType: 'website',
+  ogUrl: 'https://ateneanutricion.com',
+
+  description:
+    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+  ogDescription:
+    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+
+  ogImage: '/og-images/index.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>
   <div class="space-y-16">
-    <HeroHeader :titles="['Movimiento', 'es', 'Fortaleza.']">
-      <template #preppend>
-        <p class="font-light text-neutral-400 text-center">
+    <HeroHeader :titles="['Nutrición.', 'Deporte.', 'Salud.']">
+      <template #prepend>
+        <p class="font-light text-neutral-400 text-center text-xl">
           Haz de la nutrición tu ventaja
           <span class="text-white font-semibold">competitiva</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado
@@ -158,7 +211,7 @@ const psiconutricionAreas: CardContent[] = [
               class="absolute top-0 left-0 right-0 p-2 bg-gradient-to-b from-neutral-800"
             >
               <p class="text-3xl md:text-2xl font-bold text-neutral-200">
-                Epigenetica
+                Epigenética
               </p>
               <span class="font-light text-sm text-neutral-300">
                 Enfocada en tus objetivos
