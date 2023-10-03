@@ -35,9 +35,6 @@
         <span class="text-xs text-neutral-300 font-extralight">
           San Luis Potosí, S.L.P.
         </span>
-        <span class="text-xs text-neutral-300 font-extralight">
-          San Miguel Allende, Gto.
-        </span>
 
         <p class="text-xs text-neutral-300 font-extralight">
           ¡Supera tus limites!
