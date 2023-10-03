@@ -27,12 +27,12 @@
         >
           Epigenetica
         </NuxtLink>
-        <!-- <NuxtLink
+        <NuxtLink
           to="/nosotros"
           exact-active-class="font-bold text-[rgb(177_191_146)]"
         >
           Nosotros
-        </NuxtLink> -->
+        </NuxtLink>
       </div>
     </div>
   </nav>

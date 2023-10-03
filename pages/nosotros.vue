@@ -1,155 +1,183 @@
 <template>
-  <div>
-    <div class="col-span-2 p-4 rounded-3xl grid-rows-2">
-      <div class="grid auto-rows-[192px] grid-cols-4 gap-4">
-        <!-- 1 -->
-        <div class="row-span-2 col-span-2 rounded-xl bg-[rgb(75_167_139)] p-4">
-          <div class="h-full flex flex-col justify-between">
-            <h3 class="font-black text-6xl">App&Apps</h3>
+  <div class="space-y-16">
+    <HeroHeader :titles="['Conoce.', 'quienes.', 'Somos.']">
+      <template #prepend>
+        <p class="font-light text-neutral-400 text-center text-xl">
+          Haz de la nutrición tu ventaja
+          <span class="text-white font-semibold">competitiva</span>
+        </p>
+      </template>
 
-            <div class="flex gap-6 items-end justify-start tracking-tighter">
-              <h3
-                class="font-black text-5xl"
-                style="writing-mode: vertical-lr"
+      <template #append>
+        <div class="flex flex-col gap-4 text-xl">
+          <p class="font-light text-neutral-400 text-center mb-16">
+            Evaluaremos tu bio-información, obteniendo datos sobre tus
+            necesidades nutricionales, conocerás lo que realmente necesita tu
+            organismo a nivel celular basado en la expresión de tus genes
+          </p>
+
+          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+            <a
+              href="#CTA"
+              role="button"
+              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+            >
+              <div class="h-full flex gap-2 justify-center items-center">
+                Saber más
+              </div>
+            </a>
+
+            <GlowCard glow-gradient="from-purple-500 to-pink-500">
+              <a
+                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20tener%20mí%20estudio%20epigenetico."
+                target="_blank"
+                rel="noopener noreferrer"
+                role="button"
+                class="block rounded-xl font-medium h-12 w-full px-4 text-neutral-200"
               >
-                Happy Inc.
-              </h3>
-              <p class="font-medium text-base">
-                En esta app podras manejar los sitios de acceso y aplicaciones
-                Happy Inc.
-              </p>
+                <div class="h-full flex gap-2 justify-center items-center">
+                  <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                  Contactanos
+                </div>
+              </a>
+            </GlowCard>
+          </div>
+        </div>
+      </template>
+    </HeroHeader>
+
+    <HeroSection>
+      <header class="p-4 text-center space-y-4">
+        <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+          Preguntas <span class="text-purple-400">frecuentes</span>
+        </h2>
+      </header>
+
+      <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-200">
+              ¿Necesito un
             </div>
-          </div>
-        </div>
-
-        <!-- Nutricion -->
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl bg-[rgb(169_173_217)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:hard-drives-duotone h-6 w-6 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">AdSis</h3>
-              <p class="text-xs">adsis.corporativomty</p>
+            <div class="font-black text-2xl text-orange-400">
+              plan nutricional?
             </div>
+          </header>
+          <p class="font-light text-sm text-neutral-400">
+            La nutrición tiene total influencia en nuestro bienestar & salud de
+            nuestro cuerpo. Existe un sinfín de información sobre una
+            alimentación saludable y cual es la mejor manera de nutrirse, pero
+            para lograr una salud optima la clave es que sea personalizada, una
+            consulta de nutrición por un nutriólogo especialista te brinda las
+            herramientas necesarias para saber cuales son tus necesidades
+            específicas.
+          </p>
+        </article>
 
-            <Badge class="bg-black text-white border-0!">Abrir</Badge>
-          </div>
-        </div>
-
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl bg-[rgb(200_233_94)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:smiley-duotone h-6 w-6 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">
-                Portal Feliz
-              </h3>
-              <p class="text-xs">portal.prestamofeliz</p>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-200">
+              ¿Cuál es el mejor
             </div>
-
-            <Badge class="bg-black text-white border-0!">Abrir</Badge>
-          </div>
-        </div>
-
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl bg-[rgb(169_173_217)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:desktop-duotone h-6 w-6 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">
-                Mesa de Control
-              </h3>
-              <p class="text-xs">AIO</p>
+            <div class="font-black text-2xl text-emerald-400">
+              plan de alimentación?
             </div>
+          </header>
+          <p class="font-light text-sm text-neutral-400">
+            El mejor plan de alimentación es el que nos permita realizar cambios
+            dietéticos sostenibles a largo plazo, cada cuerpo es diferente por
+            lo que necesita una nutrición especializada, no necesita protocolos
+            de alimentación estandarizados con las mismas pautas y reglas de
+            alimentación, si lo que queremos es una nutrición óptima debemos
+            darle un enfoque personalizado con cambios dietéticos y pautas
+            nutricionales que nos brindan un bienestar único.
+          </p>
+        </article>
 
-            <Badge class="bg-black text-white border-0!">Abrir</Badge>
-          </div>
-        </div>
-
-        <!-- CONTACTO -->
-        <div
-          class="row-span-2 col-span-1 rounded-xl bg-[rgb(33_50_216)] overflow-hidden"
-        >
-          <div class="relative h-full flex flex-col justify-end">
-            <!-- <img
-              src="@/assets/happy.jpg"
-              class="h-full w-full object-cover transition transition-duration-300 hover:scale-110"
-            /> -->
-          </div>
-        </div>
-
-        <!-- Hapy PDF -->
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl bg-[rgb(251_252_211)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:file-pdf-duotone h-6 w-6 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">Hapy PDF</h3>
-              <p class="text-xs">Abre PDFs de manera segura</p>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-200">
+              ¿Qué es un estudio
             </div>
-
-            <Badge class="bg-black text-white border-0!">Abrir</Badge>
-          </div>
-        </div>
-
-        <!-- Happy Phone -->
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl border-2 border-slate-400/10 bg-[rgb(252_235_211)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:phone-call-duotone h-6 w-6 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">
-                Happy Phone
-              </h3>
-              <p class="text-xs">Llamadas VoIP de manera segura</p>
+            <div class="font-black text-2xl text-sky-400">
+              epigenético nutricional?
             </div>
+          </header>
+          <p class="font-light text-sm text-neutral-400">
+            Es un test que analiza biomarcadores celulares, que nos brinda
+            información sobre cómo la influencia del medio ambiente, entorno y
+            estilo de vida, puede afectar la expresión de nuestros genes. Nos
+            ayuda a saber qué alimentos debemos comer o reducir para cubrir
+            nuestras necesidades nutricionales de una manera más específica y
+            personalizada.
+          </p>
+        </article>
 
-            <Badge class="bg-black text-white border-0!">Abrir</Badge>
-          </div>
-        </div>
-
-        <!-- NEW -->
-        <div
-          group
-          class="row-span-1 col-span-1 rounded-xl border-2 border-slate-400/10 bg-[rgb(247_211_207)] p-4"
-        >
-          <div class="h-full flex flex-col justify-between">
-            <UnoIcon
-              class="i-ph:plus-circle-duotone h-10 w-10 group-hover:animate-wobble"
-            />
-
-            <div>
-              <h3 class="font-extrabold text-xl tracking-tighter">Nuevo</h3>
-              <p class="text-xs">Agregar un nuevo sitio...</p>
+        <article class="inline-grid gap-4 py-4 px-6">
+          <header class="flex flex-col">
+            <div class="font-medium text-base text-neutral-200">
+              ¿Qué hace un
             </div>
-          </div>
-        </div>
+            <div class="font-black text-2xl text-red-400">
+              nutriologo deportivo?
+            </div>
+          </header>
+          <p class="font-light text-sm text-neutral-400">
+            Un nutriólogo deportivo brinda las herramientas adecuadas para
+            impulsar a un atleta de alto rendimiento, amateur o recreativo para
+            que alcance su rendimiento máximo, de una manera segura y efectiva.
+            creando un plan de nutrición personalizado
+          </p>
+        </article>
       </div>
-    </div>
+    </HeroSection>
+
+    <!-- <div
+      class="border relative w-[1200px] h-[640px] p-12 px-20 overflow-hidden"
+    >
+      <NuxtLink
+        to="/"
+        class="flex items-center gap-1"
+      >
+        <NuxtImg
+          src="/atenea_logo.png"
+          loading="lazy"
+          preset="avatar"
+          width="64"
+          height="64"
+          quality="90"
+        />
+        <span class="text-3xl text-[rgb(177_191_146)]"> ATENEA </span>
+      </NuxtLink>
+
+      <div class="text-neutral-200 py-10 space-y-2">
+        <h1
+          class="text-9xl font-black text-transparent bg-gradient-to-r from-emerald-500 to-[rgb(177_191_146)] bg-clip-text"
+        >
+          Atenea Nutrición
+        </h1>
+        <p class="text-4xl font-bold text-neutral-200">
+          Nutrición, epigenética y deporte
+        </p>
+
+        <p class="w-3/4 text-neutral-400 text-lg mt-10!">
+          Sabemos que para alcanzar una salud física y mental para un óptimo
+          bienestar, debemos tener un enfoque integral, nuestro objetivo es
+          brindar las herramientas que impulsen un cambio de hábitos para
+          alcanzar objetivos individuales, enfocados en una Nutrición de
+          calidad, actividad física y bienestar emocional.
+        </p>
+      </div>
+
+      <NuxtImg
+        src="/atenea_logo.png"
+        loading="lazy"
+        preset="avatar"
+        width="800"
+        height="800"
+        quality="90"
+        class="absolute -bottom-1/2 -right-1/4 opacity-40"
+      />
+    </div> -->
   </div>
 </template>
