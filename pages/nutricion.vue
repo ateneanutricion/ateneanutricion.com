@@ -17,16 +17,16 @@ useServerSeoMeta({
 
 <template>
   <div class="space-y-16">
-    <HeroHeader :titles="['Nutrición.', 'Deporte.', 'Salud.']">
-      <template #preppend>
-        <p class="font-light text-neutral-400 text-center">
+    <HeroHeader :titles="['Tu', 'Mejor', 'Versión.']">
+      <template #prepend>
+        <p class="font-light text-neutral-400 text-center text-xl">
           Haz de la nutrición tu ventaja
           <span class="text-white font-semibold">competitiva</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado
@@ -206,12 +206,12 @@ useServerSeoMeta({
       </div>
     </HeroSection>
 
-    <!-- Clinica & metabolica -->
+    <!-- Clínica & metabólica -->
     <HeroSection>
       <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
-        <span class="text-[#4F80E2]">Clinica</span>
+        <span class="text-[#4F80E2]">Clínica</span>
         &
-        <span class="text-[#4F80E2]">metabolica</span>
+        <span class="text-[#4F80E2]">metabólica</span>
       </h2>
 
       <div
@@ -300,7 +300,7 @@ useServerSeoMeta({
             </header>
 
             <ul class="font-light text-sm list-disc list-inside">
-              <li>Plan nutricional inidividualizado</li>
+              <li>Plan nutricional individualizado</li>
               <li>Programación de entrenamiento físico</li>
               <li>Suplementación deportiva</li>
             </ul>
@@ -329,7 +329,7 @@ useServerSeoMeta({
               <UnoIcon class="i-mdi:weight-lifter w-10 h-10" />
               <div class="flex flex-col">
                 <div class="font-light">Valoración</div>
-                <div class="font-extrabold text-2xl">Fisica</div>
+                <div class="font-extrabold text-2xl">Física</div>
               </div>
             </header>
 

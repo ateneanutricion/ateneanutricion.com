@@ -1,15 +1,32 @@
+<script lang="ts" setup>
+useServerSeoMeta({
+  title: 'Atenea Nutrición | Epigenética',
+  ogTitle: 'Atenea Nutrición | Epigenética',
+  ogType: 'website',
+  ogUrl: 'https://ateneanutricion.com/epigenetica',
+
+  description:
+    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+  ogDescription:
+    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+
+  ogImage: '/og-images/epigenetica.png',
+  twitterCard: 'summary_large_image',
+})
+</script>
+
 <template>
   <div class="space-y-16">
     <HeroHeader :titles="['Ciencia.', 'Genes.', 'Bienestar.']">
-      <template #preppend>
-        <p class="font-light text-neutral-400 text-center">
+      <template #prepend>
+        <p class="font-light text-neutral-400 text-center text-xl">
           Haz de la nutrición tu ventaja
           <span class="text-white font-semibold">competitiva</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
             Evaluaremos tu bio-información, obteniendo datos sobre tus
             necesidades nutricionales, conocerás lo que realmente necesita tu
@@ -52,7 +69,7 @@
         <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
           Estudios <span class="text-purple-400">epigeneticos</span>
         </h2>
-        <Badge class="w-min mx-auto text-neutral-200"> ¿Qué conoceras? </Badge>
+        <Badge class="w-min mx-auto text-neutral-200"> ¿Qué conocerás? </Badge>
       </header>
 
       <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
@@ -98,7 +115,7 @@
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
             <div class="font-medium text-base text-neutral-200">Sistema</div>
-            <div class="font-black text-2xl text-red-400">Metabolico</div>
+            <div class="font-black text-2xl text-red-400">Metabólico</div>
           </header>
           <p class="font-light text-sm text-neutral-400">
             Información del estado actual de los principales sistemas
@@ -116,7 +133,7 @@
         <p class="text-4xl md:text-5xl font-black text-neutral-200">
           ¿Qué indicadores
           <span class="text-purple-400">epigenéticos</span>
-          conoceras?
+          conocerás?
         </p>
       </header>
 
@@ -150,7 +167,7 @@
               icon: 'i-ph:drop-duotone',
               subtitle: '7 Indicadores',
               content:
-                'Alfa linolelco 3 (ALA),  Ácido araquidónico 6 (AA), Acido docosahexaenoico 3 (DHA), Ácido eicosapentanoico 3 (EPA),  Ácido linolénico gamma 6 (GLA), Ácido linoleico 6, Ácido oleico 9',
+                'Alfa linolelco 3 (ALA),  Ácido araquidónico 6 (AA), Ácido docosahexaenoico 3 (DHA), Ácido eicosapentanoico 3 (EPA),  Ácido linolénico gamma 6 (GLA), Ácido linoleico 6, Ácido oleico 9',
             },
             {
               title: 'Aminoácidos',
@@ -164,7 +181,7 @@
               icon: 'i-mdi:bacteria',
               subtitle: '6 Indicadores',
               content:
-                'Hongo, Moldes/Esporas, Parasitos, Bacteria, Señal Viral, Señal Post vira',
+                'Hongo, Moldes/Esporas, Parásitos, Bacteria, Señal Viral, Señal Post vira',
             },
 
             {

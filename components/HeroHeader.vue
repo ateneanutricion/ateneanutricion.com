@@ -11,10 +11,10 @@ defineProps<Props>()
     <div
       class="h-full flex flex-col items-center justify-center py-12 container mx-auto"
     >
-      <slot name="preppend" />
+      <slot name="prepend" />
 
       <div
-        class="h-full w-full flex gap-2 flex-col md:flex-row items-center justify-center [line-height:1] text-[20cqw] md:text-[7cqw] font-black"
+        class="h-full w-full flex gap-2 flex-col md:flex-row items-center justify-center text-[20cqw]/[1] md:text-[8cqw] lg:text-[8.4cqw] font-black"
       >
         <span
           v-for="(title, i) in titles"
