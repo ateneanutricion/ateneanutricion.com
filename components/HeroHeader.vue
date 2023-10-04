@@ -9,7 +9,7 @@ defineProps<Props>()
 <template>
   <header class="h-[calc(100dvh-4rem)] px-6 overflow-clip @container">
     <div
-      class="h-full flex flex-col items-center justify-center py-12 container mx-auto"
+      class="h-full flex flex-col items-center justify-center py-10 md:py-12 container mx-auto"
     >
       <slot name="prepend" />
 
