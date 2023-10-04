@@ -80,7 +80,7 @@
             target="_blank"
             rel="noopener noreferrer"
             role="button"
-            class="rounded-xl bg-[rgb(177_191_146)] text-neutral-600 font-semibold py-2 px-6"
+            class="rounded-xl bg-[rgb(177_191_146)] text-neutral-800 font-semibold py-2 px-6"
           >
             <div class="flex gap-1 justify-center items-center">
               Contacto

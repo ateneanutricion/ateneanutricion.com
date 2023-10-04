@@ -14,7 +14,7 @@
         <span class="text-[rgb(177_191_146)]"> ATENEA </span>
       </NuxtLink>
 
-      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-500">
+      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-300">
         <NuxtLink
           to="/nutricion"
           exact-active-class="font-bold text-[rgb(177_191_146)]"
