@@ -6,9 +6,9 @@ useServerSeoMeta({
   ogUrl: 'https://ateneanutricion.com/nutricion',
 
   description:
-    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+    'Asesoramiento nutricional personalizado para alcanzar tus objetivos de rendimiento deportivo, salud y composición corporal',
   ogDescription:
-    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+    'Asesoramiento nutricional personalizado para alcanzar tus objetivos de rendimiento deportivo, salud y composición corporal',
 
   ogImage: '/og-images/nutricion.png',
   twitterCard: 'summary_large_image',
@@ -19,17 +19,17 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Tu', 'Mejor', 'Versión.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center text-xl">
+        <p class="font-light text-neutral-400 text-center md:text-xl">
           Haz de la nutrición tu ventaja
           <span class="text-white font-semibold">competitiva</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 text-xl">
+        <div class="flex flex-col gap-4 md:text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
-            Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
-            con un enfoque personalizado
+            Asesoramiento nutricional personalizado para alcanzar tus objetivos
+            de rendimiento deportivo, salud y composición corporal
           </p>
 
           <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">

@@ -1,19 +1,40 @@
+<script lang="ts" setup>
+useServerSeoMeta({
+  title: 'Atenea Nutrición | Nosotros',
+  ogTitle: 'Atenea Nutrición | Nosotros',
+  ogType: 'website',
+  ogUrl: 'https://ateneanutricion.com/nosotros',
+
+  description:
+    'Sabemos que para alcanzar una salud física y mental para un óptimo bienestar, debemos tener un enfoque integral, nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional',
+  ogDescription:
+    'Sabemos que para alcanzar una salud física y mental para un óptimo bienestar, debemos tener un enfoque integral, nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional',
+
+  ogImage: '/og-images/nosotros.png',
+  twitterCard: 'summary_large_image',
+})
+</script>
+
 <template>
   <div class="space-y-16">
-    <HeroHeader :titles="['Conoce.', 'quienes.', 'Somos.']">
-      <template #prepend>
-        <p class="font-light text-neutral-400 text-center text-xl">
-          Haz de la nutrición tu ventaja
-          <span class="text-white font-semibold">competitiva</span>
-        </p>
-      </template>
-
+    <HeroHeader :titles="['Conoce', 'quienes', 'Somos.']">
       <template #append>
-        <div class="flex flex-col gap-4 text-xl">
+        <div class="flex flex-col gap-4 md:text-xl">
+          <NuxtImg
+            src="/atenea_logo.png"
+            loading="lazy"
+            preset="avatar"
+            width="100"
+            height="100"
+            class="self-center"
+            alt="Atenea Logo"
+          />
           <p class="font-light text-neutral-400 text-center mb-16">
-            Evaluaremos tu bio-información, obteniendo datos sobre tus
-            necesidades nutricionales, conocerás lo que realmente necesita tu
-            organismo a nivel celular basado en la expresión de tus genes
+            Sabemos que para alcanzar una salud física y mental para un óptimo
+            bienestar, debemos tener un enfoque integral, nuestro objetivo es
+            brindar las herramientas que impulsen un cambio de hábitos para
+            alcanzar objetivos individuales, enfocados en una Nutrición de
+            calidad, actividad física y bienestar emocional
           </p>
 
           <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">

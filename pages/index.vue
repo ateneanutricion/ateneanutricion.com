@@ -96,14 +96,14 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Nutrición.', 'Deporte.', 'Salud.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center text-xl">
-          Haz de la nutrición tu ventaja
-          <span class="text-white font-semibold">competitiva</span>
+        <p class="font-light text-neutral-400 text-center md:text-xl">
+          Nutrición para un rendimiento optimo y
+          <span class="text-white font-semibold">bienestar</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 text-xl">
+        <div class="flex flex-col gap-4 md:text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado

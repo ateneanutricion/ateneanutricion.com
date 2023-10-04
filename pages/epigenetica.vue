@@ -6,9 +6,9 @@ useServerSeoMeta({
   ogUrl: 'https://ateneanutricion.com/epigenetica',
 
   description:
-    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+    'Optimiza tu bienestar logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
   ogDescription:
-    'Haz de la nutrición tu ventaja competitiva | Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan con un enfoque personalizado.',
+    'Optimiza tu bienestar logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
 
   ogImage: '/og-images/epigenetica.png',
   twitterCard: 'summary_large_image',
@@ -19,18 +19,18 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Ciencia.', 'Genes.', 'Bienestar.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center text-xl">
-          Haz de la nutrición tu ventaja
-          <span class="text-white font-semibold">competitiva</span>
+        <p class="font-light text-neutral-400 text-center md:text-xl">
+          Bienvenido a la nutrición
+          <span class="text-white font-semibold">inteligente</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 text-xl">
+        <div class="flex flex-col gap-4 md:text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
-            Evaluaremos tu bio-información, obteniendo datos sobre tus
-            necesidades nutricionales, conocerás lo que realmente necesita tu
-            organismo a nivel celular basado en la expresión de tus genes
+            Optimiza tu bienestar logrando tus objetivos de salud, peso,
+            aumentar tu energía durante el día y potenciar tu bienestar a través
+            de las necesidades reales de tu organismo
           </p>
 
           <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
