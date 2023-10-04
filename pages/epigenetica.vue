@@ -230,6 +230,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 hover:scale-110"
+            alt="Estudio epigenético para alto rendimiento"
           />
         </div>
 
@@ -267,6 +268,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 hover:scale-110"
+            alt="Estudio epigenético wellness"
           />
         </div>
 
@@ -302,6 +304,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 hover:scale-110"
+            alt="Estudio epigenético para veganos"
           />
         </div>
 

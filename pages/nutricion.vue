@@ -75,6 +75,7 @@ useServerSeoMeta({
             preset="hero"
             fit="cover"
             class="object-cover w-full transition-300 group-hover:scale-110"
+            alt="Fotografía pesa y botella de agua sobre una banca de ejercicio dentro de un gimnasio"
           />
 
           <div class="absolute top-0 right-0 p-2">
@@ -102,6 +103,7 @@ useServerSeoMeta({
             preset="hero"
             fit="cover"
             class="object-cover w-full transition-300 group-hover:scale-110"
+            alt="Fotografía de corredores en la linea de salida"
           />
 
           <div class="absolute top-0 right-0 p-2">
@@ -129,6 +131,7 @@ useServerSeoMeta({
             preset="hero"
             fit="cover"
             class="object-cover w-full transition-300 group-hover:scale-110"
+            alt="Fotografía de diversos grupos alimenticios y una mano sosteniendo una manzana"
           />
 
           <div class="absolute top-0 right-0 p-2">
@@ -395,6 +398,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
+            alt="Fotografía de la nutrióloga Yetlanetzi Portillo"
           />
 
           <div class="absolute bottom-2 left-2">
@@ -409,6 +413,7 @@ useServerSeoMeta({
                   width="60"
                   height="60"
                   class="object-cover w-full"
+                  alt=""
                 />
               </div>
 
@@ -429,6 +434,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
+            alt="Fotografía de la nutrióloga Daniela Cuevas"
           />
 
           <div class="absolute bottom-2 left-2">
@@ -443,6 +449,7 @@ useServerSeoMeta({
                   width="60"
                   height="60"
                   class="object-cover w-full"
+                  alt=""
                 />
               </div>
 
@@ -463,6 +470,7 @@ useServerSeoMeta({
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 group-hover:scale-110"
+            alt="Fotografía de la nutrióloga Ninfa Jonguitud"
           />
 
           <div class="absolute bottom-2 left-2">
@@ -477,6 +485,7 @@ useServerSeoMeta({
                   width="60"
                   height="60"
                   class="object-cover w-full"
+                  alt=""
                 />
               </div>
 

@@ -23,6 +23,7 @@
             loading="lazy"
             preset="avatar"
             class="h-10 w-10 drop-shadow-sm"
+            alt="Atenea Logo"
           />
           <span class="font-semibold text-[rgb(177_191_146)] drop-shadow-sm">
             ATENEA

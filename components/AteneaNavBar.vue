@@ -10,6 +10,7 @@
           loading="lazy"
           preset="avatar"
           class="h-10 w-10"
+          alt="Atenea Logo"
         />
         <span class="text-[rgb(177_191_146)]"> ATENEA </span>
       </NuxtLink>

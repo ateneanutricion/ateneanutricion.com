@@ -158,6 +158,7 @@ useServerSeoMeta({
               preset="hero"
               fit="cover"
               class="object-cover w-full h-full transition-300 group-hover:scale-110"
+              alt="Fotografía de verduras, vasos de agua, cinta para medir y pesas"
             />
 
             <div
@@ -205,6 +206,7 @@ useServerSeoMeta({
               preset="hero"
               fit="cover"
               class="object-cover w-full h-full transition-300 group-hover:scale-110"
+              alt="Fotografía de simulación de científicos revisando un estudio genético"
             />
 
             <div
@@ -272,6 +274,7 @@ useServerSeoMeta({
               preset="hero"
               fit="cover"
               class="object-cover h-full w-full transition-300 group-hover:scale-110"
+              alt="Fotografía de discos de peso para gimnasio"
             />
 
             <div class="absolute inset-0 grid overflow-hidden text-neutral-200">
@@ -329,6 +332,7 @@ useServerSeoMeta({
               loading="lazy"
               preset="hero"
               class="h-full w-full object-contain transition-300 group-hover:scale-110"
+              alt="Fotografía de la nutrióloga Yetlanetzi Portillo"
             />
 
             <div class="absolute bottom-2 left-2">
@@ -343,6 +347,7 @@ useServerSeoMeta({
                     width="60"
                     height="60"
                     class="object-cover w-full"
+                    alt=""
                   />
                 </div>
 
