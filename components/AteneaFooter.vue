@@ -94,6 +94,7 @@
             href="https://www.instagram.com/ateneanutricion/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Sígueme en Instagram"
           >
             <UnoIcon class="i-ph:instagram-logo w-6 h-6" />
           </a>
@@ -101,6 +102,7 @@
             href="https://www.facebook.com/YetlanetziPortillo/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Sígueme en Facebook"
           >
             <UnoIcon class="i-ph:facebook-logo w-6 h-6" />
           </a>
@@ -108,11 +110,13 @@
             href="https://www.linkedin.com/in/mitzivillafaña"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Contacto en Linkedin"
           >
             <UnoIcon class="i-ph:linkedin-logo w-6 h-6" />
           </a>
           <a
             href="mailto:contacto@ateneanutricion.com?Subject=Cita%20Nutricional"
+            aria-label="Contacto por correo electronico"
           >
             <UnoIcon class="i-ph:envelope-simple w-6 h-6" />
           </a>
