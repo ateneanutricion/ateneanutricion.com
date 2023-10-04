@@ -126,12 +126,10 @@ useServerSeoMeta({
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="block rounded-xl font-medium h-12 w-full px-4 text-neutral-200"
+                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
               >
-                <div class="h-full flex gap-2 justify-center items-center">
-                  <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
-                  Contactanos
-                </div>
+                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                Contactanos
               </a>
             </GlowCard>
           </div>

@@ -22,7 +22,7 @@ withDefaults(defineProps<Props>(), {
 
     <div
       v-if="!disableGlow"
-      class="absolute z-0 top-0 left-0 blur w-full h-full rounded bg-gradient-to-r"
+      class="absolute z-0 top-0 left-0 blur w-full h-full rounded-xl bg-gradient-to-r"
       :class="glowGradient"
     ></div>
   </div>

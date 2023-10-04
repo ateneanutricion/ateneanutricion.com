@@ -29,16 +29,14 @@
 
             <GlowCard glow-gradient="from-purple-500 to-pink-500">
               <a
-                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20tener%20mí%20estudio%20epigenetico."
+                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="block rounded-xl font-medium h-12 w-full px-4 text-neutral-200"
+                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
               >
-                <div class="h-full flex gap-2 justify-center items-center">
-                  <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
-                  Contactanos
-                </div>
+                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                Contactanos
               </a>
             </GlowCard>
           </div>
