@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   experimental: { typedPages: true },
   app: {
     head: {
+      htmlAttrs: { lang: 'es' },
       meta: [
         { name: 'theme-color', content: '#000' },
         { name: 'application-name', content: 'Atenea' },
