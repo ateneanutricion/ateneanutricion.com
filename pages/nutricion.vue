@@ -67,7 +67,7 @@ useServerSeoMeta({
       <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
         <article
           group
-          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 justify-self-end"
+          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 md:justify-self-end"
         >
           <NuxtImg
             src="/nutricion/fitness.jpeg"
@@ -123,7 +123,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 justify-self-start"
+          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 md:justify-self-start"
         >
           <NuxtImg
             src="/nutricion/clinica.jpg"
@@ -391,7 +391,7 @@ useServerSeoMeta({
       <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative justify-self-end"
+          class="aspect-1/1 h-full md:h-64 relative md:justify-self-end"
         >
           <NuxtImg
             src="/nutricion/people/nutri_0.png"
@@ -427,7 +427,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative justify-self-end"
+          class="aspect-1/1 h-full md:h-64 relative"
         >
           <NuxtImg
             src="/nutricion/people/nutri_1.png"
@@ -463,7 +463,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative justify-self-end"
+          class="aspect-1/1 h-full md:h-64 relative md:justify-self-start"
         >
           <NuxtImg
             src="/nutricion/people/nutri_2.png"
