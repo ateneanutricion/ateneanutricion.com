@@ -104,7 +104,7 @@ useServerSeoMeta({
 
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
-          <p class="font-light text-neutral-400 text-center mb-16">
+          <p class="font-light text-neutral-400 text-center mb-10">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado
           </p>

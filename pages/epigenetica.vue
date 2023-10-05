@@ -27,7 +27,7 @@ useServerSeoMeta({
 
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
-          <p class="font-light text-neutral-400 text-center mb-16">
+          <p class="font-light text-neutral-400 text-center mb-10">
             Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar tu bienestar a través de las
             necesidades reales de tu organismo

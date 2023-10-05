@@ -29,7 +29,7 @@ useServerSeoMeta({
             class="self-center"
             alt="Atenea Logo"
           />
-          <p class="font-light text-neutral-400 text-center mb-16">
+          <p class="font-light text-neutral-400 text-center mb-10">
             Sabemos que para alcanzar una salud física y mental para un óptimo
             bienestar, debemos tener un enfoque integral, nuestro objetivo es
             brindar las herramientas que impulsen un cambio de hábitos para

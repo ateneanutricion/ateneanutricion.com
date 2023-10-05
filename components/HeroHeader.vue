@@ -7,9 +7,9 @@ defineProps<Props>()
 </script>
 
 <template>
-  <header class=" px-6 overflow-clip @container">
+  <header class="px-6 overflow-clip @container">
     <div
-      class="min-h-[calc(100dvh-4rem)] flex flex-col items-center justify-center py-10 md:py-12 container mx-auto"
+      class="min-h-[calc(100dvh-4rem)] flex flex-col items-center justify-evenly container mx-auto"
     >
       <slot name="prepend" />
 
