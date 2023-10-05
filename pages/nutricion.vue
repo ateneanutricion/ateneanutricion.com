@@ -17,26 +17,26 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Tu', 'Mejor', 'Versión.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center md:text-xl">
+        <p class="text-center font-light text-neutral-400 md:text-xl">
           Haz de la nutrición tu ventaja
-          <span class="text-white font-semibold">competitiva</span>
+          <span class="font-semibold text-white">competitiva</span>
         </p>
       </template>
 
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
-          <p class="font-light text-neutral-400 text-center mb-10">
+          <p class="mb-10 text-center font-light text-neutral-400">
             Asesoramiento nutricional personalizado para alcanzar tus objetivos
             de rendimiento deportivo, salud y composición corporal
           </p>
 
-          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
             <a
               href="#CTA"
               role="button"
-              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
             >
-              <div class="h-full flex gap-2 justify-center items-center">
+              <div class="h-full flex items-center justify-center gap-2">
                 Saber más
               </div>
             </a>
@@ -47,9 +47,9 @@ useServerSeoMeta({
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
+                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
               >
-                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
                 Contactanos
               </a>
             </GlowCard>
@@ -60,30 +60,30 @@ useServerSeoMeta({
 
     <!-- Images grid -->
     <HeroSection>
-      <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
+      <div class="grid justify-items-center gap-4 md:grid-cols-3 md:h-64">
         <article
           group
-          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 md:justify-self-end"
+          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98 md:justify-self-end"
         >
           <NuxtImg
             src="/nutricion/fitness.jpeg"
             loading="lazy"
             preset="hero"
             fit="cover"
-            class="object-cover w-full transition-300 group-hover:scale-110"
+            class="w-full object-cover transition-300 group-hover:scale-110"
             alt="Fotografía pesa y botella de agua sobre una banca de ejercicio dentro de un gimnasio"
           />
 
-          <div class="absolute top-0 right-0 p-2">
-            <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+          <div class="absolute right-0 top-0 p-2">
+            <div class="rounded-xl bg-[#4F80E2] p-2 text-neutral-200">
               <UnoIcon class="i-mdi:arm-flex-outline" />
             </div>
           </div>
 
           <div
-            class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+            class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
               Composición corporal & fitness
             </p>
           </div>
@@ -91,27 +91,27 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98"
+          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98"
         >
           <NuxtImg
             src="/nutricion/rendimiento.jpeg"
             loading="lazy"
             preset="hero"
             fit="cover"
-            class="object-cover w-full transition-300 group-hover:scale-110"
+            class="w-full object-cover transition-300 group-hover:scale-110"
             alt="Fotografía de corredores en la linea de salida"
           />
 
-          <div class="absolute top-0 right-0 p-2">
-            <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+          <div class="absolute right-0 top-0 p-2">
+            <div class="rounded-xl bg-[#4F80E2] p-2 text-neutral-200">
               <UnoIcon class="i-mdi:weight-lifter" />
             </div>
           </div>
 
           <div
-            class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+            class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
               Alto rendimiento & deporte
             </p>
           </div>
@@ -119,27 +119,27 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-7/5 md:aspect-1/1 h-full relative rounded-xl overflow-hidden transition-300 hover:scale-98 md:justify-self-start"
+          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98 md:justify-self-start"
         >
           <NuxtImg
             src="/nutricion/clinica.jpg"
             loading="lazy"
             preset="hero"
             fit="cover"
-            class="object-cover w-full transition-300 group-hover:scale-110"
+            class="w-full object-cover transition-300 group-hover:scale-110"
             alt="Fotografía de diversos grupos alimenticios y una mano sosteniendo una manzana"
           />
 
-          <div class="absolute top-0 right-0 p-2">
-            <div class="bg-[#4F80E2] rounded-xl p-2 text-neutral-200">
+          <div class="absolute right-0 top-0 p-2">
+            <div class="rounded-xl bg-[#4F80E2] p-2 text-neutral-200">
               <UnoIcon class="i-mdi:fruit-cherries" />
             </div>
           </div>
 
           <div
-            class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+            class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
               Clínica & metabólica
             </p>
           </div>
@@ -149,7 +149,7 @@ useServerSeoMeta({
 
     <!-- Alto rendimiento & deporte -->
     <HeroSection>
-      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
         Alto
         <span class="text-[#4F80E2]">rendimiento</span>
         &
@@ -157,10 +157,10 @@ useServerSeoMeta({
       </h2>
 
       <div
-        class="mt-4 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200"
+        class="mt-4 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
       >
         <div
-          class="w-full space-y-2 text-sm text-neutral-400 py-4 md:order-last"
+          class="w-full py-4 text-sm text-neutral-400 md:order-last space-y-2"
         >
           <p>
             Entendemos la importancia de la nutrición en el rendimiento
@@ -173,7 +173,7 @@ useServerSeoMeta({
             composición corporal y rendimiento deportivo.
           </p>
 
-          <p class="text-[#4F80E2] font-semibold">
+          <p class="font-semibold text-[#4F80E2]">
             Haz de la nutrición tu ventaja competitiva.
           </p>
 
@@ -186,17 +186,17 @@ useServerSeoMeta({
         </div>
 
         <GlowCard disable-glow>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Consulta
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Nutricional
               </div>
             </header>
 
-            <ul class="font-light text-sm list-disc list-inside">
+            <ul class="list-disc list-inside text-sm font-light">
               <li>Periodización nutricional</li>
               <li>Pre, durante & post competencia</li>
               <li>Perfil antropométrico somatocarta</li>
@@ -211,16 +211,16 @@ useServerSeoMeta({
 
     <!-- Clínica & metabólica -->
     <HeroSection>
-      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
         <span class="text-[#4F80E2]">Clínica</span>
         &
         <span class="text-[#4F80E2]">metabólica</span>
       </h2>
 
       <div
-        class="mt-4 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200"
+        class="mt-4 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
       >
-        <div class="w-full space-y-2 text-sm text-neutral-400 py-4">
+        <div class="w-full py-4 text-sm text-neutral-400 space-y-2">
           <p>
             Eres único. Tu Nutrición también debería serlo. Áreas especializadas
             de nutrición y manejo de enfermedades en las que se enfocan nuestros
@@ -240,17 +240,17 @@ useServerSeoMeta({
         </div>
 
         <GlowCard disable-glow>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Consulta
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Nutricional
               </div>
             </header>
 
-            <ul class="font-light text-sm list-disc list-inside">
+            <ul class="list-disc list-inside text-sm font-light">
               <li>Plan y guía de alimentación</li>
               <li>Lista de super</li>
               <li>Análisis de composición corporal</li>
@@ -265,14 +265,14 @@ useServerSeoMeta({
     <span id="CTA" />
     <!-- Composición Corporal & fitness -->
     <HeroSection>
-      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
         Composición
         <span class="text-[#4F80E2]">corporal</span>
         &
         <span class="text-[#4F80E2]">fitness</span>
       </h2>
 
-      <p class="text-sm text-neutral-400 py-4">
+      <p class="py-4 text-sm text-neutral-400">
         Sabemos que cada cuerpo es diferente y nos apasiona personalizar cada
         plan con un enfoque personalizado. Así como perder grasa corporal, ganar
         masa muscular, mejorar su salud u optimizar su rendimiento, creamos un
@@ -280,20 +280,20 @@ useServerSeoMeta({
       </p>
 
       <div
-        class="mt-8 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200"
+        class="mt-8 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
       >
         <GlowCard disable-glow>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Consulta
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Nutricional
               </div>
             </header>
 
-            <ul class="font-light text-sm list-disc list-inside">
+            <ul class="list-disc list-inside text-sm font-light">
               <li>Plan y guía de alimentación</li>
               <li>Lista de super</li>
               <li>Análisis de composición corporal</li>
@@ -304,17 +304,17 @@ useServerSeoMeta({
         </GlowCard>
 
         <GlowCard disable-glow>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Consulta
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 + Entrenamiento
               </div>
             </header>
 
-            <ul class="font-light text-sm list-disc list-inside">
+            <ul class="list-disc list-inside text-sm font-light">
               <li>Plan nutricional individualizado</li>
               <li>Programación de entrenamiento físico</li>
               <li>Suplementación deportiva</li>
@@ -326,33 +326,33 @@ useServerSeoMeta({
 
     <!-- Entrenamiento Personalizado -->
     <HeroSection>
-      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
         Entrenamiento
         <span class="text-[#4F80E2]">Personalizado</span>
       </h2>
       <span class="text-sm text-neutral-400">
         El movimiento es
-        <span class="text-neutral-200 font-semibold"> fortaleza. </span>
+        <span class="font-semibold text-neutral-200"> fortaleza. </span>
       </span>
 
       <div
-        class="mt-8 inline-grid md:grid-cols-3 gap-8 content-start md:col-span-2 text-neutral-200"
+        class="inline-grid mt-8 content-start gap-8 text-neutral-200 md:col-span-2 md:grid-cols-3"
       >
         <GlowCard>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex items-center gap-2">
-              <UnoIcon class="i-mdi:weight-lifter w-10 h-10" />
+              <UnoIcon class="i-mdi:weight-lifter h-10 w-10" />
               <div class="flex flex-col">
                 <div class="font-light">
                   Valoración
                 </div>
-                <div class="font-extrabold text-2xl">
+                <div class="text-2xl font-extrabold">
                   Física
                 </div>
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               Mediante una valoración inicial identificaremos la intensidad, los
               ejercicios y el nivel de aptitud física actual. Para una
               programación personalizada de acuerdo a tus capacidades.
@@ -361,20 +361,20 @@ useServerSeoMeta({
         </GlowCard>
 
         <GlowCard>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex items-center gap-2">
-              <UnoIcon class="i-ph:target-duotone w-10 h-10" />
+              <UnoIcon class="i-ph:target-duotone h-10 w-10" />
               <div class="flex flex-col">
                 <div class="font-light">
                   Metas y
                 </div>
-                <div class="font-extrabold text-2xl">
+                <div class="text-2xl font-extrabold">
                   Objetivos
                 </div>
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               Ganar fuerza, aumentar músculo, disminuir grasa o ser funcional.
               Establecer nuestra meta nos ayudará a mantener el enfoque y
               diseñar un programa de entrenamiento que se alinee con tus
@@ -384,20 +384,20 @@ useServerSeoMeta({
         </GlowCard>
 
         <GlowCard>
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex items-center gap-2">
-              <UnoIcon class="i-ph:arrow-line-up-right-bold w-10 h-10" />
+              <UnoIcon class="i-ph:arrow-line-up-right-bold h-10 w-10" />
               <div class="flex flex-col">
                 <div class="font-light">
                   Sobrecarga
                 </div>
-                <div class="font-extrabold text-2xl">
+                <div class="text-2xl font-extrabold">
                   Progresiva
                 </div>
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               Es importante progresar y desafiarte a ti mismo. Aumentando la
               intensidad de tus entrenamientos mientras tu condición física va
               mejorando. La progresión nos ayudará a evitar lesiones y a seguir
@@ -410,14 +410,14 @@ useServerSeoMeta({
 
     <!-- People -->
     <HeroSection>
-      <Badge class="w-min mx-auto text-neutral-200">
+      <Badge class="mx-auto w-min text-neutral-200">
         Conocenos
       </Badge>
 
-      <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
+      <div class="grid justify-items-center gap-4 md:grid-cols-3 md:h-64">
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative md:justify-self-end"
+          class="relative aspect-1/1 h-full md:h-64 md:justify-self-end"
         >
           <NuxtImg
             src="/nutricion/people/nutri_0.png"
@@ -429,16 +429,16 @@ useServerSeoMeta({
 
           <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
+              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
             >
-              <div class="h-12 w-12 rounded-full overflow-hidden">
+              <div class="h-12 w-12 overflow-hidden rounded-full">
                 <NuxtImg
                   src="/nutricion/people/nutri_0.png"
                   loading="lazy"
                   preset="avatar"
                   width="60"
                   height="60"
-                  class="object-cover w-full"
+                  class="w-full object-cover"
                   alt=""
                 />
               </div>
@@ -457,7 +457,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative"
+          class="relative aspect-1/1 h-full md:h-64"
         >
           <NuxtImg
             src="/nutricion/people/nutri_1.png"
@@ -469,16 +469,16 @@ useServerSeoMeta({
 
           <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
+              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
             >
-              <div class="h-12 w-12 rounded-full overflow-hidden">
+              <div class="h-12 w-12 overflow-hidden rounded-full">
                 <NuxtImg
                   src="/nutricion/people/nutri_1.png"
                   loading="lazy"
                   preset="avatar"
                   width="60"
                   height="60"
-                  class="object-cover w-full"
+                  class="w-full object-cover"
                   alt=""
                 />
               </div>
@@ -497,7 +497,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="aspect-1/1 h-full md:h-64 relative md:justify-self-start"
+          class="relative aspect-1/1 h-full md:h-64 md:justify-self-start"
         >
           <NuxtImg
             src="/nutricion/people/nutri_2.png"
@@ -509,16 +509,16 @@ useServerSeoMeta({
 
           <div class="absolute bottom-2 left-2">
             <div
-              class="flex items-center gap-2 py-2 pl-2 pr-12 bg-black/70 backdrop-blur rounded-full"
+              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
             >
-              <div class="h-12 w-12 rounded-full overflow-hidden">
+              <div class="h-12 w-12 overflow-hidden rounded-full">
                 <NuxtImg
                   src="/nutricion/people/nutri_2.png"
                   loading="lazy"
                   preset="avatar"
                   width="60"
                   height="60"
-                  class="object-cover w-full"
+                  class="w-full object-cover"
                   alt=""
                 />
               </div>

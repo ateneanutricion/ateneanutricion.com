@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky w-full top-0 px-6 h-16 bg-black/70 backdrop-blur z-99">
+  <nav class="sticky top-0 z-99 h-16 w-full bg-black/70 px-6 backdrop-blur">
     <div class="h-full flex items-center justify-between">
       <NuxtLink
         to="/"
@@ -15,7 +15,7 @@
         <span class="text-[rgb(177_191_146)]"> ATENEA </span>
       </NuxtLink>
 
-      <div class="space-x-2 md:space-x-4 text-xs font-light text-neutral-300">
+      <div class="text-xs font-light text-neutral-300 space-x-2 md:space-x-4">
         <NuxtLink
           to="/nutricion"
           exact-active-class="font-bold text-[rgb(177_191_146)]"

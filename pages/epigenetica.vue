@@ -17,27 +17,27 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Ciencia.', 'Genes.', 'Bienestar.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center md:text-xl">
+        <p class="text-center font-light text-neutral-400 md:text-xl">
           Bienvenido a la nutrición
-          <span class="text-white font-semibold">inteligente</span>
+          <span class="font-semibold text-white">inteligente</span>
         </p>
       </template>
 
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
-          <p class="font-light text-neutral-400 text-center mb-10">
+          <p class="mb-10 text-center font-light text-neutral-400">
             Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar tu bienestar a través de las
             necesidades reales de tu organismo
           </p>
 
-          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
             <a
               href="#CTA"
               role="button"
-              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
             >
-              <div class="h-full flex gap-2 justify-center items-center">
+              <div class="h-full flex items-center justify-center gap-2">
                 Saber más
               </div>
             </a>
@@ -48,9 +48,9 @@ useServerSeoMeta({
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
+                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
               >
-                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
                 Contactanos
               </a>
             </GlowCard>
@@ -62,70 +62,70 @@ useServerSeoMeta({
     <!-- AREAS -->
     <HeroSection>
       <header class="p-4 text-center space-y-4">
-        <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+        <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
           Estudios <span class="text-purple-400">epigeneticos</span>
         </h2>
-        <Badge class="w-min mx-auto text-neutral-200">
+        <Badge class="mx-auto w-min text-neutral-200">
           ¿Qué conocerás?
         </Badge>
       </header>
 
-      <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
-        <article class="inline-grid gap-4 py-4 px-6">
+      <div class="grid rounded-xl bg-neutral-800 p-4 md:grid-cols-2">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               Sensibilidades
             </div>
-            <div class="font-black text-2xl text-orange-400">
+            <div class="text-2xl font-black text-orange-400">
               Alimentarias
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
             causando estrés digestivo en tu organismo, impidiendo la correcta
             absorción de nutrientes y favoreciendo la inflamación
           </p>
         </article>
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               Necesidades
             </div>
-            <div class="font-black text-2xl text-emerald-400">
+            <div class="text-2xl font-black text-emerald-400">
               Nutricionales
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar el bienestar a través de las
             necesidades reales de tu organismo
           </p>
         </article>
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               Factores
             </div>
-            <div class="font-black text-2xl text-sky-400">
+            <div class="text-2xl font-black text-sky-400">
               Externos
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
             los factores ambientales, la exposición tóxica y las cargas
             electromagnéticas de baja intensidad a nivel celular?
           </p>
         </article>
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               Sistema
             </div>
-            <div class="font-black text-2xl text-red-400">
+            <div class="text-2xl font-black text-red-400">
               Metabólico
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             Información del estado actual de los principales sistemas
             metabólicos para recuperar su equilibrio y optimizar tus sistemas
             inmune, intestinal, cardiovascular, metabólico, sueño, emociones.
@@ -138,7 +138,7 @@ useServerSeoMeta({
     <!-- MARCADORES -->
     <HeroSection class="space-y-6">
       <header class="p-4 text-center">
-        <p class="text-4xl md:text-5xl font-black text-neutral-200">
+        <p class="text-4xl font-black text-neutral-200 md:text-5xl">
           ¿Qué indicadores
           <span class="text-purple-400">epigenéticos</span>
           conocerás?
@@ -200,11 +200,11 @@ useServerSeoMeta({
             },
           ]"
           :key="i"
-          class="w-full md:w-1/3 py-3 md:px-3"
+          class="w-full py-3 md:w-1/3 md:px-3"
         >
           <AteneaAccordion>
             <template #title>
-              <div class="tracking-tighter text-start">
+              <div class="text-start tracking-tighter">
                 <p>{{ title }}</p>
                 <span class="text-xs text-gray-500">{{ subtitle }}</span>
               </div>
@@ -212,7 +212,7 @@ useServerSeoMeta({
             <template #icon>
               <UnoIcon
                 :class="icon"
-                class="bg-purple-500 h-6 w-6"
+                class="h-6 w-6 bg-purple-500"
               />
             </template>
 
@@ -225,16 +225,16 @@ useServerSeoMeta({
     </HeroSection>
 
     <HeroSection>
-      <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
         Informes
         <span class="text-purple-400">epigenéticos</span>
       </h2>
 
       <!-- ALTO RENDIMIENTO -->
       <div
-        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
       >
-        <div class="w-full space-y-2 text-sm text-neutral-400">
+        <div class="w-full text-sm text-neutral-400 space-y-2">
           <NuxtImg
             src="/epigenetica/high_performance.png"
             loading="lazy"
@@ -248,17 +248,17 @@ useServerSeoMeta({
           disable-glow
           glow-gradient=" from-violet-500 to-purple-400"
         >
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Informe de optimización
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Alto Rendimiento
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               El informe epigenético "Optimización de Alto Rendimiento" ha sido
               desarrollado por científicos expertos en epigenética para ayudar a
               identificar las influencias del entorno y su influencia en la
@@ -274,9 +274,9 @@ useServerSeoMeta({
 
       <!-- WELLNESS -->
       <div
-        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
       >
-        <div class="w-full space-y-2 text-sm text-neutral-400 md:order-last">
+        <div class="w-full text-sm text-neutral-400 md:order-last space-y-2">
           <NuxtImg
             src="/epigenetica/wellness.png"
             loading="lazy"
@@ -290,17 +290,17 @@ useServerSeoMeta({
           disable-glow
           glow-gradient=" from-violet-500 to-purple-400"
         >
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Informe de optimización
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Wellness
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               El informe wellness está diseñado para ayudarnos a identificar
               influencias ambientales, que podrían estar afectando nuestra
               expresión genética y su influencia en las funciones metabólicas.
@@ -314,9 +314,9 @@ useServerSeoMeta({
 
       <!-- VEGANO -->
       <div
-        class="mt-16 w-full inline-flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2 text-neutral-200 md:h-82"
+        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
       >
-        <div class="w-full space-y-2 text-sm text-neutral-400">
+        <div class="w-full text-sm text-neutral-400 space-y-2">
           <NuxtImg
             src="/epigenetica/vegan.png"
             loading="lazy"
@@ -330,17 +330,17 @@ useServerSeoMeta({
           disable-glow
           glow-gradient=" from-violet-500 to-purple-400"
         >
-          <article class="inline-grid gap-4 py-4 px-6">
+          <article class="inline-grid gap-4 px-6 py-4">
             <header class="flex flex-col">
               <div class="font-light">
                 Informe de optimización
               </div>
-              <div class="font-extrabold text-2xl">
+              <div class="text-2xl font-extrabold">
                 Vegano
               </div>
             </header>
 
-            <p class="font-light text-sm">
+            <p class="text-sm font-light">
               El informe optimización "vegano" está diseñado para ayudar a
               identificar influencias ambientales correlacionadas con la
               expresión de genes, enzimas y funciones metabólica. Además, de

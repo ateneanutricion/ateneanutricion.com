@@ -32,17 +32,17 @@ watchEffect(() => {
 <template>
   <div
     ref="card"
-    class="relative p-1 overflow-hidden rounded-2xl bg-[#80808033] w-full"
+    class="relative w-full overflow-hidden rounded-2xl bg-[#80808033] p-1"
   >
     <div
-      class="z-1 relative w-full h-full rounded-xl overflow-hidden bg-[#1a1a1a]"
+      class="relative z-1 h-full w-full overflow-hidden rounded-xl bg-[#1a1a1a]"
     >
       <slot />
     </div>
 
     <div
       ref="blob"
-      class="z-0 absolute top-0 left-0 blur-2xl opacity-0 w-[250px] h-[250px] rounded-full"
+      class="absolute left-0 top-0 z-0 h-[250px] w-[250px] rounded-full opacity-0 blur-2xl"
       :class="blobColor"
     />
   </div>

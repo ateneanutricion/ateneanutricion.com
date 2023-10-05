@@ -1,9 +1,9 @@
 <template>
   <div
-    class="text-xs rounded-full py-1 px-4 border transition-300 hover:scale-110"
+    class="border rounded-full px-4 py-1 text-xs transition-300 hover:scale-110"
   >
-    <div class="flex justify-center items-center">
-      <span class="font-medium whitespace-nowrap">
+    <div class="flex items-center justify-center">
+      <span class="whitespace-nowrap font-medium">
         <slot />
       </span>
     </div>

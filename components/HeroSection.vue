@@ -1,7 +1,7 @@
 <template>
   <section class="px-6">
     <div
-      class="h-full flex flex-col items-center justify-center container max-w-[80ch] mx-auto"
+      class="mx-auto h-full max-w-[80ch] flex flex-col items-center justify-center container"
     >
       <slot name="preppend" />
 

@@ -94,26 +94,26 @@ useServerSeoMeta({
   <div class="space-y-16">
     <HeroHeader :titles="['Nutrición.', 'Deporte.', 'Salud.']">
       <template #prepend>
-        <p class="font-light text-neutral-400 text-center md:text-xl">
+        <p class="text-center font-light text-neutral-400 md:text-xl">
           Nutrición para un rendimiento optimo y
-          <span class="text-white font-semibold">bienestar</span>
+          <span class="font-semibold text-white">bienestar</span>
         </p>
       </template>
 
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
-          <p class="font-light text-neutral-400 text-center mb-10">
+          <p class="mb-10 text-center font-light text-neutral-400">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado
           </p>
 
-          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
             <a
               href="#CTA"
               role="button"
-              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
             >
-              <div class="h-full flex gap-2 justify-center items-center">
+              <div class="h-full flex items-center justify-center gap-2">
                 Saber más
               </div>
             </a>
@@ -124,9 +124,9 @@ useServerSeoMeta({
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
+                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
               >
-                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
                 Contactanos
               </a>
             </GlowCard>
@@ -139,41 +139,41 @@ useServerSeoMeta({
     <!-- Bento grid -->
     <HeroSection>
       <section
-        class="grid gap-4 lg:gap-2 md:grid-cols-6 lg:grid-cols-10 lg:-mx-28"
+        class="grid gap-4 lg:grid-cols-10 md:grid-cols-6 lg:gap-2 lg:-mx-28"
       >
         <!-- NUTRICION -->
-        <div class="md:col-span-2 lg:row-span-3 lg:order-1">
+        <div class="lg:order-1 lg:row-span-3 md:col-span-2">
           <ShineCard
             group
             blob-color="bg-purple-400"
-            class="aspect-7/4 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
+            class="relative aspect-7/4 overflow-hidden rounded-xl transition-300 md:aspect-7/6 hover:scale-98"
           >
             <NuxtImg
               src="/index/nutricion.jpeg"
               loading="lazy"
               preset="hero"
               fit="cover"
-              class="object-cover w-full h-full transition-300 group-hover:scale-110"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
               alt="Fotografía de verduras, vasos de agua, cinta para medir y pesas"
             />
 
             <div
-              class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-neutral-800"
+              class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
             >
-              <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
                 Nutrición
               </p>
-              <span class="font-light text-sm text-neutral-300">
+              <span class="text-sm font-light text-neutral-300">
                 Enfocada en tus objetivos
               </span>
             </div>
           </ShineCard>
         </div>
 
-        <div class="hidden lg:block col-span-6 lg:order-2">
-          <div class="text-center flex justify-center">
+        <div class="col-span-6 hidden lg:order-2 lg:block">
+          <div class="flex justify-center text-center">
             <div
-              class="bg-black rounded-xl text-neutral-200 p-2 flex items-center gap-1 text-sm font-semibold"
+              class="flex items-center gap-1 rounded-xl bg-black p-2 text-sm font-semibold text-neutral-200"
             >
               <p>¡Comencemos!</p>
             </div>
@@ -181,37 +181,37 @@ useServerSeoMeta({
         </div>
 
         <!-- FRASE -->
-        <div class="md:col-span-2 order-1 md:order-none lg:order-6">
+        <div class="order-1 lg:order-6 md:order-none md:col-span-2">
           <div
-            class="md:aspect-7/6 lg:aspect-0 bg-black text-neutral-200 rounded-xl text-xl py-2 flex justify-center items-center whitespace-nowrap"
+            class="flex items-center justify-center whitespace-nowrap rounded-xl bg-black py-2 text-xl text-neutral-200 lg:aspect-0 md:aspect-7/6"
           >
             ¡Optimiza tu salud!
           </div>
         </div>
 
         <!-- EPIGENETICA -->
-        <div class="md:col-span-2 lg:order-3 lg:row-span-3">
+        <div class="lg:order-3 lg:row-span-3 md:col-span-2">
           <ShineCard
             group
             blob-color="bg-indigo-400"
-            class="aspect-7/4 md:aspect-7/6 relative rounded-xl overflow-hidden transition-300 hover:scale-98"
+            class="relative aspect-7/4 overflow-hidden rounded-xl transition-300 md:aspect-7/6 hover:scale-98"
           >
             <NuxtImg
               src="/index/epigenetica.jpg"
               loading="lazy"
               preset="hero"
               fit="cover"
-              class="object-cover w-full h-full transition-300 group-hover:scale-110"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
               alt="Fotografía de simulación de científicos revisando un estudio genético"
             />
 
             <div
-              class="absolute top-0 left-0 right-0 p-2 bg-gradient-to-b from-neutral-800"
+              class="absolute left-0 right-0 top-0 from-neutral-800 bg-gradient-to-b p-2"
             >
-              <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
                 Epigenética
               </p>
-              <span class="font-light text-sm text-neutral-300">
+              <span class="text-sm font-light text-neutral-300">
                 Enfocada en tus objetivos
               </span>
             </div>
@@ -220,7 +220,7 @@ useServerSeoMeta({
 
         <!-- PSICONUTRICION -->
         <div
-          class="md:col-span-2 md:col-start-2 lg:col-start-3 lg:row-span-2 lg:order-4"
+          class="lg:order-4 lg:row-span-2 md:col-span-2 lg:col-start-3 md:col-start-2"
         >
           <GlowCard
             group
@@ -228,15 +228,15 @@ useServerSeoMeta({
             glow-gradient="from-indigo-500 to-purple-500"
             class="aspect-7/3 md:aspect-7/6"
           >
-            <div class="h-full grid overflow-hidden text-neutral-200">
-              <div class="flex h-full items-center px-4">
-                <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+            <div class="grid h-full overflow-hidden text-neutral-200">
+              <div class="h-full flex items-center px-4">
+                <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
                   Psiconutrición
                 </p>
               </div>
 
               <div
-                class="w-full px-4 font-light text-sm text-neutral-200 inline-grid content-center gap-2"
+                class="inline-grid w-full content-center gap-2 px-4 text-sm font-light text-neutral-200"
               >
                 <div
                   class="w-full flex items-center gap-2 rounded-xl bg-neutral-800 p-2"
@@ -258,51 +258,51 @@ useServerSeoMeta({
 
         <!-- ENTRENAMIENTO -->
         <div
-          class="md:col-start-4 md:col-span-2 lg:col-start-7 lg:row-span-2 lg:order-5"
+          class="lg:order-5 lg:row-span-2 md:col-span-2 lg:col-start-7 md:col-start-4"
         >
           <div
             group
-            class="relative aspect-7/3 md:aspect-7/6 rounded-xl overflow-hidden"
+            class="relative aspect-7/3 overflow-hidden rounded-xl md:aspect-7/6"
           >
             <NuxtImg
               src="/index/entrenamiento.jpeg"
               loading="lazy"
               preset="hero"
               fit="cover"
-              class="object-cover h-full w-full transition-300 group-hover:scale-110"
+              class="h-full w-full object-cover transition-300 group-hover:scale-110"
               alt="Fotografía de discos de peso para gimnasio"
             />
 
             <div class="absolute inset-0 grid overflow-hidden text-neutral-200">
-              <div class="flex h-full items-center px-4">
-                <p class="text-3xl md:text-2xl font-bold text-neutral-200">
+              <div class="h-full flex items-center px-4">
+                <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
                   Entrenamiento
                 </p>
               </div>
 
               <div
-                class="w-full px-4 font-light text-sm text-neutral-200 inline-grid grid-cols-2 content-center gap-1"
+                class="inline-grid grid-cols-2 w-full content-center gap-1 px-4 text-sm font-light text-neutral-200"
               >
                 <div
-                  class="rounded-xl bg-black/50 p-2 backdrop-blur w-full inline-flex items-center justify-center"
+                  class="w-full inline-flex items-center justify-center rounded-xl bg-black/50 p-2 backdrop-blur"
                 >
                   Fuerza
                 </div>
 
                 <div
-                  class="rounded-xl bg-black/50 p-2 backdrop-blur w-full inline-flex items-center justify-center"
+                  class="w-full inline-flex items-center justify-center rounded-xl bg-black/50 p-2 backdrop-blur"
                 >
                   Resistencia
                 </div>
 
                 <div
-                  class="rounded-xl bg-black/50 p-2 backdrop-blur w-full inline-flex items-center justify-center"
+                  class="w-full inline-flex items-center justify-center rounded-xl bg-black/50 p-2 backdrop-blur"
                 >
                   Fitness
                 </div>
 
                 <div
-                  class="rounded-xl bg-black/50 p-2 backdrop-blur w-full inline-flex items-center justify-center"
+                  class="w-full inline-flex items-center justify-center rounded-xl bg-black/50 p-2 backdrop-blur"
                 >
                   Potencia
                 </div>
@@ -316,12 +316,12 @@ useServerSeoMeta({
     <!-- Presentation -->
     <HeroSection>
       <div
-        class="w-full flex flex-col md:flex-row justify-center gap-8 content-start md:col-span-2"
+        class="w-full flex flex-col content-start justify-center gap-8 md:col-span-2 md:flex-row"
       >
-        <div class="w-full space-y-2 text-sm py-4">
+        <div class="w-full py-4 text-sm space-y-2">
           <article
             group
-            class="aspect-1/1 h-full md:h-64 relative justify-self-end"
+            class="relative aspect-1/1 h-full justify-self-end md:h-64"
           >
             <NuxtImg
               src="/nutricion/people/nutri_0.png"
@@ -333,16 +333,16 @@ useServerSeoMeta({
 
             <div class="absolute bottom-2 left-2">
               <div
-                class="flex items-center gap-2 py-2 pl-4 pr-12 bg-black/70 backdrop-blur rounded-full"
+                class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-4 pr-12 backdrop-blur"
               >
-                <div class="h-12 w-12 rounded-full overflow-hidden">
+                <div class="h-12 w-12 overflow-hidden rounded-full">
                   <NuxtImg
                     src="/nutricion/people/nutri_0.png"
                     loading="lazy"
                     preset="avatar"
                     width="60"
                     height="60"
-                    class="object-cover w-full"
+                    class="w-full object-cover"
                     alt=""
                   />
                 </div>
@@ -360,10 +360,10 @@ useServerSeoMeta({
           </article>
         </div>
 
-        <div class="flex flex-col gap-4 justify-center text-neutral-300">
+        <div class="flex flex-col justify-center gap-4 text-neutral-300">
           <p>
             Mi nombre es
-            <span class="text-[rgb(177_191_146)] font-black">Yetlanetzi</span>
+            <span class="font-black text-[rgb(177_191_146)]">Yetlanetzi</span>
             y quiero ayudarte a superar tus metas, nuestro objetivo principal
             será optimizar tu salud, utilizando la mejor arma que es la
             Nutrición de excelencia y calidad.
@@ -379,7 +379,7 @@ useServerSeoMeta({
                 'Salud',
               ]"
               :key="i"
-              class="text-neutral-400 border-neutral-400"
+              class="border-neutral-400 text-neutral-400"
             >
               {{ content }}
             </Badge>
@@ -391,12 +391,12 @@ useServerSeoMeta({
     <!-- PSICONUTRICIÓN -->
     <HeroSection>
       <div class="grid gap-4">
-        <div class="text-center overflow-hidden">
-          <p class="text-4xl md:text-5xl font-black text-[rgb(177_191_146)]">
+        <div class="overflow-hidden text-center">
+          <p class="text-4xl font-black text-[rgb(177_191_146)] md:text-5xl">
             Psiconutrición
           </p>
 
-          <div class="p-4 overflow-x-scroll overflow-y-hidden scrollbar-hide">
+          <div class="overflow-x-scroll overflow-y-hidden p-4 scrollbar-hide">
             <div class="flex gap-2">
               <Badge
                 v-for="(content, i) of [
@@ -413,7 +413,7 @@ useServerSeoMeta({
                   'Restricción',
                 ]"
                 :key="i"
-                class="text-neutral-400 border-neutral-400"
+                class="border-neutral-400 text-neutral-400"
               >
                 {{ content }}
               </Badge>
@@ -427,7 +427,7 @@ useServerSeoMeta({
           <div
             v-for="({ title, icon, content }, i) of psiconutricionAreas"
             :key="i"
-            class="w-full md:w-1/3 py-3 md:px-3"
+            class="w-full py-3 md:w-1/3 md:px-3"
           >
             <AteneaAccordion>
               <template #title>
@@ -436,7 +436,7 @@ useServerSeoMeta({
               <template #icon>
                 <UnoIcon
                   :class="icon"
-                  class="bg-purple-500 h-6 w-6"
+                  class="h-6 w-6 bg-purple-500"
                 />
               </template>
 

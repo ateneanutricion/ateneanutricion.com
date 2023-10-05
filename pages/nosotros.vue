@@ -27,7 +27,7 @@ useServerSeoMeta({
             class="self-center"
             alt="Atenea Logo"
           />
-          <p class="font-light text-neutral-400 text-center mb-10">
+          <p class="mb-10 text-center font-light text-neutral-400">
             Sabemos que para alcanzar una salud física y mental para un óptimo
             bienestar, debemos tener un enfoque integral, nuestro objetivo es
             brindar las herramientas que impulsen un cambio de hábitos para
@@ -35,13 +35,13 @@ useServerSeoMeta({
             calidad, actividad física y bienestar emocional
           </p>
 
-          <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
+          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
             <a
               href="#CTA"
               role="button"
-              class="block rounded-xl bg-white text-black font-medium h-12 w-full px-4"
+              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
             >
-              <div class="h-full flex gap-2 justify-center items-center">
+              <div class="h-full flex items-center justify-center gap-2">
                 Saber más
               </div>
             </a>
@@ -52,9 +52,9 @@ useServerSeoMeta({
                 target="_blank"
                 rel="noopener noreferrer"
                 role="button"
-                class="rounded-xl font-medium h-12 w-full px-4 text-neutral-200 flex gap-2 justify-center items-center"
+                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
               >
-                <UnoIcon class="i-ph:whatsapp-logo w-5 h-5" />
+                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
                 Contactanos
               </a>
             </GlowCard>
@@ -67,22 +67,22 @@ useServerSeoMeta({
     <!-- FAQs -->
     <HeroSection>
       <header class="p-4 text-center space-y-4">
-        <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
+        <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
           Preguntas <span class="text-purple-400">frecuentes</span>
         </h2>
       </header>
 
-      <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
-        <article class="inline-grid gap-4 py-4 px-6">
+      <div class="grid rounded-xl bg-neutral-800 p-4 md:grid-cols-2">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               ¿Necesito un
             </div>
-            <div class="font-black text-2xl text-orange-400">
+            <div class="text-2xl font-black text-orange-400">
               plan nutricional?
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             La nutrición tiene total influencia en nuestro bienestar & salud de
             nuestro cuerpo. Existe un sinfín de información sobre una
             alimentación saludable y cual es la mejor manera de nutrirse, pero
@@ -93,16 +93,16 @@ useServerSeoMeta({
           </p>
         </article>
 
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               ¿Cuál es el mejor
             </div>
-            <div class="font-black text-2xl text-emerald-400">
+            <div class="text-2xl font-black text-emerald-400">
               plan de alimentación?
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             El mejor plan de alimentación es el que nos permita realizar cambios
             dietéticos sostenibles a largo plazo, cada cuerpo es diferente por
             lo que necesita una nutrición especializada, no necesita protocolos
@@ -113,16 +113,16 @@ useServerSeoMeta({
           </p>
         </article>
 
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               ¿Qué es un estudio
             </div>
-            <div class="font-black text-2xl text-sky-400">
+            <div class="text-2xl font-black text-sky-400">
               epigenético nutricional?
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             Es un test que analiza biomarcadores celulares, que nos brinda
             información sobre cómo la influencia del medio ambiente, entorno y
             estilo de vida, puede afectar la expresión de nuestros genes. Nos
@@ -132,16 +132,16 @@ useServerSeoMeta({
           </p>
         </article>
 
-        <article class="inline-grid gap-4 py-4 px-6">
+        <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">
+            <div class="text-base font-medium text-neutral-200">
               ¿Qué hace un
             </div>
-            <div class="font-black text-2xl text-red-400">
+            <div class="text-2xl font-black text-red-400">
               nutriologo deportivo?
             </div>
           </header>
-          <p class="font-light text-sm text-neutral-400">
+          <p class="text-sm font-light text-neutral-400">
             Un nutriólogo deportivo brinda las herramientas adecuadas para
             impulsar a un atleta de alto rendimiento, amateur o recreativo para
             que alcance su rendimiento máximo, de una manera segura y efectiva.
