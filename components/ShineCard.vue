@@ -9,11 +9,13 @@ withDefaults(defineProps<Props>(), {
 const card = shallowRef<HTMLDivElement>()
 const blob = shallowRef<HTMLDivElement>()
 
-const { x, y } = useSharedMouse({ type: (e) => [e.clientX, e.clientY] })
+const { x, y } = useSharedMouse({ type: e => [e.clientX, e.clientY] })
 
 watchEffect(() => {
-  if (!card.value || !blob.value) return
-  if (!card.value.getBoundingClientRect()) return
+  if (!card.value || !blob.value)
+    return
+  if (!card.value.getBoundingClientRect())
+    return
 
   const rect = card.value.getBoundingClientRect()
   const xAnimation = x.value - rect.left - rect.width / 2
@@ -22,7 +24,7 @@ watchEffect(() => {
   blob.value.style.opacity = '1'
   blob.value.animate(
     [{ transform: `translate(${xAnimation}px,${yAnimation}px)` }],
-    { duration: 300, fill: 'forwards' }
+    { duration: 300, fill: 'forwards' },
   )
 })
 </script>
@@ -42,6 +44,6 @@ watchEffect(() => {
       ref="blob"
       class="z-0 absolute top-0 left-0 blur-2xl opacity-0 w-[250px] h-[250px] rounded-full"
       :class="blobColor"
-    ></div>
+    />
   </div>
 </template>

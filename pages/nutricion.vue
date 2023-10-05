@@ -190,8 +190,12 @@ useServerSeoMeta({
         <GlowCard disable-glow>
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Consulta</div>
-              <div class="font-extrabold text-2xl">Nutricional</div>
+              <div class="font-light">
+                Consulta
+              </div>
+              <div class="font-extrabold text-2xl">
+                Nutricional
+              </div>
             </header>
 
             <ul class="font-light text-sm list-disc list-inside">
@@ -240,8 +244,12 @@ useServerSeoMeta({
         <GlowCard disable-glow>
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Consulta</div>
-              <div class="font-extrabold text-2xl">Nutricional</div>
+              <div class="font-light">
+                Consulta
+              </div>
+              <div class="font-extrabold text-2xl">
+                Nutricional
+              </div>
             </header>
 
             <ul class="font-light text-sm list-disc list-inside">
@@ -256,7 +264,7 @@ useServerSeoMeta({
       </div>
     </HeroSection>
 
-    <span id="CTA"></span>
+    <span id="CTA" />
     <!-- Composición Corporal & fitness -->
     <HeroSection>
       <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
@@ -279,8 +287,12 @@ useServerSeoMeta({
         <GlowCard disable-glow>
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Consulta</div>
-              <div class="font-extrabold text-2xl">Nutricional</div>
+              <div class="font-light">
+                Consulta
+              </div>
+              <div class="font-extrabold text-2xl">
+                Nutricional
+              </div>
             </header>
 
             <ul class="font-light text-sm list-disc list-inside">
@@ -296,8 +308,12 @@ useServerSeoMeta({
         <GlowCard disable-glow>
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Consulta</div>
-              <div class="font-extrabold text-2xl">+ Entrenamiento</div>
+              <div class="font-light">
+                Consulta
+              </div>
+              <div class="font-extrabold text-2xl">
+                + Entrenamiento
+              </div>
             </header>
 
             <ul class="font-light text-sm list-disc list-inside">
@@ -329,8 +345,12 @@ useServerSeoMeta({
             <header class="flex items-center gap-2">
               <UnoIcon class="i-mdi:weight-lifter w-10 h-10" />
               <div class="flex flex-col">
-                <div class="font-light">Valoración</div>
-                <div class="font-extrabold text-2xl">Física</div>
+                <div class="font-light">
+                  Valoración
+                </div>
+                <div class="font-extrabold text-2xl">
+                  Física
+                </div>
               </div>
             </header>
 
@@ -347,8 +367,12 @@ useServerSeoMeta({
             <header class="flex items-center gap-2">
               <UnoIcon class="i-ph:target-duotone w-10 h-10" />
               <div class="flex flex-col">
-                <div class="font-light">Metas y</div>
-                <div class="font-extrabold text-2xl">Objetivos</div>
+                <div class="font-light">
+                  Metas y
+                </div>
+                <div class="font-extrabold text-2xl">
+                  Objetivos
+                </div>
               </div>
             </header>
 
@@ -366,8 +390,12 @@ useServerSeoMeta({
             <header class="flex items-center gap-2">
               <UnoIcon class="i-ph:arrow-line-up-right-bold w-10 h-10" />
               <div class="flex flex-col">
-                <div class="font-light">Sobrecarga</div>
-                <div class="font-extrabold text-2xl">Progresiva</div>
+                <div class="font-light">
+                  Sobrecarga
+                </div>
+                <div class="font-extrabold text-2xl">
+                  Progresiva
+                </div>
               </div>
             </header>
 
@@ -384,7 +412,9 @@ useServerSeoMeta({
 
     <!-- People -->
     <HeroSection>
-      <Badge class="w-min mx-auto text-neutral-200"> Conocenos </Badge>
+      <Badge class="w-min mx-auto text-neutral-200">
+        Conocenos
+      </Badge>
 
       <div class="grid gap-4 md:grid-cols-3 md:h-64 justify-items-center">
         <article
@@ -416,8 +446,12 @@ useServerSeoMeta({
               </div>
 
               <div>
-                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
-                <p class="text-xs text-gray-400">Yetlanetzi Portillo</p>
+                <p class="text-xs font-bold text-neutral-200">
+                  Nutriologa
+                </p>
+                <p class="text-xs text-gray-400">
+                  Yetlanetzi Portillo
+                </p>
               </div>
             </div>
           </div>
@@ -452,8 +486,12 @@ useServerSeoMeta({
               </div>
 
               <div>
-                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
-                <p class="text-xs text-gray-400">Daniela Cuevas</p>
+                <p class="text-xs font-bold text-neutral-200">
+                  Nutriologa
+                </p>
+                <p class="text-xs text-gray-400">
+                  Daniela Cuevas
+                </p>
               </div>
             </div>
           </div>
@@ -488,8 +526,12 @@ useServerSeoMeta({
               </div>
 
               <div>
-                <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
-                <p class="text-xs text-gray-400">Ninfa Jonguitud</p>
+                <p class="text-xs font-bold text-neutral-200">
+                  Nutriologa
+                </p>
+                <p class="text-xs text-gray-400">
+                  Ninfa Jonguitud
+                </p>
               </div>
             </div>
           </div>

@@ -6,9 +6,9 @@ useServerSeoMeta({
   ogUrl: 'https://ateneanutricion.com/epigenetica',
 
   description:
-    'Optimiza tu bienestar logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
+    'Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
   ogDescription:
-    'Optimiza tu bienestar logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
+    'Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
 
   ogImage: '/og-images/epigenetica.png',
   twitterCard: 'summary_large_image',
@@ -28,9 +28,9 @@ useServerSeoMeta({
       <template #append>
         <div class="flex flex-col gap-4 md:text-xl">
           <p class="font-light text-neutral-400 text-center mb-16">
-            Optimiza tu bienestar logrando tus objetivos de salud, peso,
-            aumentar tu energía durante el día y potenciar tu bienestar a través
-            de las necesidades reales de tu organismo
+            Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu
+            energía durante el día y potenciar tu bienestar a través de las
+            necesidades reales de tu organismo
           </p>
 
           <div class="flex flex-col md:flex-row gap-4 w-full max-w-100 mx-auto">
@@ -67,7 +67,9 @@ useServerSeoMeta({
         <h2 class="text-4xl md:text-5xl font-black text-neutral-200">
           Estudios <span class="text-purple-400">epigeneticos</span>
         </h2>
-        <Badge class="w-min mx-auto text-neutral-200"> ¿Qué conocerás? </Badge>
+        <Badge class="w-min mx-auto text-neutral-200">
+          ¿Qué conocerás?
+        </Badge>
       </header>
 
       <div class="bg-neutral-800 p-4 rounded-xl grid md:grid-cols-2">
@@ -76,7 +78,9 @@ useServerSeoMeta({
             <div class="font-medium text-base text-neutral-200">
               Sensibilidades
             </div>
-            <div class="font-black text-2xl text-orange-400">Alimentarias</div>
+            <div class="font-black text-2xl text-orange-400">
+              Alimentarias
+            </div>
           </header>
           <p class="font-light text-sm text-neutral-400">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
@@ -101,8 +105,12 @@ useServerSeoMeta({
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">Factores</div>
-            <div class="font-black text-2xl text-sky-400">Externos</div>
+            <div class="font-medium text-base text-neutral-200">
+              Factores
+            </div>
+            <div class="font-black text-2xl text-sky-400">
+              Externos
+            </div>
           </header>
           <p class="font-light text-sm text-neutral-400">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
@@ -112,8 +120,12 @@ useServerSeoMeta({
         </article>
         <article class="inline-grid gap-4 py-4 px-6">
           <header class="flex flex-col">
-            <div class="font-medium text-base text-neutral-200">Sistema</div>
-            <div class="font-black text-2xl text-red-400">Metabólico</div>
+            <div class="font-medium text-base text-neutral-200">
+              Sistema
+            </div>
+            <div class="font-black text-2xl text-red-400">
+              Metabólico
+            </div>
           </header>
           <p class="font-light text-sm text-neutral-400">
             Información del estado actual de los principales sistemas
@@ -124,7 +136,7 @@ useServerSeoMeta({
       </div>
     </HeroSection>
 
-    <span id="CTA"></span>
+    <span id="CTA" />
     <!-- MARCADORES -->
     <HeroSection class="space-y-6">
       <header class="p-4 text-center">
@@ -137,7 +149,6 @@ useServerSeoMeta({
 
       <div class="flex flex-wrap justify-center">
         <div
-          class="w-full md:w-1/3 py-3 md:px-3"
           v-for="({ title, subtitle, icon, content }, i) of [
             {
               title: 'Vitaminas',
@@ -191,6 +202,7 @@ useServerSeoMeta({
             },
           ]"
           :key="i"
+          class="w-full md:w-1/3 py-3 md:px-3"
         >
           <AteneaAccordion>
             <template #title>
@@ -206,7 +218,9 @@ useServerSeoMeta({
               />
             </template>
 
-            <p class="text-neutral-400">{{ content }}</p>
+            <p class="text-neutral-400">
+              {{ content }}
+            </p>
           </AteneaAccordion>
         </div>
       </div>
@@ -238,8 +252,12 @@ useServerSeoMeta({
         >
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Informe de optimización</div>
-              <div class="font-extrabold text-2xl">Alto Rendimiento</div>
+              <div class="font-light">
+                Informe de optimización
+              </div>
+              <div class="font-extrabold text-2xl">
+                Alto Rendimiento
+              </div>
             </header>
 
             <p class="font-light text-sm">
@@ -276,8 +294,12 @@ useServerSeoMeta({
         >
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Informe de optimización</div>
-              <div class="font-extrabold text-2xl">Wellness</div>
+              <div class="font-light">
+                Informe de optimización
+              </div>
+              <div class="font-extrabold text-2xl">
+                Wellness
+              </div>
             </header>
 
             <p class="font-light text-sm">
@@ -312,8 +334,12 @@ useServerSeoMeta({
         >
           <article class="inline-grid gap-4 py-4 px-6">
             <header class="flex flex-col">
-              <div class="font-light">Informe de optimización</div>
-              <div class="font-extrabold text-2xl">Vegano</div>
+              <div class="font-light">
+                Informe de optimización
+              </div>
+              <div class="font-extrabold text-2xl">
+                Vegano
+              </div>
             </header>
 
             <p class="font-light text-sm">

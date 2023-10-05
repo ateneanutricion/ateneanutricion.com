@@ -13,8 +13,9 @@ body {
   background: #000;
 }
 </style>
+
 <style>
-/* 
+/*
   bg-[#3E54D3]
   bg-[#4F80E2]
   bg-[#15CDCA]

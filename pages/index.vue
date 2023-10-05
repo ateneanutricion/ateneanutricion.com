@@ -47,26 +47,26 @@ useServerHead({
         '@graph': [
           {
             '@type': 'Organization',
-            url: 'https://ateneanutricion.com',
-            logo: '/logo.png',
+            'url': 'https://ateneanutricion.com',
+            'logo': '/logo.png',
           },
           {
             '@type': 'FAQPage',
-            mainEntity: [
+            'mainEntity': [
               {
                 '@type': 'Question',
-                name: '¿Necesito un plan nutricional?',
-                acceptedAnswer: {
+                'name': '¿Necesito un plan nutricional?',
+                'acceptedAnswer': {
                   '@type': 'Answer',
-                  text: 'La nutrición tiene total influencia en nuestro bienestar & salud de nuestro cuerpo. Existe un sinfín de información sobre una alimentación saludable y cual es la mejor  manera de nutrirse, pero para lograr una salud optima la clave es que sea personalizada, una consulta de nutrición por un nutriólogo especialista te brinda las herramientas necesarias para saber cuales son tus necesidades específicas.',
+                  'text': 'La nutrición tiene total influencia en nuestro bienestar & salud de nuestro cuerpo. Existe un sinfín de información sobre una alimentación saludable y cual es la mejor  manera de nutrirse, pero para lograr una salud optima la clave es que sea personalizada, una consulta de nutrición por un nutriólogo especialista te brinda las herramientas necesarias para saber cuales son tus necesidades específicas.',
                 },
               },
               {
                 '@type': 'Question',
-                name: '¿Cuál es el mejor plan de alimentación?',
-                acceptedAnswer: {
+                'name': '¿Cuál es el mejor plan de alimentación?',
+                'acceptedAnswer': {
                   '@type': 'Answer',
-                  text: 'El mejor plan de alimentación es el que nos permita realizar cambios dietéticos sostenibles a largo plazo, cada cuerpo es diferente por lo que necesita una nutrición especializada, no necesita protocolos de alimentación estandarizados con las mismas pautas y reglas de alimentación,  si lo que queremos es una nutrición óptima debemos darle un enfoque personalizado con cambios dietéticos y pautas nutricionales que nos brindan un bienestar único.',
+                  'text': 'El mejor plan de alimentación es el que nos permita realizar cambios dietéticos sostenibles a largo plazo, cada cuerpo es diferente por lo que necesita una nutrición especializada, no necesita protocolos de alimentación estandarizados con las mismas pautas y reglas de alimentación,  si lo que queremos es una nutrición óptima debemos darle un enfoque personalizado con cambios dietéticos y pautas nutricionales que nos brindan un bienestar único.',
                 },
               },
             ],
@@ -137,7 +137,7 @@ useServerSeoMeta({
       </template>
     </HeroHeader>
 
-    <span id="CTA"></span>
+    <span id="CTA" />
     <!-- Bento grid -->
     <HeroSection>
       <section
@@ -350,8 +350,12 @@ useServerSeoMeta({
                 </div>
 
                 <div>
-                  <p class="text-xs font-bold text-neutral-200">Nutriologa</p>
-                  <p class="text-xs text-gray-400">Yetlanetzi Portillo</p>
+                  <p class="text-xs font-bold text-neutral-200">
+                    Nutriologa
+                  </p>
+                  <p class="text-xs text-gray-400">
+                    Yetlanetzi Portillo
+                  </p>
                 </div>
               </div>
             </div>
@@ -368,7 +372,6 @@ useServerSeoMeta({
           </p>
           <div class="flex flex-wrap gap-2">
             <Badge
-              class="text-neutral-400 border-neutral-400"
               v-for="(content, i) of [
                 'Nutrición',
                 'Epigenética',
@@ -378,6 +381,7 @@ useServerSeoMeta({
                 'Salud',
               ]"
               :key="i"
+              class="text-neutral-400 border-neutral-400"
             >
               {{ content }}
             </Badge>
@@ -397,7 +401,6 @@ useServerSeoMeta({
           <div class="p-4 overflow-x-scroll overflow-y-hidden scrollbar-hide">
             <div class="flex gap-2">
               <Badge
-                class="text-neutral-400 border-neutral-400"
                 v-for="(content, i) of [
                   'TCA',
                   'TCANE',
@@ -412,6 +415,7 @@ useServerSeoMeta({
                   'Restricción',
                 ]"
                 :key="i"
+                class="text-neutral-400 border-neutral-400"
               >
                 {{ content }}
               </Badge>
@@ -423,12 +427,14 @@ useServerSeoMeta({
 
         <div class="flex flex-wrap justify-center">
           <div
-            class="w-full md:w-1/3 py-3 md:px-3"
             v-for="({ title, icon, content }, i) of psiconutricionAreas"
             :key="i"
+            class="w-full md:w-1/3 py-3 md:px-3"
           >
             <AteneaAccordion>
-              <template #title> {{ title }} </template>
+              <template #title>
+                {{ title }}
+              </template>
               <template #icon>
                 <UnoIcon
                   :class="icon"
@@ -436,7 +442,9 @@ useServerSeoMeta({
                 />
               </template>
 
-              <p class="text-neutral-400">{{ content }}</p>
+              <p class="text-neutral-400">
+                {{ content }}
+              </p>
             </AteneaAccordion>
           </div>
         </div>

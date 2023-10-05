@@ -65,7 +65,7 @@ useServerSeoMeta({
       </template>
     </HeroHeader>
 
-    <span id="CTA"></span>
+    <span id="CTA" />
     <!-- FAQs -->
     <HeroSection>
       <header class="p-4 text-center space-y-4">

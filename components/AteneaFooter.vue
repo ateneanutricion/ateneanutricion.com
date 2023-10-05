@@ -5,7 +5,9 @@
         <div
           class="h-full w-10/12 md:w-1/2 mx-auto border rounded-2xl py-2 text-center"
         >
-          <p class="text-neutral-100 font-semibold">¡Optimiza tu salud!</p>
+          <p class="text-neutral-100 font-semibold">
+            ¡Optimiza tu salud!
+          </p>
         </div>
       </div>
     </div>
@@ -40,7 +42,9 @@
         <p class="text-xs text-neutral-300 font-extralight">
           ¡Supera tus limites!
         </p>
-        <p class="text-xs text-neutral-300 font-extralight">Copyright © 2023</p>
+        <p class="text-xs text-neutral-300 font-extralight">
+          Copyright © 2023
+        </p>
       </div>
 
       <div class="grid gap-2 md:grid-cols-3 md:col-span-3">
