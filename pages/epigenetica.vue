@@ -5,10 +5,8 @@ useServerSeoMeta({
   ogType: 'website',
   ogUrl: 'https://ateneanutricion.com/epigenetica',
 
-  description:
-    'Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
-  ogDescription:
-    'Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu energía durante el día y potenciar tu bienestar a través de las necesidades reales de tu organismo',
+  description: 'Brindamos informes epigenéticos deportivos, wellnes y veganos, nuestros informes incluyen una asesoría para interpretar tus resultados con nuestros especialistas y una dieta basada en tu información celular. Evaluamos la expresión de tus genes para crear un plan basado en tu bioinformación.',
+  ogDescription: 'OptiBrindamos informes epigenéticos deportivos, wellnes y veganos, nuestros informes incluyen una asesoría para interpretar tus resultados con nuestros especialistas y una dieta basada en tu información celular. Evaluamos la expresión de tus genes para crear un plan basado en tu bioinformación.',
 
   ogImage: '/og-images/epigenetica.png',
   twitterCard: 'summary_large_image',

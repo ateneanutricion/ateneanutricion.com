@@ -5,10 +5,8 @@ useServerSeoMeta({
   ogType: 'website',
   ogUrl: 'https://ateneanutricion.com/nosotros',
 
-  description:
-    'Sabemos que para alcanzar una salud física y mental para un óptimo bienestar, debemos tener un enfoque integral, nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional',
-  ogDescription:
-    'Sabemos que para alcanzar una salud física y mental para un óptimo bienestar, debemos tener un enfoque integral, nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional',
+  description: 'Nuestro objetivo es brindar las herramientas para alcanzar una salud física & mental para un óptimo bienestar, a través de una nutrición de calidad, actividad física & bienestar emocional. Nuestros nutricionistas son especialistas en el área deportiva & clínica de la nutrición.',
+  ogDescription: 'Nuestro objetivo es brindar las herramientas para alcanzar una salud física & mental para un óptimo bienestar, a través de una nutrición de calidad, actividad física & bienestar emocional. Nuestros nutricionistas son especialistas en el área deportiva & clínica de la nutrición.',
 
   ogImage: '/og-images/nosotros.png',
   twitterCard: 'summary_large_image',

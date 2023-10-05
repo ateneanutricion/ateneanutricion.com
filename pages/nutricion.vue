@@ -5,10 +5,8 @@ useServerSeoMeta({
   ogType: 'website',
   ogUrl: 'https://ateneanutricion.com/nutricion',
 
-  description:
-    'Asesoramiento nutricional personalizado para alcanzar tus objetivos de rendimiento deportivo, salud y composición corporal',
-  ogDescription:
-    'Asesoramiento nutricional personalizado para alcanzar tus objetivos de rendimiento deportivo, salud y composición corporal',
+  description: 'Somos expertos en nutrición deportiva & clínica, creamos planes de alimentación diseñados para aumentar el rendimiento deportivo, salud y bienestar, de una manera integral. Nuestras consultas Incluye: evaluación, diagnóstico, tratamiento y seguimiento nutricional.',
+  ogDescription: 'Somos expertos en nutrición deportiva & clínica, creamos planes de alimentación diseñados para aumentar el rendimiento deportivo, salud y bienestar, de una manera integral. Nuestras consultas Incluye: evaluación, diagnóstico, tratamiento y seguimiento nutricional.',
 
   ogImage: '/og-images/nutricion.png',
   twitterCard: 'summary_large_image',
