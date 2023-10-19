@@ -32,7 +32,7 @@ const teamMembers: TeamMember[] = [
     name: 'Yetlanetzi Portillo',
     position: 'nutriologa',
     description: 'Mereces una relación pacífica y evolutiva con la comida y tu cuerpo. Soy Yet Villafaña mi objetivo como nutrióloga es ayudarte a alcanzar tus objetivos nutricionales y deportivos, mientras mejoras tu salud y aprendes la importancia de una buena nutrición.  Mi área de especialidad es el deporte & alto rendimiento, tengo una maestría en nutrición deportiva y soy entrenadora certificada.',
-    imageSrc: '/nutricion/people/nutri_0.png',
+    imageSrc: '/nosotros/people/nutri_0.png',
     socials: [
       {
         icon: 'i-ph:linkedin-logo-duotone',
@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
     name: 'Daniela Cuevas',
     position: 'nutriologa',
     description: 'Me considero una persona responsable, dinámica, dedicada con mis pacientes y siempre en constante actualización.Diplomado en nutrición clínica (2020-2021). Experiencia en consulta privada desde 2018, tratando ámbitos como: control de peso, control de enfermedades metabólicas, Síndrome de Ovario Poliquístico, embarazo y lactancia.',
-    imageSrc: '/nutricion/people/nutri_1.png',
+    imageSrc: '/nosotros/people/nutri_1.png',
     socials: [
       {
         icon: 'i-ph:instagram-logo-duotone',
@@ -70,7 +70,7 @@ const teamMembers: TeamMember[] = [
     description: `Enfocada en el area clínica desde el 2019. 
     Tengo experiencia en consulta externa en pacientes que buscan un control de peso, tratamiento de enfermedades metabólicas y cambiar hábitos de alimentación.
     Me gusta llevar de la mano a mis pacientes desde una experiencia propia y científica para ayudarlos a cumplir sus objetivos.`,
-    imageSrc: '/nutricion/people/nutri_2.png',
+    imageSrc: '/nosotros/people/nutri_2.png',
     socials: [
       {
         icon: 'i-ph-envelope-duotone',
@@ -89,7 +89,7 @@ const teamMembers: TeamMember[] = [
   <LotusPage>
     <LotusHero
       title="Conoce quienes somos."
-      image="/nutricion/clinica.jpg"
+      image="/nosotros/header.jpg"
       append="Nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional"
     >
       <template #actions>
