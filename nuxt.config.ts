@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: 'es' },
       meta: [
-        { name: 'theme-color', content: '#000' },
+        { name: 'theme-color', content: '#fff' },
         { name: 'application-name', content: 'Atenea' },
         { name: 'apple-mobile-web-app-title', content: 'Atenea' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
