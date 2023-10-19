@@ -20,7 +20,7 @@ defineProps<Props>()
           v-for="(title, i) in titles"
           :key="i"
           :data-title-content="title"
-          class="relative block select-none before:absolute before:block before:text-white"
+          class="relative block select-none before:absolute before:block before:text-current"
         >
           <span
             class="bg-gradient-to-r bg-clip-text text-transparent"

@@ -14,45 +14,41 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <div class="space-y-16">
-    <HeroHeader :titles="['Ciencia.', 'Genes.', 'Bienestar.']">
+  <LotusPage>
+    <HeroHeader
+      :titles="['Ciencia.', 'Genes.', 'Bienestar.']"
+      class="text-neutral-200"
+    >
       <template #prepend>
-        <p class="text-center font-light text-neutral-400 md:text-xl">
-          Bienvenido a la nutrición
-          <span class="font-semibold text-white">inteligente</span>
+        <p class="text-center font-light">
+          Bienvenido a la nutrición inteligente
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 md:text-xl">
-          <p class="mb-10 text-center font-light text-neutral-400">
+        <div class="flex flex-col gap-10">
+          <p class="text-center font-light">
             Optimiza tu salud logrando tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar tu bienestar a través de las
             necesidades reales de tu organismo
           </p>
 
-          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
-            <a
-              href="#CTA"
-              role="button"
-              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
-            >
-              <div class="h-full flex items-center justify-center gap-2">
-                Saber más
-              </div>
-            </a>
+          <div class="w-full flex flex-col items-center justify-center gap-4 md:flex-row">
+            <LotusButton
+              label="Saber más"
+              to="#CTA"
+              variant="link"
+              size="lg"
+            />
 
-            <GlowCard glow-gradient="from-purple-500 to-pink-500">
-              <a
-                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20tener%20mí%20estudio%20epigenetico."
+            <GlowCard>
+              <LotusButton
+                label="Contactanos"
+                icon="i-ph:whatsapp-logo"
+                size="lg"
                 target="_blank"
-                rel="noopener noreferrer"
-                role="button"
-                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
-              >
-                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
-                Contactanos
-              </a>
+                to="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
+              />
             </GlowCard>
           </div>
         </div>
@@ -60,12 +56,13 @@ useServerSeoMeta({
     </HeroHeader>
 
     <!-- AREAS -->
-    <HeroSection>
-      <header class="p-4 text-center space-y-4">
-        <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-          Estudios <span class="text-purple-400">epigeneticos</span>
-        </h2>
-        <Badge class="mx-auto w-min text-neutral-200">
+    <section class="p-4 text-neutral-200 space-y-6">
+      <header class="flex flex-col items-start gap-6 @container">
+        <span class="text-[15cqw]/[1] font-extrabold sm:text-[9cqw]/[1]">
+          Estudios
+          <span class="text-purple-400">epigeneticos</span>
+        </span>
+        <Badge class="mx-auto mt-6 w-min text-neutral-200">
           ¿Qué conocerás?
         </Badge>
       </header>
@@ -132,17 +129,17 @@ useServerSeoMeta({
           </p>
         </article>
       </div>
-    </HeroSection>
+    </section>
 
     <span id="CTA" />
     <!-- MARCADORES -->
-    <HeroSection class="space-y-6">
-      <header class="p-4 text-center">
-        <p class="text-4xl font-black text-neutral-200 md:text-5xl">
+    <section class="p-4 text-neutral-200 space-y-6">
+      <header class="flex flex-col items-start gap-6 @container">
+        <span class="text-[15cqw]/[1] font-extrabold sm:text-[9cqw]/[1]">
           ¿Qué indicadores
           <span class="text-purple-400">epigenéticos</span>
           conocerás?
-        </p>
+        </span>
       </header>
 
       <div class="flex flex-wrap justify-center">
@@ -222,19 +219,19 @@ useServerSeoMeta({
           </AteneaAccordion>
         </div>
       </div>
-    </HeroSection>
+    </section>
 
-    <HeroSection>
-      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-        Informes
-        <span class="text-purple-400">epigenéticos</span>
-      </h2>
+    <section class="p-4 text-neutral-200 space-y-6">
+      <header class="flex flex-col items-start gap-6 @container">
+        <span class="text-[15cqw]/[1] font-extrabold sm:text-[9cqw]/[1]">
+          Informes
+          <span class="text-purple-400">epigenéticos</span>
+        </span>
+      </header>
 
-      <!-- ALTO RENDIMIENTO -->
-      <div
-        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
-      >
-        <div class="w-full text-sm text-neutral-400 space-y-2">
+      <section class="space-y-12">
+        <!-- ALTO RENDIMIENTO -->
+        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
           <NuxtImg
             src="/epigenetica/high_performance.png"
             loading="lazy"
@@ -242,114 +239,95 @@ useServerSeoMeta({
             class="h-full w-full object-contain transition-300 hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
-        </div>
 
-        <GlowCard
-          disable-glow
-          glow-gradient=" from-violet-500 to-purple-400"
-        >
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Informe de optimización
-              </div>
-              <div class="text-2xl font-extrabold">
-                Alto Rendimiento
-              </div>
-            </header>
+          <GlowCard
+            class="z-0"
+            glow-gradient="from-violet-500 to-purple-400"
+          >
+            <div class="inline-grid h-full gap-4 bg-neutral-900 px-6 py-4">
+              <header class="flex flex-col">
+                <div class="font-light">
+                  Informe de optimización
+                </div>
+                <div class="text-2xl font-extrabold">
+                  Alto Rendimiento
+                </div>
+              </header>
 
-            <p class="text-sm font-light">
-              El informe epigenético "Optimización de Alto Rendimiento" ha sido
-              desarrollado por científicos expertos en epigenética para ayudar a
-              identificar las influencias del entorno y su influencia en la
-              expresión en genes relacionados al rendimiento del atleta. tiene
-              como objetivo poder mejorar el rendimiento físico de los atletas a
-              través de ajustes nutricionales y medio ambientales. De este modo
-              podremos optimizar sus capacidades físicas, mentales y
-              emocionales.
-            </p>
-          </article>
-        </GlowCard>
-      </div>
+              <p class="text-sm font-light">
+                El informe epigenético "Optimización de Alto Rendimiento" ha sido
+                desarrollado por científicos expertos en epigenética para ayudar a
+                identificar las influencias del entorno y su influencia en la
+                expresión en genes relacionados al rendimiento del atleta. tiene
+                como objetivo poder mejorar el rendimiento físico de los atletas a
+                través de ajustes nutricionales y medio ambientales. De este modo
+                podremos optimizar sus capacidades físicas, mentales y
+                emocionales.
+              </p>
+            </div>
+          </GlowCard>
+        </article>
 
-      <!-- WELLNESS -->
-      <div
-        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
-      >
-        <div class="w-full text-sm text-neutral-400 md:order-last space-y-2">
+        <!-- WELLNESS -->
+        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
           <NuxtImg
             src="/epigenetica/wellness.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-contain transition-300 hover:scale-110"
-            alt="Estudio epigenético wellness"
+            class="h-full w-full object-contain transition-300 sm:order-last hover:scale-110"
+            alt="Estudio epigenético para alto rendimiento"
           />
-        </div>
+          <GlowCard
+            class="z-0"
+            glow-gradient="from-violet-500 to-purple-400"
+          >
+            <div class="inline-grid h-full gap-4 bg-neutral-900 px-6 py-4">
+              <header class="flex flex-col">
+                <div class="font-light">
+                  Informe de optimización
+                </div>
+                <div class="text-2xl font-extrabold">
+                  Wellness
+                </div>
+              </header>
 
-        <GlowCard
-          disable-glow
-          glow-gradient=" from-violet-500 to-purple-400"
-        >
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Informe de optimización
-              </div>
-              <div class="text-2xl font-extrabold">
-                Wellness
-              </div>
-            </header>
+              <p class="text-sm font-light">
+                El informe wellness está diseñado para ayudarnos a identificar influencias ambientales, que podrían estar afectando nuestra expresión genética y su influencia en las funciones metabólicas. En base a dichas influencias, nos proporciona un "Plan Nutricional de 90 Días" para equilibrar estos marcadores y así poder optimizarlos a través de ajustes nutricionales.
+              </p>
+            </div>
+          </GlowCard>
+        </article>
 
-            <p class="text-sm font-light">
-              El informe wellness está diseñado para ayudarnos a identificar
-              influencias ambientales, que podrían estar afectando nuestra
-              expresión genética y su influencia en las funciones metabólicas.
-              En base a dichas influencias, nos proporciona un "Plan Nutricional
-              de 90 Días" para equilibrar estos marcadores y así poder
-              optimizarlos a través de ajustes nutricionales.
-            </p>
-          </article>
-        </GlowCard>
-      </div>
-
-      <!-- VEGANO -->
-      <div
-        class="mt-16 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:h-82 md:flex-row"
-      >
-        <div class="w-full text-sm text-neutral-400 space-y-2">
+        <!-- VEGANO -->
+        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
           <NuxtImg
             src="/epigenetica/vegan.png"
             loading="lazy"
             preset="hero"
             class="h-full w-full object-contain transition-300 hover:scale-110"
-            alt="Estudio epigenético para veganos"
+            alt="Estudio epigenético para alto rendimiento"
           />
-        </div>
+          <GlowCard
+            class="z-0"
+            glow-gradient="from-violet-500 to-purple-400"
+          >
+            <div class="inline-grid h-full gap-4 bg-neutral-900 px-6 py-4">
+              <header class="flex flex-col">
+                <div class="font-light">
+                  Informe de optimización
+                </div>
+                <div class="text-2xl font-extrabold">
+                  Vegano
+                </div>
+              </header>
 
-        <GlowCard
-          disable-glow
-          glow-gradient=" from-violet-500 to-purple-400"
-        >
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Informe de optimización
-              </div>
-              <div class="text-2xl font-extrabold">
-                Vegano
-              </div>
-            </header>
-
-            <p class="text-sm font-light">
-              El informe optimización "vegano" está diseñado para ayudar a
-              identificar influencias ambientales correlacionadas con la
-              expresión de genes, enzimas y funciones metabólica. Además, de
-              brindar un plan para abordar estos desequilibrios y optimizar la
-              salud mediante programas dietéticos, nutricionales y suplementos.
-            </p>
-          </article>
-        </GlowCard>
-      </div>
-    </HeroSection>
-  </div>
+              <p class="text-sm font-light">
+                El informe optimización "vegano" está diseñado para ayudar a identificar influencias ambientales correlacionadas con la expresión de genes, enzimas y funciones metabólica. Además, de brindar un plan para abordar estos desequilibrios y optimizar la salud mediante programas dietéticos, nutricionales y suplementos.
+              </p>
+            </div>
+          </GlowCard>
+        </article>
+      </section>
+    </section>
+  </LotusPage>
 </template>

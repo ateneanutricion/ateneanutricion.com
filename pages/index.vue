@@ -91,44 +91,41 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <div class="space-y-16">
-    <HeroHeader :titles="['Nutrición.', 'Deporte.', 'Salud.']">
+  <LotusPage>
+    <HeroHeader
+      class="text-neutral-200"
+      :titles="['Nutrición.', 'Deporte.', 'Salud.']"
+    >
       <template #prepend>
-        <p class="text-center font-light text-neutral-400 md:text-xl">
+        <p class="text-center font-light">
           Nutrición para un rendimiento optimo y
           <span class="font-semibold text-white">bienestar</span>
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 md:text-xl">
-          <p class="mb-10 text-center font-light text-neutral-400">
+        <div class="flex flex-col gap-10">
+          <p class="text-center font-light">
             Sabemos que cada cuerpo es diferente y nos apasiona crear cada plan
             con un enfoque personalizado
           </p>
 
-          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
-            <a
-              href="#CTA"
-              role="button"
-              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
-            >
-              <div class="h-full flex items-center justify-center gap-2">
-                Saber más
-              </div>
-            </a>
+          <div class="w-full flex flex-col items-center justify-center gap-4 md:flex-row">
+            <LotusButton
+              label="Saber más"
+              to="#CTA"
+              variant="link"
+              size="lg"
+            />
 
-            <GlowCard glow-gradient="from-purple-500 to-pink-500">
-              <a
-                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
+            <GlowCard>
+              <LotusButton
+                label="Contactanos"
+                icon="i-ph:whatsapp-logo"
+                size="lg"
                 target="_blank"
-                rel="noopener noreferrer"
-                role="button"
-                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
-              >
-                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
-                Contactanos
-              </a>
+                to="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
+              />
             </GlowCard>
           </div>
         </div>
@@ -228,7 +225,7 @@ useServerSeoMeta({
             glow-gradient="from-indigo-500 to-purple-500"
             class="aspect-7/3 md:aspect-7/6"
           >
-            <div class="grid h-full overflow-hidden text-neutral-200">
+            <div class="grid h-full overflow-hidden bg-neutral-900 text-neutral-200">
               <div class="h-full flex items-center px-4">
                 <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
                   Psiconutrición
@@ -448,5 +445,5 @@ useServerSeoMeta({
         </div>
       </div>
     </HeroSection>
-  </div>
+  </LotusPage>
 </template>

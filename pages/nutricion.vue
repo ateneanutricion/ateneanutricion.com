@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+definePageMeta({ layout: 'clear' })
 useServerSeoMeta({
   title: 'Atenea Nutrición | Nutrición',
   ogTitle: 'Atenea Nutrición | Nutrición',
@@ -14,44 +15,37 @@ useServerSeoMeta({
 </script>
 
 <template>
-  <div class="space-y-16">
+  <LotusPage>
     <HeroHeader :titles="['Tu', 'Mejor', 'Versión.']">
       <template #prepend>
-        <p class="text-center font-light text-neutral-400 md:text-xl">
-          Haz de la nutrición tu ventaja
-          <span class="font-semibold text-white">competitiva</span>
+        <p class="text-center font-light">
+          Haz de la nutrición tu ventaja competitiva
         </p>
       </template>
 
       <template #append>
-        <div class="flex flex-col gap-4 md:text-xl">
-          <p class="mb-10 text-center font-light text-neutral-400">
-            Asesoramiento nutricional personalizado para alcanzar tus objetivos
-            de rendimiento deportivo, salud y composición corporal
+        <div class="flex flex-col gap-10">
+          <p class="text-center font-light">
+            Asesoramiento nutricional personalizado para alcanzar tus objetivos de rendimiento deportivo, salud y composición corporal
           </p>
 
-          <div class="mx-auto max-w-100 w-full flex flex-col gap-4 md:flex-row">
-            <a
-              href="#CTA"
-              role="button"
-              class="block h-12 w-full rounded-xl bg-white px-4 font-medium text-black"
-            >
-              <div class="h-full flex items-center justify-center gap-2">
-                Saber más
-              </div>
-            </a>
+          <div class="w-full flex flex-col items-center justify-center gap-4 md:flex-row">
+            <LotusButton
+              label="Saber más"
+              to="#CTA"
+              variant="link"
+              size="lg"
+            />
 
-            <GlowCard glow-gradient="from-purple-500 to-pink-500">
-              <a
-                href="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
+            <GlowCard>
+              <LotusButton
+                label="Contactanos"
+                icon="i-ph:whatsapp-logo"
+                size="lg"
                 target="_blank"
-                rel="noopener noreferrer"
-                role="button"
-                class="h-12 w-full flex items-center justify-center gap-2 rounded-xl px-4 font-medium text-neutral-200"
-              >
-                <UnoIcon class="i-ph:whatsapp-logo h-5 w-5" />
-                Contactanos
-              </a>
+                color="black"
+                to="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
+              />
             </GlowCard>
           </div>
         </div>
@@ -59,7 +53,7 @@ useServerSeoMeta({
     </HeroHeader>
 
     <!-- Images grid -->
-    <HeroSection>
+    <section>
       <div class="grid justify-items-center gap-4 md:grid-cols-3 md:h-64">
         <article
           group
@@ -145,23 +139,23 @@ useServerSeoMeta({
           </div>
         </article>
       </div>
-    </HeroSection>
+    </section>
 
     <!-- Alto rendimiento & deporte -->
-    <HeroSection>
-      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-        Alto
-        <span class="text-[#4F80E2]">rendimiento</span>
-        &
-        <span class="text-[#4F80E2]">deporte</span>
-      </h2>
+    <section class="p-4 @container space-y-6">
+      <header class="text-[18cqw]/[1] font-extrabold sm:text-[7cqw]/[1]">
+        <h2>
+          Alto
+          <span class="text-[#4F80E2]">rendimiento</span>
+          &
+          <span class="text-[#4F80E2]">deporte</span>
+        </h2>
+      </header>
 
       <div
-        class="mt-4 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
+        class="inline-grid w-full content-start justify-center gap-8 sm:grid-cols-2"
       >
-        <div
-          class="w-full py-4 text-sm text-neutral-400 md:order-last space-y-2"
-        >
+        <div class="text-sm md:order-last space-y-2">
           <p>
             Entendemos la importancia de la nutrición en el rendimiento
             deportivo, cada atleta y deporte es único y requiere un programa
@@ -185,42 +179,50 @@ useServerSeoMeta({
           </p>
         </div>
 
-        <GlowCard disable-glow>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Consulta
-              </div>
-              <div class="text-2xl font-extrabold">
-                Nutricional
-              </div>
-            </header>
+        <LotusCard
+          :ui="{
+            divide: '',
+            background: 'bg-[#4F80E2]',
+            header: { padding: 'p-6 pb-2' },
+            body: { padding: 'p-6 pt-2' },
+          }"
+          class="text-neutral-100"
+        >
+          <template #header>
+            <div class="font-light">
+              Consulta
+            </div>
+            <div class="text-2xl font-extrabold">
+              Nutricional
+            </div>
+          </template>
 
-            <ul class="list-disc list-inside text-sm font-light">
-              <li>Periodización nutricional</li>
-              <li>Pre, durante & post competencia</li>
-              <li>Perfil antropométrico somatocarta</li>
-              <li>Análisis de composición corporal</li>
-              <li>Plan de hidratación & recuperación</li>
-              <li>Plan de suplementación</li>
-            </ul>
-          </article>
-        </GlowCard>
+          <ul class="list-disc list-inside text-sm font-light">
+            <li>Periodización nutricional</li>
+            <li>Pre, durante & post competencia</li>
+            <li>Perfil antropométrico somatocarta</li>
+            <li>Análisis de composición corporal</li>
+            <li>Plan de hidratación & recuperación</li>
+            <li>Plan de suplementación</li>
+          </ul>
+        </LotusCard>
       </div>
-    </HeroSection>
+    </section>
 
     <!-- Clínica & metabólica -->
-    <HeroSection>
-      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-        <span class="text-[#4F80E2]">Clínica</span>
-        &
-        <span class="text-[#4F80E2]">metabólica</span>
-      </h2>
+    <section class="p-4 @container space-y-6">
+      <header class="text-[18cqw]/[1] font-extrabold sm:text-[7cqw]/[1]">
+        <h2>
+          <span class="text-[#4F80E2]">Clínica</span>
+          &
+          <span class="text-[#4F80E2]">metabólica</span>
+        </h2>
+      </header>
 
       <div
-        class="mt-4 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
+        class="inline-grid w-full content-start justify-center gap-8 sm:grid-cols-2"
       >
-        <div class="w-full py-4 text-sm text-neutral-400 space-y-2">
+        <div class="text-sm space-y-2">
           <p>
             Eres único. Tu Nutrición también debería serlo. Áreas especializadas
             de nutrición y manejo de enfermedades en las que se enfocan nuestros
@@ -239,40 +241,48 @@ useServerSeoMeta({
           </ul>
         </div>
 
-        <GlowCard disable-glow>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Consulta
-              </div>
-              <div class="text-2xl font-extrabold">
-                Nutricional
-              </div>
-            </header>
+        <LotusCard
+          :ui="{
+            divide: '',
+            background: 'bg-[#4F80E2]',
+            header: { padding: 'p-6 pb-2' },
+            body: { padding: 'p-6 pt-2' },
+          }"
+          class="text-neutral-100"
+        >
+          <template #header>
+            <div class="font-light">
+              Consulta
+            </div>
+            <div class="text-2xl font-extrabold">
+              Nutricional
+            </div>
+          </template>
 
-            <ul class="list-disc list-inside text-sm font-light">
-              <li>Plan y guía de alimentación</li>
-              <li>Lista de super</li>
-              <li>Análisis de composición corporal</li>
-              <li>Antropométria</li>
-              <li>Lista de equivalentes</li>
-            </ul>
-          </article>
-        </GlowCard>
+          <ul class="list-disc list-inside text-sm font-light">
+            <li>Plan y guía de alimentación</li>
+            <li>Lista de super</li>
+            <li>Análisis de composición corporal</li>
+            <li>Antropométria</li>
+            <li>Lista de equivalentes</li>
+          </ul>
+        </LotusCard>
       </div>
-    </HeroSection>
+    </section>
 
     <span id="CTA" />
     <!-- Composición Corporal & fitness -->
-    <HeroSection>
-      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-        Composición
-        <span class="text-[#4F80E2]">corporal</span>
-        &
-        <span class="text-[#4F80E2]">fitness</span>
-      </h2>
+    <section class="p-4 @container space-y-6">
+      <header class="text-[15cqw]/[1] font-extrabold sm:text-[7cqw]/[1]">
+        <h2>
+          Composición
+          <span class="text-[#4F80E2]">corporal</span>
+          &
+          <span class="text-[#4F80E2]">fitness</span>
+        </h2>
+      </header>
 
-      <p class="py-4 text-sm text-neutral-400">
+      <p class="py-4 text-sm">
         Sabemos que cada cuerpo es diferente y nos apasiona personalizar cada
         plan con un enfoque personalizado. Así como perder grasa corporal, ganar
         masa muscular, mejorar su salud u optimizar su rendimiento, creamos un
@@ -280,99 +290,129 @@ useServerSeoMeta({
       </p>
 
       <div
-        class="mt-8 w-full inline-flex flex-col content-start justify-center gap-8 text-neutral-200 md:col-span-2 md:flex-row"
+        class="inline-grid w-full content-start justify-center gap-8 sm:grid-cols-2"
       >
-        <GlowCard disable-glow>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Consulta
-              </div>
-              <div class="text-2xl font-extrabold">
-                Nutricional
-              </div>
-            </header>
+        <LotusCard
+          :ui="{
+            divide: '',
+            background: 'bg-[#4F80E2]',
+            header: { padding: 'p-6 pb-2' },
+            body: { padding: 'p-6 pt-2' },
+          }"
+          class="text-neutral-100"
+        >
+          <template #header>
+            <div class="font-light">
+              Consulta
+            </div>
+            <div class="text-2xl font-extrabold">
+              Nutricional
+            </div>
+          </template>
 
-            <ul class="list-disc list-inside text-sm font-light">
-              <li>Plan y guía de alimentación</li>
-              <li>Lista de super</li>
-              <li>Análisis de composición corporal</li>
-              <li>Antropométria</li>
-              <li>Lista de equivalentes</li>
-            </ul>
-          </article>
-        </GlowCard>
+          <ul class="list-disc list-inside text-sm font-light">
+            <li>Plan y guía de alimentación</li>
+            <li>Lista de super</li>
+            <li>Análisis de composición corporal</li>
+            <li>Antropométria</li>
+            <li>Lista de equivalentes</li>
+          </ul>
+        </LotusCard>
 
-        <GlowCard disable-glow>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex flex-col">
-              <div class="font-light">
-                Consulta
-              </div>
-              <div class="text-2xl font-extrabold">
-                + Entrenamiento
-              </div>
-            </header>
+        <LotusCard
+          :ui="{
+            divide: '',
+            background: 'bg-[#4F80E2]',
+            header: { padding: 'p-6 pb-2' },
+            body: { padding: 'p-6 pt-2' },
+          }"
+          class="text-neutral-100"
+        >
+          <template #header>
+            <div class="font-light">
+              Consulta
+            </div>
+            <div class="text-2xl font-extrabold">
+              + Entrenamiento
+            </div>
+          </template>
 
-            <ul class="list-disc list-inside text-sm font-light">
-              <li>Plan nutricional individualizado</li>
-              <li>Programación de entrenamiento físico</li>
-              <li>Suplementación deportiva</li>
-            </ul>
-          </article>
-        </GlowCard>
+          <ul class="list-disc list-inside text-sm font-light">
+            <li>Plan nutricional individualizado</li>
+            <li>Programación de entrenamiento físico</li>
+            <li>Suplementación deportiva</li>
+          </ul>
+        </LotusCard>
       </div>
-    </HeroSection>
+    </section>
 
     <!-- Entrenamiento Personalizado -->
-    <HeroSection>
-      <h2 class="text-4xl font-black text-neutral-200 md:text-5xl">
-        Entrenamiento
-        <span class="text-[#4F80E2]">Personalizado</span>
-      </h2>
+    <section class="dark rounded-3xl bg-gray-900 p-6 @container space-y-6">
+      <header class="text-[14cqw]/[1] font-extrabold text-neutral-200 sm:text-[7cqw]/[1]">
+        <h2>
+          Entrenamiento
+          <span class="text-[#4F80E2]">Personalizado</span>
+        </h2>
+      </header>
+
       <span class="text-sm text-neutral-400">
-        El movimiento es
-        <span class="font-semibold text-neutral-200"> fortaleza. </span>
+        El movimiento es fortaleza.
       </span>
 
       <div
         class="inline-grid mt-8 content-start gap-8 text-neutral-200 md:col-span-2 md:grid-cols-3"
       >
         <GlowCard>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex items-center gap-2">
-              <UnoIcon class="i-mdi:weight-lifter h-10 w-10" />
-              <div class="flex flex-col">
-                <div class="font-light">
-                  Valoración
-                </div>
-                <div class="text-2xl font-extrabold">
-                  Física
+          <LotusCard
+            :ui="{
+              divide: '',
+              header: { padding: 'p-4 pb-2' },
+              body: { padding: 'p-4 pt-2' },
+            }"
+          >
+            <template #header>
+              <div class="flex items-center gap-2">
+                <UnoIcon class="i-mdi:weight-lifter h-10 w-10" />
+                <div>
+                  <div class="font-light">
+                    Valoración
+                  </div>
+                  <div class="text-2xl font-extrabold">
+                    Física
+                  </div>
                 </div>
               </div>
-            </header>
+            </template>
 
             <p class="text-sm font-light">
               Mediante una valoración inicial identificaremos la intensidad, los
               ejercicios y el nivel de aptitud física actual. Para una
               programación personalizada de acuerdo a tus capacidades.
             </p>
-          </article>
+          </LotusCard>
         </GlowCard>
 
         <GlowCard>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex items-center gap-2">
-              <UnoIcon class="i-ph:target-duotone h-10 w-10" />
-              <div class="flex flex-col">
-                <div class="font-light">
-                  Metas y
-                </div>
-                <div class="text-2xl font-extrabold">
-                  Objetivos
+          <LotusCard
+            :ui="{
+              divide: '',
+              header: { padding: 'p-4 pb-2' },
+              body: { padding: 'p-4 pt-2' },
+            }"
+          >
+            <template #header>
+              <div class="flex items-center gap-2">
+                <UnoIcon class="i-ph:target-duotone h-10 w-10" />
+                <div>
+                  <div class="font-light">
+                    Metas y
+                  </div>
+                  <div class="text-2xl font-extrabold">
+                    Objetivos
+                  </div>
                 </div>
               </div>
-            </header>
+            </template>
 
             <p class="text-sm font-light">
               Ganar fuerza, aumentar músculo, disminuir grasa o ser funcional.
@@ -380,22 +420,30 @@ useServerSeoMeta({
               diseñar un programa de entrenamiento que se alinee con tus
               objetivos individuales.
             </p>
-          </article>
+          </LotusCard>
         </GlowCard>
 
         <GlowCard>
-          <article class="inline-grid gap-4 px-6 py-4">
-            <header class="flex items-center gap-2">
-              <UnoIcon class="i-ph:arrow-line-up-right-bold h-10 w-10" />
-              <div class="flex flex-col">
-                <div class="font-light">
-                  Sobrecarga
-                </div>
-                <div class="text-2xl font-extrabold">
-                  Progresiva
+          <LotusCard
+            :ui="{
+              divide: '',
+              header: { padding: 'p-4 pb-2' },
+              body: { padding: 'p-4 pt-2' },
+            }"
+          >
+            <template #header>
+              <div class="flex items-center gap-2">
+                <UnoIcon class="i-ph:arrow-line-up-right-bold h-10 w-10" />
+                <div>
+                  <div class="font-light">
+                    Sobrecarga
+                  </div>
+                  <div class="text-2xl font-extrabold">
+                    Progresiva
+                  </div>
                 </div>
               </div>
-            </header>
+            </template>
 
             <p class="text-sm font-light">
               Es importante progresar y desafiarte a ti mismo. Aumentando la
@@ -403,138 +451,9 @@ useServerSeoMeta({
               mejorando. La progresión nos ayudará a evitar lesiones y a seguir
               viendo resultados a largo plazo.
             </p>
-          </article>
+          </LotusCard>
         </GlowCard>
       </div>
-    </HeroSection>
-
-    <!-- People -->
-    <HeroSection>
-      <Badge class="mx-auto w-min text-neutral-200">
-        Conocenos
-      </Badge>
-
-      <div class="grid justify-items-center gap-4 md:grid-cols-3 md:h-64">
-        <article
-          group
-          class="relative aspect-1/1 h-full md:h-64 md:justify-self-end"
-        >
-          <NuxtImg
-            src="/nutricion/people/nutri_0.png"
-            loading="lazy"
-            preset="hero"
-            class="h-full w-full object-contain transition-300 group-hover:scale-110"
-            alt="Fotografía de la nutrióloga Yetlanetzi Portillo"
-          />
-
-          <div class="absolute bottom-2 left-2">
-            <div
-              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
-            >
-              <div class="h-12 w-12 overflow-hidden rounded-full">
-                <NuxtImg
-                  src="/nutricion/people/nutri_0.png"
-                  loading="lazy"
-                  preset="avatar"
-                  width="60"
-                  height="60"
-                  class="w-full object-cover"
-                  alt=""
-                />
-              </div>
-
-              <div>
-                <p class="text-xs font-bold text-neutral-200">
-                  Nutriologa
-                </p>
-                <p class="text-xs text-gray-400">
-                  Yetlanetzi Portillo
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article
-          group
-          class="relative aspect-1/1 h-full md:h-64"
-        >
-          <NuxtImg
-            src="/nutricion/people/nutri_1.png"
-            loading="lazy"
-            preset="hero"
-            class="h-full w-full object-contain transition-300 group-hover:scale-110"
-            alt="Fotografía de la nutrióloga Daniela Cuevas"
-          />
-
-          <div class="absolute bottom-2 left-2">
-            <div
-              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
-            >
-              <div class="h-12 w-12 overflow-hidden rounded-full">
-                <NuxtImg
-                  src="/nutricion/people/nutri_1.png"
-                  loading="lazy"
-                  preset="avatar"
-                  width="60"
-                  height="60"
-                  class="w-full object-cover"
-                  alt=""
-                />
-              </div>
-
-              <div>
-                <p class="text-xs font-bold text-neutral-200">
-                  Nutriologa
-                </p>
-                <p class="text-xs text-gray-400">
-                  Daniela Cuevas
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article
-          group
-          class="relative aspect-1/1 h-full md:h-64 md:justify-self-start"
-        >
-          <NuxtImg
-            src="/nutricion/people/nutri_2.png"
-            loading="lazy"
-            preset="hero"
-            class="h-full w-full object-contain transition-300 group-hover:scale-110"
-            alt="Fotografía de la nutrióloga Ninfa Jonguitud"
-          />
-
-          <div class="absolute bottom-2 left-2">
-            <div
-              class="flex items-center gap-2 rounded-full bg-black/70 py-2 pl-2 pr-12 backdrop-blur"
-            >
-              <div class="h-12 w-12 overflow-hidden rounded-full">
-                <NuxtImg
-                  src="/nutricion/people/nutri_2.png"
-                  loading="lazy"
-                  preset="avatar"
-                  width="60"
-                  height="60"
-                  class="w-full object-cover"
-                  alt=""
-                />
-              </div>
-
-              <div>
-                <p class="text-xs font-bold text-neutral-200">
-                  Nutriologa
-                </p>
-                <p class="text-xs text-gray-400">
-                  Ninfa Jonguitud
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </HeroSection>
-  </div>
+    </section>
+  </LotusPage>
 </template>

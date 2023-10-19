@@ -1,11 +1,11 @@
 <template>
-  <div class="font-sans">
-    <AteneaNavBar />
+  <div class="dark [--navbar-height:4rem] bg-black font-sans">
+    <LotusNavbar />
 
     <main>
       <slot />
     </main>
 
-    <AteneaFooter />
+    <LotusFooter />
   </div>
 </template>
