@@ -1,14 +1,30 @@
 <script lang="ts" setup>
+interface UIBaseProperties {
+  base: string
+  background: string
+  padding: string
+}
+interface UIButtonProperties extends Omit<UIBaseProperties, 'padding'> {
+  divide: string
+  ring: string
+  rounded: string
+  shadow: string
+}
+interface UI extends UIButtonProperties {
+  body: Partial<UIBaseProperties>
+  header: Partial<UIBaseProperties>
+  footer: Partial<UIBaseProperties>
+}
+interface Props {
+  as?: string
+  ui?: Partial<UI>
+}
 const props = withDefaults(defineProps<Props>(), {
   as: 'div',
   ui: () => ({}),
 })
-interface Props {
-  as?: string
-  ui?: Record<string, any>
-}
 
-const card = {
+const DEFAULT: UI = {
   base: 'overflow-hidden',
   background: 'bg-white dark:bg-gray-900',
   divide: 'divide-y divide-gray-200 dark:divide-gray-800',
@@ -31,30 +47,28 @@ const card = {
     padding: 'px-4 py-4 sm:px-6',
   },
 }
-const body = Object.assign(card.body, props.ui.body ?? {})
-const header = Object.assign(card.header, props.ui.header ?? {})
-const footer = Object.assign(card.footer, props.ui.footer ?? {})
-const ui = Object.assign(card, props.ui)
-ui.body = body
-ui.header = header
-ui.footer = footer
 
-const cardClass = computed(() =>
-  [
-    ui.base,
-    ui.rounded,
-    ui.divide,
-    ui.ring,
-    ui.shadow,
-    ui.background,
-  ],
-)
+const ui = computed(() => ({
+  ...DEFAULT,
+  ...props.ui,
+  body: { ...DEFAULT.body, ...props.ui.body },
+  header: { ...DEFAULT.header, ...props.ui.header },
+  footer: { ...DEFAULT.footer, ...props.ui.footer },
+
+}))
 </script>
 
 <template>
   <component
     :is="$attrs.onSubmit ? 'form' : as"
-    :class="cardClass"
+    :class=" [
+      ui.base,
+      ui.rounded,
+      ui.divide,
+      ui.ring,
+      ui.shadow,
+      ui.background,
+    ]"
     class="h-full w-full"
   >
     <header
