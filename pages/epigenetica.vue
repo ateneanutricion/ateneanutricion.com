@@ -10,7 +10,7 @@ useServerSeoMeta({
 
   ogImage: '/og-images/epigenetica.png',
   twitterCard: 'summary_large_image',
-  twitterImage: '/og-images/epigenetica.png',
+  twitterImage: 'https://ateneanutricion.com/og-images/epigenetica.png',
 })
 </script>
 

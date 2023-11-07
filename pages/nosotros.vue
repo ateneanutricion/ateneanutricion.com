@@ -12,7 +12,7 @@ useServerSeoMeta({
 
   ogImage: '/og-images/nosotros.png',
   twitterCard: 'summary_large_image',
-  twitterImage: '/og-images/nosotros.png',
+  twitterImage: 'https://ateneanutricion.com/og-images/nosotros.png',
 })
 
 interface SocialAction {

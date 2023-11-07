@@ -87,7 +87,7 @@ useServerSeoMeta({
 
   ogImage: '/og-images/index.png',
   twitterCard: 'summary_large_image',
-  twitterImage: '/og-images/index.png',
+  twitterImage: 'https://ateneanutricion.com/og-images/index.png',
 })
 </script>
 
