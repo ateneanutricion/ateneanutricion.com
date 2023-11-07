@@ -237,7 +237,7 @@ useServerSeoMeta({
             src="/epigenetica/high_performance.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-contain transition-300 hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
 
@@ -275,7 +275,7 @@ useServerSeoMeta({
             src="/epigenetica/wellness.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-contain transition-300 sm:order-last hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:order-last sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard
@@ -305,7 +305,7 @@ useServerSeoMeta({
             src="/epigenetica/vegan.png"
             loading="lazy"
             preset="hero"
-            class="h-full w-full object-contain transition-300 hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard
