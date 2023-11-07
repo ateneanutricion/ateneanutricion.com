@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import ProfileCard from '~/components/Lotus/ProfileCard.vue'
-
 definePageMeta({ layout: 'clear' })
 
 useServerSeoMeta({
@@ -14,6 +12,7 @@ useServerSeoMeta({
 
   ogImage: '/og-images/nosotros.png',
   twitterCard: 'summary_large_image',
+  twitterImage: '/og-images/nosotros.png',
 })
 
 interface SocialAction {
@@ -90,41 +89,15 @@ const teamMembers: TeamMember[] = [
     <LotusHero
       title="Conoce quienes somos."
       image="/nosotros/header.jpg"
-      append="Nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional"
-    >
-      <template #actions>
-        <LotusButton
-          label="Saber más"
-          to="#CTA"
-          variant="link"
-          size="lg"
-        />
-
-        <GlowCard>
-          <LotusButton
-            label="Contactanos"
-            icon="i-ph:whatsapp-logo"
-            size="lg"
-            target="_blank"
-            color="black"
-            to="https://api.whatsapp.com/send?phone=5214443159190&text=Hola%2C%20me%20gustaría%20agendar%20una%20cita%20nutricional."
-          />
-        </GlowCard>
-      </template>
-    </LotusHero>
+      sub-title="Nuestro objetivo es brindar las herramientas que impulsen un cambio de hábitos para alcanzar objetivos individuales, enfocados en una Nutrición de calidad, actividad física y bienestar emocional"
+    />
 
     <span id="CTA" />
-    <section class="p-4 space-y-6">
-      <header class="flex flex-col items-start gap-6 @container">
-        <span class="text-[20cqw]/[1] font-extrabold sm:text-[9cqw]/[1]">
-          Nuestro
-          <span class="text-primary-400">Equipo.</span>
-        </span>
-
-        <span class="text-xs">
-          Especialistas con amplia experiencia en areas clinica, deportiva y de alto rendimiento
-        </span>
-      </header>
+    <LotusContent sub-title="Especialistas con amplia experiencia en areas clinica, deportiva y de alto rendimiento">
+      <template #title>
+        Nuestro
+        <span class="text-primary-400">Equipo.</span>
+      </template>
 
       <div class="grid gap-6 px-6 sm:grid-cols-3">
         <LotusProfileCard
@@ -133,16 +106,14 @@ const teamMembers: TeamMember[] = [
           v-bind="member"
         />
       </div>
-    </section>
+    </LotusContent>
 
     <!-- FAQs -->
-    <section class="p-4 space-y-6">
-      <header class="flex flex-col items-start gap-6 @container">
-        <span class="text-[20cqw]/[1] font-extrabold sm:text-[9cqw]/[1]">
-          Preguntas
-          <span class="text-primary-400">frecuentes.</span>
-        </span>
-      </header>
+    <LotusContent>
+      <template #title>
+        Preguntas
+        <span class="text-primary-400">frecuentes.</span>
+      </template>
 
       <LotusCard>
         <div class="grid sm:grid-cols-2">
@@ -227,6 +198,6 @@ const teamMembers: TeamMember[] = [
           </article>
         </div>
       </LotusCard>
-    </section>
+    </LotusContent>
   </LotusPage>
 </template>

@@ -11,6 +11,7 @@ useServerSeoMeta({
 
   ogImage: '/og-images/nutricion.png',
   twitterCard: 'summary_large_image',
+  twitterImage: '/og-images/nutricion.png',
 })
 </script>
 
