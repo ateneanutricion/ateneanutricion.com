@@ -54,11 +54,11 @@ useServerSeoMeta({
     </HeroHeader>
 
     <!-- Images grid -->
-    <section>
-      <div class="grid justify-items-center gap-4 md:grid-cols-3 md:h-64">
+    <section class="p-4 @container">
+      <div class="grid justify-items-center gap-4 sm:grid-cols-3">
         <article
           group
-          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98 md:justify-self-end"
+          class="relative aspect-7/5 w-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98"
         >
           <NuxtImg
             src="/nutricion/fitness.jpeg"
@@ -86,7 +86,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98"
+          class="relative aspect-7/5 w-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98"
         >
           <NuxtImg
             src="/nutricion/rendimiento.jpeg"
@@ -114,7 +114,7 @@ useServerSeoMeta({
 
         <article
           group
-          class="relative aspect-7/5 h-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98 md:justify-self-start"
+          class="relative aspect-7/5 w-full overflow-hidden rounded-xl transition-300 md:aspect-1/1 hover:scale-98"
         >
           <NuxtImg
             src="/nutricion/clinica.jpg"
