@@ -232,12 +232,12 @@ useServerSeoMeta({
 
       <section class="space-y-12">
         <!-- ALTO RENDIMIENTO -->
-        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
+        <article class="grid gap-6 sm:grid-cols-2">
           <NuxtImg
             src="/epigenetica/high_performance.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
+            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
 
@@ -270,12 +270,12 @@ useServerSeoMeta({
         </article>
 
         <!-- WELLNESS -->
-        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
+        <article class="grid gap-6 sm:grid-cols-2">
           <NuxtImg
             src="/epigenetica/wellness.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto h-full w-full object-contain transition-300 sm:order-last sm:w-auto hover:scale-110"
+            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:order-last sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard
@@ -300,12 +300,12 @@ useServerSeoMeta({
         </article>
 
         <!-- VEGANO -->
-        <article class="grid gap-6 sm:grid-cols-2 sm:h-xs">
+        <article class="grid gap-6 sm:grid-cols-2">
           <NuxtImg
             src="/epigenetica/vegan.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
+            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard
