@@ -24,7 +24,7 @@ defineProps<Props>()
       :alt="`Fotografía de la nutrióloga ${name}`"
       loading="lazy"
       preset="hero"
-      class="rounded-t-[3rem] bg-primary object-contain"
+      class="rounded-t-[3rem] bg-primary object-contain w-full"
     />
 
     <template #footer>
