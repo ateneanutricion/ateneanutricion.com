@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { NuxtLinkProps } from 'nuxt/dist/app/components'
-
-interface Props extends NuxtLinkProps {
+interface Props {
+  to?: string
+  exactActiveClass?: string
   as?: string
   disabled?: boolean
-
 }
+
 defineOptions({ inheritAttrs: false })
 withDefaults(defineProps<Props>(), {
   as: 'button',
