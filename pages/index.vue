@@ -47,8 +47,21 @@ useServerHead({
         '@graph': [
           {
             '@type': 'Organization',
+            'image': 'https://ateneanutricion.com/logo.png',
             'url': 'https://ateneanutricion.com',
-            'logo': '/logo.png',
+            'logo': 'https://ateneanutricion.com/logo.png',
+            'name': 'Atenea Nutrición',
+            'description': 'Atenea Nutrición brinda servicios de bienestar y salud, somos expertos en nutrición deportiva & clínica, creamos planes de alimentación individualizados, entrenamientos personalizados & test epigenéticos para una nutrición óptima. Nos encontramos en San Luis Potosí SLP. y Matehuala S.L.P',
+            'email': 'contacto@ateneanutricion.com',
+            'telephone': '+54-44-4315-9190',
+            'address': {
+              '@type': 'PostalAddress',
+              'streetAddress': 'Morelos 510',
+              'addressLocality': 'San Luis Potosi',
+              'addressCountry': 'MX',
+              'addressRegion': 'Matehuala',
+              'postalCode': '78700',
+            },
           },
           {
             '@type': 'FAQPage',
