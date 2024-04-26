@@ -15,14 +15,22 @@
     "@nuxt/image": "1.4.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.8.0",
-    "@iconify-json/mdi": "1.1.64",
-    "@iconify-json/ph": "1.1.11",
-    "@unocss/eslint-config": "0.58.5",
-    "@unocss/nuxt": "0.58.5",
+    "@antfu/eslint-config": "2.16.0",
+    "@iconify-json/mdi": "1.1.66",
+    "@iconify-json/ph": "1.1.12",
+    "@unocss/eslint-config": "0.59.4",
+    "@unocss/nuxt": "0.59.4",
     "@vueuse/core": "10.9.0",
     "@vueuse/nuxt": "10.9.0",
     "eslint": "8.57.0",
-    "nuxt": "3.10.3"
+    "lint-staged": "^15.2.2",
+    "nuxt": "3.11.2",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
