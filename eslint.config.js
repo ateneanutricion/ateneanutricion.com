@@ -13,6 +13,18 @@ export default antfu({
           max: 1,
         },
       }],
+      'vue/no-restricted-syntax': [
+        'error',
+        {
+          selector: 'VElement[name="a"]',
+          message: 'Use NuxtLink instead.',
+        },
+      ],
     },
+  },
+}, {
+  rules: {
+    'no-console': ['warn', { allow: ['info'] }],
+    'no-alert': 'warn',
   },
 })
