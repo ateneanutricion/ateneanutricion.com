@@ -71,14 +71,14 @@ useServerSeoMeta({
       <div class="grid rounded-xl bg-neutral-800 p-4 md:grid-cols-2">
         <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="text-base font-medium text-neutral-200">
+            <div class="text-base text-neutral-200 font-medium">
               Sensibilidades
             </div>
-            <div class="text-2xl font-black text-orange-400">
+            <div class="text-2xl text-orange-400 font-black">
               Alimentarias
             </div>
           </header>
-          <p class="text-sm font-light text-neutral-400">
+          <p class="text-sm text-neutral-400 font-light">
             Te ayudamos a identificar qué alimentos y aditivos pueden estar
             causando estrés digestivo en tu organismo, impidiendo la correcta
             absorción de nutrientes y favoreciendo la inflamación
@@ -86,14 +86,14 @@ useServerSeoMeta({
         </article>
         <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="text-base font-medium text-neutral-200">
+            <div class="text-base text-neutral-200 font-medium">
               Necesidades
             </div>
-            <div class="text-2xl font-black text-emerald-400">
+            <div class="text-2xl text-emerald-400 font-black">
               Nutricionales
             </div>
           </header>
-          <p class="text-sm font-light text-neutral-400">
+          <p class="text-sm text-neutral-400 font-light">
             Para ayudarte a lograr tus objetivos de salud, peso, aumentar tu
             energía durante el día y potenciar el bienestar a través de las
             necesidades reales de tu organismo
@@ -101,14 +101,14 @@ useServerSeoMeta({
         </article>
         <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="text-base font-medium text-neutral-200">
+            <div class="text-base text-neutral-200 font-medium">
               Factores
             </div>
-            <div class="text-2xl font-black text-sky-400">
+            <div class="text-2xl text-sky-400 font-black">
               Externos
             </div>
           </header>
-          <p class="text-sm font-light text-neutral-400">
+          <p class="text-sm text-neutral-400 font-light">
             ¿Cómo te relacionas con el ambiente que te rodea y cómo te afectan
             los factores ambientales, la exposición tóxica y las cargas
             electromagnéticas de baja intensidad a nivel celular?
@@ -116,14 +116,14 @@ useServerSeoMeta({
         </article>
         <article class="inline-grid gap-4 px-6 py-4">
           <header class="flex flex-col">
-            <div class="text-base font-medium text-neutral-200">
+            <div class="text-base text-neutral-200 font-medium">
               Sistema
             </div>
-            <div class="text-2xl font-black text-red-400">
+            <div class="text-2xl text-red-400 font-black">
               Metabólico
             </div>
           </header>
-          <p class="text-sm font-light text-neutral-400">
+          <p class="text-sm text-neutral-400 font-light">
             Información del estado actual de los principales sistemas
             metabólicos para recuperar su equilibrio y optimizar tus sistemas
             inmune, intestinal, cardiovascular, metabólico, sueño, emociones.
@@ -237,7 +237,7 @@ useServerSeoMeta({
             src="/epigenetica/high_performance.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:h-xs sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
 
@@ -275,7 +275,7 @@ useServerSeoMeta({
             src="/epigenetica/wellness.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:order-last sm:w-auto hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:order-last sm:h-xs sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard
@@ -305,7 +305,7 @@ useServerSeoMeta({
             src="/epigenetica/vegan.png"
             loading="lazy"
             preset="hero"
-            class="mx-auto sm:h-xs h-full w-full object-contain transition-300 sm:w-auto hover:scale-110"
+            class="mx-auto h-full w-full object-contain transition-300 sm:h-xs sm:w-auto hover:scale-110"
             alt="Estudio epigenético para alto rendimiento"
           />
           <GlowCard

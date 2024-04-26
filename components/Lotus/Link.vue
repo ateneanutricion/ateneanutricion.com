@@ -30,6 +30,7 @@ withDefaults(defineProps<Props>(), {
     v-bind="$props"
     custom
   >
+    <!-- eslint-disable-next-line eslint-disable-next-line vue/no-restricted-syntax -->
     <a
       v-bind="$attrs"
       :href="!disabled ? href : undefined"

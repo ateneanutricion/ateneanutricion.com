@@ -122,7 +122,7 @@ const teamMembers: TeamMember[] = [
               <div>
                 ¿Necesito un
               </div>
-              <div class="text-2xl font-black text-primary-400">
+              <div class="text-2xl text-primary-400 font-black">
                 plan nutricional?
               </div>
             </header>
@@ -143,7 +143,7 @@ const teamMembers: TeamMember[] = [
               <div>
                 ¿Cuál es el mejor
               </div>
-              <div class="text-2xl font-black text-primary-400">
+              <div class="text-2xl text-primary-400 font-black">
                 plan de alimentación?
               </div>
             </header>
@@ -164,7 +164,7 @@ const teamMembers: TeamMember[] = [
               <div>
                 ¿Qué es un estudio
               </div>
-              <div class="text-2xl font-black text-primary-400">
+              <div class="text-2xl text-primary-400 font-black">
                 epigenético nutricional?
               </div>
             </header>
@@ -184,7 +184,7 @@ const teamMembers: TeamMember[] = [
               <div>
                 ¿Qué hace un
               </div>
-              <div class="text-2xl font-black text-primary-400">
+              <div class="text-2xl text-primary-400 font-black">
                 nutriologo deportivo?
               </div>
             </header>

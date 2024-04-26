@@ -25,18 +25,18 @@
             />
           </template>
         </LotusButton>
-        <span class="text-xs font-extralight text-primary-700">
+        <span class="text-xs text-primary-700 font-extralight">
           ¡Supera tus limites!
         </span>
 
-        <span class="text-xs font-extralight text-primary-700">
+        <span class="text-xs text-primary-700 font-extralight">
           Matehuala, S.L.P.
         </span>
-        <span class="text-xs font-extralight text-primary-700">
+        <span class="text-xs text-primary-700 font-extralight">
           San Luis Potosí, S.L.P.
         </span>
 
-        <p class="text-xs font-extralight text-primary-200">
+        <p class="text-xs text-primary-200 font-extralight">
           Copyright © 2023
         </p>
       </div>

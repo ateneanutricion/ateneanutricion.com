@@ -13,7 +13,7 @@
           </span>
         </div>
 
-        <div class="font-semibold text-neutral-300">
+        <div class="text-neutral-300 font-semibold">
           <slot name="title" />
         </div>
       </div>

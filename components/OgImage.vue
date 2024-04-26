@@ -16,11 +16,11 @@
     </NuxtLink>
     <div class="py-10 text-neutral-200 space-y-2">
       <h1
-        class="from-emerald-500 to-[rgb(177_191_146)] bg-gradient-to-r bg-clip-text text-9xl font-black text-transparent"
+        class="from-emerald-500 to-[rgb(177_191_146)] bg-gradient-to-r bg-clip-text text-9xl text-transparent font-black"
       >
         Nosotros
       </h1>
-      <p class="text-4xl font-bold text-neutral-200">
+      <p class="text-4xl text-neutral-200 font-bold">
         Conoce quienes somos
       </p>
       <p class="w-3/4 text-lg text-neutral-400 mt-10!">

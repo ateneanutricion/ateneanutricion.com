@@ -78,7 +78,7 @@ useServerSeoMeta({
           <div
             class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+            <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
               Composición corporal & fitness
             </p>
           </div>
@@ -106,7 +106,7 @@ useServerSeoMeta({
           <div
             class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+            <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
               Alto rendimiento & deporte
             </p>
           </div>
@@ -134,7 +134,7 @@ useServerSeoMeta({
           <div
             class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
           >
-            <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+            <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
               Clínica & metabólica
             </p>
           </div>
@@ -168,7 +168,7 @@ useServerSeoMeta({
             composición corporal y rendimiento deportivo.
           </p>
 
-          <p class="font-semibold text-[#4F80E2]">
+          <p class="text-[#4F80E2] font-semibold">
             Haz de la nutrición tu ventaja competitiva.
           </p>
 
@@ -349,7 +349,7 @@ useServerSeoMeta({
 
     <!-- Entrenamiento Personalizado -->
     <section class="dark rounded-3xl bg-gray-900 p-6 @container space-y-6">
-      <header class="text-[14cqw]/[1] font-extrabold text-neutral-200 sm:text-[7cqw]/[1]">
+      <header class="text-[14cqw]/[1] text-neutral-200 font-extrabold sm:text-[7cqw]/[1]">
         <h2>
           Entrenamiento
           <span class="text-[#4F80E2]">Personalizado</span>

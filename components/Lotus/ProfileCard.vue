@@ -24,13 +24,13 @@ defineProps<Props>()
       :alt="`Fotografía de la nutrióloga ${name}`"
       loading="lazy"
       preset="hero"
-      class="rounded-t-[3rem] bg-primary object-contain w-full"
+      class="w-full rounded-t-[3rem] bg-primary object-contain"
     />
 
     <template #footer>
       <div class="border-2 rounded-b-3xl px-4 py-4 text-center text-neutral-600 sm:px-6">
         <span class="block text-sm uppercase">{{ name }}</span>
-        <span class="text-xs uppercase text-neutral-500">{{ position }}</span>
+        <span class="text-xs text-neutral-500 uppercase">{{ position }}</span>
 
         <div class="py-1">
           <LotusButton

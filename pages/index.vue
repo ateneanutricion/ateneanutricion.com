@@ -113,7 +113,7 @@ useServerSeoMeta({
       <template #prepend>
         <p class="text-center font-light">
           Nutrición para un rendimiento optimo y
-          <span class="font-semibold text-white">bienestar</span>
+          <span class="text-white font-semibold">bienestar</span>
         </p>
       </template>
 
@@ -171,10 +171,10 @@ useServerSeoMeta({
             <div
               class="absolute bottom-0 left-0 right-0 from-neutral-800 bg-gradient-to-t p-2"
             >
-              <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+              <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
                 Nutrición
               </p>
-              <span class="text-sm font-light text-neutral-300">
+              <span class="text-sm text-neutral-300 font-light">
                 Enfocada en tus objetivos
               </span>
             </div>
@@ -184,7 +184,7 @@ useServerSeoMeta({
         <div class="col-span-6 hidden lg:order-2 lg:block">
           <div class="flex justify-center text-center">
             <div
-              class="flex items-center gap-1 rounded-xl bg-black p-2 text-sm font-semibold text-neutral-200"
+              class="flex items-center gap-1 rounded-xl bg-black p-2 text-sm text-neutral-200 font-semibold"
             >
               <p>¡Comencemos!</p>
             </div>
@@ -219,10 +219,10 @@ useServerSeoMeta({
             <div
               class="absolute left-0 right-0 top-0 from-neutral-800 bg-gradient-to-b p-2"
             >
-              <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+              <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
                 Epigenética
               </p>
-              <span class="text-sm font-light text-neutral-300">
+              <span class="text-sm text-neutral-300 font-light">
                 Enfocada en tus objetivos
               </span>
             </div>
@@ -241,13 +241,13 @@ useServerSeoMeta({
           >
             <div class="grid h-full overflow-hidden bg-neutral-900 text-neutral-200">
               <div class="h-full flex items-center px-4">
-                <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+                <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
                   Psiconutrición
                 </p>
               </div>
 
               <div
-                class="inline-grid w-full content-center gap-2 px-4 text-sm font-light text-neutral-200"
+                class="inline-grid w-full content-center gap-2 px-4 text-sm text-neutral-200 font-light"
               >
                 <div
                   class="w-full flex items-center gap-2 rounded-xl bg-neutral-800 p-2"
@@ -286,13 +286,13 @@ useServerSeoMeta({
 
             <div class="absolute inset-0 grid overflow-hidden text-neutral-200">
               <div class="h-full flex items-center px-4">
-                <p class="text-3xl font-bold text-neutral-200 md:text-2xl">
+                <p class="text-3xl text-neutral-200 font-bold md:text-2xl">
                   Entrenamiento
                 </p>
               </div>
 
               <div
-                class="inline-grid grid-cols-2 w-full content-center gap-1 px-4 text-sm font-light text-neutral-200"
+                class="inline-grid grid-cols-2 w-full content-center gap-1 px-4 text-sm text-neutral-200 font-light"
               >
                 <div
                   class="w-full inline-flex items-center justify-center rounded-xl bg-black/50 p-2 backdrop-blur"
@@ -359,7 +359,7 @@ useServerSeoMeta({
                 </div>
 
                 <div>
-                  <p class="text-xs font-bold text-neutral-200">
+                  <p class="text-xs text-neutral-200 font-bold">
                     Nutriologa
                   </p>
                   <p class="text-xs text-gray-400">
@@ -374,7 +374,7 @@ useServerSeoMeta({
         <div class="flex flex-col justify-center gap-4 text-neutral-300">
           <p>
             Mi nombre es
-            <span class="font-black text-[rgb(177_191_146)]">Yetlanetzi</span>
+            <span class="text-[rgb(177_191_146)] font-black">Yetlanetzi</span>
             y quiero ayudarte a superar tus metas, nuestro objetivo principal
             será optimizar tu salud, utilizando la mejor arma que es la
             Nutrición de excelencia y calidad.
@@ -403,7 +403,7 @@ useServerSeoMeta({
     <HeroSection>
       <div class="grid gap-4">
         <div class="overflow-hidden text-center">
-          <p class="text-4xl font-black text-[rgb(177_191_146)] md:text-5xl">
+          <p class="text-4xl text-[rgb(177_191_146)] font-black md:text-5xl">
             Psiconutrición
           </p>
 
