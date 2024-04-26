@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  telemetry: false,
+  devtools: { enabled: true },
   experimental: { typedPages: true },
   app: {
     head: {
